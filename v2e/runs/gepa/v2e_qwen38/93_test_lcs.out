@@ -1,0 +1,87 @@
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 32 instances, 24 workers
+v0 abt-buy          dPC=+0.1459 d|C|=+2.42% pairs=+160 ops={'move_to_y': 30, 'move_to_x': 34}
+v0 abt-buy          dPC=+0.1486 d|C|=+4.46% pairs=+163 ops={'move_to_y': 33, 'move_to_x': 31}
+v0 abt-buy          dPC=+0.0784 d|C|=-14.92% pairs=+86 ops={'move_to_y': 57, 'move_to_x': 7}
+v0 abt-buy          dPC=+0.1194 d|C|=+3.97% pairs=+131 ops={'move_to_x': 36, 'move_to_y': 28}
+v0 abt-buy          dPC=+0.0638 d|C|=-9.30% pairs=+70 ops={'move_to_y': 55, 'move_to_x': 9}
+v0 abt-buy          dPC=+0.0583 d|C|=-16.91% pairs=+64 ops={'move_to_y': 56, 'move_to_x': 8}
+v0 abt-buy          dPC=+0.1459 d|C|=+5.52% pairs=+160 ops={'move_to_y': 28, 'move_to_x': 36}
+v0 abt-buy          dPC=+0.0675 d|C|=-14.52% pairs=+74 ops={'move_to_y': 56, 'move_to_x': 8}v0 abt-buy          dPC=+0.0766 d|C|=-20.96% pairs=+84 ops={'move_to_y': 57, 'move_to_x': 7}
+v0 abt-buy          dPC=+0.1203 d|C|=+2.57% pairs=+132 ops={'move_to_x': 30, 'move_to_y': 34}
+v0 abt-buy          dPC=+0.0729 d|C|=-12.71% pairs=+80 ops={'move_to_y': 57, 'move_to_x': 7}v0 abt-buy          dPC=+0.0757 d|C|=-15.57% pairs=+83 ops={'move_to_y': 56, 'move_to_x': 8}
+
+v0 abt-buy          dPC=+0.0656 d|C|=-8.99% pairs=+72 ops={'move_to_x': 23, 'move_to_y': 33}v0 abt-buy          dPC=+0.0693 d|C|=-20.29% pairs=+76 ops={'move_to_y': 57, 'move_to_x': 7}
+
+
+v0 abt-buy          dPC=+0.0656 d|C|=-8.46% pairs=+72 ops={'move_to_x': 22, 'move_to_y': 34}v0 abt-buy          dPC=+0.0611 d|C|=-8.76% pairs=+67 ops={'move_to_y': 36, 'move_to_x': 20}
+
+v0 abt-buy          dPC=+0.0693 d|C|=-8.81% pairs=+76 ops={'move_to_y': 35, 'move_to_x': 21}
+v0 abt-buy          dPC=+0.1249 d|C|=+3.69% pairs=+137 ops={'move_to_x': 31, 'move_to_y': 33}
+v0 abt-buy          dPC=+0.0784 d|C|=-7.98% pairs=+86 ops={'move_to_y': 32, 'move_to_x': 24}
+v0 abt-buy          dPC=+0.0693 d|C|=-7.98% pairs=+76 ops={'move_to_x': 21, 'move_to_y': 35}v0 abt-buy          dPC=+0.1531 d|C|=+3.52% pairs=+168 ops={'move_to_x': 30, 'move_to_y': 34}
+v0 abt-buy          dPC=+0.1422 d|C|=+5.07% pairs=+156 ops={'move_to_x': 33, 'move_to_y': 31}
+
+v0 abt-buy          dPC=+0.0675 d|C|=-7.34% pairs=+74 ops={'move_to_x': 23, 'move_to_y': 33}
+v0 abt-buy          dPC=+0.0611 d|C|=-8.41% pairs=+67 ops={'move_to_y': 34, 'move_to_x': 22}
+v0 dblp-scholar     dPC=+0.0202 d|C|=+2.46% pairs=+108 ops={'move_to_y': 42, 'move_to_x': 22}
+v0 dblp-scholar     dPC=+0.0223 d|C|=+2.92% pairs=+119 ops={'move_to_y': 42, 'move_to_x': 22}
+v0 dblp-scholar     dPC=+0.0176 d|C|=+1.88% pairs=+94 ops={'move_to_y': 40, 'move_to_x': 24}
+v0 dblp-scholar     dPC=+0.0224 d|C|=+2.78% pairs=+120 ops={'move_to_x': 24, 'move_to_y': 40}
+v0 dblp-scholar     dPC=+0.0209 d|C|=+2.59% pairs=+112 ops={'move_to_y': 45, 'move_to_x': 19}
+v0 dblp-scholar     dPC=+0.0200 d|C|=+2.50% pairs=+107 ops={'move_to_x': 23, 'move_to_y': 41}
+v0 dblp-scholar     dPC=+0.0187 d|C|=+2.21% pairs=+100 ops={'move_to_y': 37, 'move_to_x': 27}
+v0 dblp-scholar     dPC=+0.0189 d|C|=+2.23% pairs=+101 ops={'move_to_y': 39, 'move_to_x': 25}
+{
+  "variants": 1,
+  "n_pairs_per_instance": 64,
+  "order": "random",
+  "per_cell": {
+    "lambdafold/abt-buy": {
+      "d_pc_mean": 0.0703053783044667,
+      "d_pc_spread": 0.020054694621695623,
+      "d_c_rel_mean": -0.1564753376891567,
+      "pairs_gained_mean": 77.125,
+      "score_mean": 1.0088581475694718,
+      "n": 8
+    },
+    "reclin2/abt-buy": {
+      "d_pc_mean": 0.06722880583409296,
+      "d_pc_spread": 0.017319963536918892,
+      "d_c_rel_mean": -0.08342387830755464,
+      "pairs_gained_mean": 73.75,
+      "score_mean": 1.0937248961249293,
+      "n": 8
+    },
+    "reclin2/dblp-scholar": {
+      "d_pc_mean": 0.020128109220123466,
+      "d_pc_spread": 0.004862539741911309,
+      "d_c_rel_mean": 0.024454976303317534,
+      "pairs_gained_mean": 107.625,
+      "score_mean": 1.0632999423919096,
+      "n": 8
+    },
+    "simcse/abt-buy": {
+      "d_pc_mean": 0.1375341841385597,
+      "d_pc_spread": 0.03372835004557884,
+      "d_c_rel_mean": 0.039016021676385695,
+      "pairs_gained_mean": 150.875,
+      "score_mean": 0.3287246895815001,
+      "n": 8
+    }
+  },
+  "macro_d_pc": 0.0737991193743107,
+  "macro_score": 0.8736519189169527,
+  "instances_lost": 0,
+  "calls_failed": 0,
+  "runtime_s": 408.7
+}
