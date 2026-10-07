@@ -16,7 +16,7 @@ never shown.
 |---|---|
 | `blocking_methods/` | the standard-key (`A_standard_reclin2`) and LSH (`B_lsh_blocklib`) blockers with their pilot outputs. The klsh and SimCSE/Louvain blockers and lambdafold are built by `v2e/pc_gepa/block_r.R`, `build_bank_r.py`, `build_bank_simcse.py` and `run_lambdafold.py`. |
 | `setup_datasets.sh` | fetches the public benchmarks (Amazon-Google, Walmart-Amazon, DBLP-ACM, Cora, Abt-Buy, DBLP-Scholar, MB-20K). Datasets are not committed. |
-| `v2e/pc_gepa/` | the search and evaluation code. `v2.py` is the driver: builds the judge message, replays a cell, scores it, and runs reflective prompt evolution. `pc_gepa/README.md` holds the full design notes, including the scoring formula and the 14-cell matrix. |
+| `v2e/pc_gepa/` | the search and evaluation code. `v2.py` is the driver: builds the judge message, replays a cell, scores it, and runs reflective prompt evolution. `pc_gepa/README.md` holds the full design notes, including the scoring formula and the 15-cell matrix. |
 | `v2e/runs/gepa/v2e_qwen38/prompts/best.txt` | the optimized instruction the paper evaluates. (`v2e/pc_gepa/best_prompt.txt` is an earlier V1-design file and is not the evaluated instruction.) |
 | `v2e/runs/gepa/v2e_qwen38/prompts/seed.txt` | the strategy-free initial prompt |
 | `v2e/runs/gepa/v2e_qwen38/prompts/abl_no{1..7}.txt`, `force_*.txt`, `noseed.txt` | the manipulated instructions (one method step deleted; direction forced; disclosed pair withheld) |
@@ -37,7 +37,7 @@ All under `v2e/runs/gepa/v2e_qwen38/` unless noted.
 | `eval_test_mblcs.json`, `95_test_mblcs.out` | the script on the MB-20K held-out cell, mirroring `eval_test_mbbest.json`. |
 | `eval_test_lcs.json`, `93_test_lcs.out` | the same script on the held-out cells, mirroring `eval_test_best.json` (64 boundaries, 8 instances per cell). |
 | `eval_val_best.json`, `eval_val_seed.json` | the 120-instance validation panel, both instructions (win rate) |
-| `eval_test_best.json` | the 80 held-out instances, optimized instruction |
+| `eval_test_best.json` | the 32 held-out instances on Abt-Buy and DBLP-Scholar, optimized instruction (MB-20K's 8 are in `eval_test_mbbest.json`) |
 | `../../../analysis/v2e_qwen38/run_log.txt` | the search's own log; the per-candidate validation means quoted in Section 5 are read from here (the trajectory figure of earlier drafts was removed) |
 | `../../../analysis/v2e_qwen38/candidates.json` | the text of every accepted candidate instruction, in order |
 | `serving_exh_v1_{best,seed}_{before,after}.json` | server state snapshots (model digest and keep-alive expiry) around the replicate sweeps. No such snapshot exists for the first sweeps; the paper identifies their server from the resident server's state. |
