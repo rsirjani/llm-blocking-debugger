@@ -1,4 +1,4 @@
-# LLM-Based Debugging and Explainability of Blocking Methods in Entity Resolution
+# Debugging Blocking Methods in Entity Resolution with Executable Repairs
 
 Artifacts for the EDBT 2027 short paper of the same title (Ramtin Sirjani, Farhan Patel, Mostafa Milani;
 The University of Western Ontario).
