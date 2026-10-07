@@ -1,0 +1,48 @@
+[excluded] simcse/dblp-acm: not built
+[excluded] simcse/cora: not built
+[excluded] simcse/abt-buy: not built
+[excluded] reclin2/dblp-acm: not built
+[excluded] reclin2/cora: not built
+[excluded] reclin2/abt-buy: not built
+no training cells found
+[excluded] simcse/abt-buy: not built
+[excluded] reclin2/dblp-acm: not built
+[excluded] reclin2/cora: not built
+[excluded] reclin2/abt-buy: not built
+[panel] 8 instances, 8 workers
+v0 cora             dPC=+0.0475 d|C|=+14.98% pairs=+817 ops={'move_to_x': 21, 'move_to_y': 5, 'none': 5}
+v0 cora             dPC=+0.0366 d|C|=+10.84% pairs=+629 ops={'move_to_x': 25, 'none': 4, 'move_to_y': 2}
+v0 dblp-acm         dPC=+0.0130 d|C|=+0.56% pairs=+29 ops={'move_to_x': 27, 'none': 4, 'move_to_y': 1}
+v0 dblp-acm         dPC=+0.0175 d|C|=+1.75% pairs=+39 ops={'move_to_x': 27, 'none': 2, 'move_to_y': 3}
+v0 dblp-acm         dPC=+0.0166 d|C|=+0.78% pairs=+37 ops={'none': 3, 'move_to_x': 28, 'move_to_y': 1}
+v0 dblp-acm         dPC=+0.0166 d|C|=+1.06% pairs=+37 ops={'move_to_x': 29, 'none': 3}
+v0 cora             dPC=+0.0175 d|C|=+3.13% pairs=+300 ops={'move_to_x': 16, 'none': 13, 'move_to_y': 3}
+v0 cora             dPC=+0.0238 d|C|=+5.55% pairs=+409 ops={'move_to_x': 18, 'none': 9, 'move_to_y': 5}
+{
+  "variants": 1,
+  "n_pairs_per_instance": 32,
+  "order": "random",
+  "per_cell": {
+    "simcse/cora": {
+      "d_pc_mean": 0.031351838919925504,
+      "d_pc_spread": 0.030086126629422727,
+      "d_c_rel_mean": 0.08625498007968127,
+      "pairs_gained_mean": 538.75,
+      "score_mean": -0.15081804145682967,
+      "n": 4
+    },
+    "simcse/dblp-acm": {
+      "d_pc_mean": 0.015962230215827405,
+      "d_pc_spread": 0.004496402877697814,
+      "d_c_rel_mean": 0.010370560988162634,
+      "pairs_gained_mean": 35.5,
+      "score_mean": 0.6888189865030371,
+      "n": 4
+    }
+  },
+  "macro_d_pc": 0.023657034567876455,
+  "macro_score": 0.2690004725231037,
+  "instances_lost": 0,
+  "calls_failed": 0,
+  "runtime_s": 1183.4
+}

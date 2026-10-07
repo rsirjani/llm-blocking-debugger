@@ -1,0 +1,379 @@
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+v0 amazon-google    dPC=+0.0162 d|C|=-0.61% pairs=+21 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 amazon-google    dPC=+0.0154 d|C|=-0.07% pairs=+20 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 cora             dPC=+0.0132 d|C|=+5.04% pairs=+227 ops={'move_to_x': 23, 'move_to_y': 9}
+v0 amazon-google    dPC=+0.0146 d|C|=-0.18% pairs=+19 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 amazon-google    dPC=+0.0162 d|C|=+0.07% pairs=+21 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 cora             dPC=-0.0094 d|C|=-4.57% pairs=-162 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 cora             dPC=+0.0022 d|C|=-0.79% pairs=+37 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 cora             dPC=+0.0044 d|C|=+0.55% pairs=+76 ops={'move_to_y': 7, 'move_to_x': 25}
+v0 amazon-google    dPC=+0.0123 d|C|=-0.44% pairs=+16 ops={'move_to_x': 19, 'move_to_y': 13}
+v0 cora             dPC=-0.0054 d|C|=+0.62% pairs=-92 ops={'move_to_y': 8, 'move_to_x': 24}
+v0 amazon-google    dPC=+0.0085 d|C|=-0.36% pairs=+11 ops={'move_to_x': 22, 'move_to_y': 10}
+v0 cora             dPC=+0.0291 d|C|=+5.58% pairs=+500 ops={'move_to_x': 28, 'move_to_y': 4}
+v0 cora             dPC=+0.0016 d|C|=-4.80% pairs=+27 ops={'move_to_x': 29, 'move_to_y': 3}
+v0 dblp-acm         dPC=+0.0126 d|C|=-1.11% pairs=+28 ops={'move_to_y': 9, 'move_to_x': 23}
+v0 amazon-google    dPC=+0.0146 d|C|=-0.67% pairs=+19 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 dblp-acm         dPC=+0.0085 d|C|=-0.22% pairs=+19 ops={'move_to_y': 4, 'move_to_x': 28}
+v0 amazon-google    dPC=+0.0108 d|C|=-0.22% pairs=+14 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 walmart-amazon   dPC=+0.0217 d|C|=-0.04% pairs=+25 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 walmart-amazon   dPC=+0.0234 d|C|=-0.05% pairs=+27 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 dblp-acm         dPC=+0.0090 d|C|=-0.17% pairs=+20 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 dblp-acm         dPC=+0.0117 d|C|=-0.44% pairs=+26 ops={'move_to_x': 27, 'move_to_y': 5}
+Traceback (most recent call last):
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1465, in <module>
+    main()
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1305, in main
+    evaluate_panel(client, cells, specs, template,
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1157, in evaluate_panel
+    rows = list(ex.map(one_eval, jobs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1130, in one_eval
+    r = replay(client, template, cell, inst,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 543, in replay
+    raw = client.chat([{"role": "user", "content": msg}],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/harness.py", line 166, in chat
+    raise RuntimeError(f"ollama call failed 8x over ~6 min: "
+RuntimeError: ollama call failed 8x over ~6 min: timed out
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+v0 amazon-google    dPC=+0.0138 d|C|=-0.60% pairs=+18 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 amazon-google    dPC=+0.0100 d|C|=-0.21% pairs=+13 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 cora             dPC=-0.0054 d|C|=+0.62% pairs=-92 ops={'move_to_y': 7, 'move_to_x': 25}
+v0 amazon-google    dPC=+0.0154 d|C|=-0.24% pairs=+20 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 cora             dPC=+0.0017 d|C|=-4.61% pairs=+29 ops={'move_to_x': 29, 'move_to_y': 3}
+v0 cora             dPC=+0.0024 d|C|=-0.20% pairs=+41 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 cora             dPC=+0.0174 d|C|=+3.62% pairs=+299 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 amazon-google    dPC=+0.0177 d|C|=-0.87% pairs=+23 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 amazon-google    dPC=+0.0192 d|C|=-1.35% pairs=+25 ops={'move_to_x': 19, 'move_to_y': 13}
+v0 cora             dPC=+0.0179 d|C|=+4.39% pairs=+307 ops={'move_to_x': 27, 'move_to_y': 5}
+v0 amazon-google    dPC=+0.0177 d|C|=-0.02% pairs=+23 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 amazon-google    dPC=+0.0115 d|C|=-0.00% pairs=+15 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 dblp-acm         dPC=+0.0085 d|C|=-0.20% pairs=+19 ops={'move_to_y': 5, 'move_to_x': 27}
+v0 amazon-google    dPC=+0.0100 d|C|=-0.17% pairs=+13 ops={'move_to_x': 23, 'move_to_y': 9}
+v0 cora             dPC=+0.0060 d|C|=+0.48% pairs=+103 ops={'move_to_y': 9, 'move_to_x': 23}
+v0 cora             dPC=-0.0101 d|C|=-4.84% pairs=-174 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 walmart-amazon   dPC=+0.0217 d|C|=-0.03% pairs=+25 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 walmart-amazon   dPC=+0.0243 d|C|=-0.06% pairs=+28 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 dblp-acm         dPC=+0.0099 d|C|=-0.17% pairs=+22 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 dblp-acm         dPC=+0.0135 d|C|=-1.20% pairs=+30 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 dblp-acm         dPC=+0.0117 d|C|=-0.62% pairs=+26 ops={'move_to_x': 25, 'move_to_y': 7}
+Traceback (most recent call last):
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1465, in <module>
+    main()
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1305, in main
+    evaluate_panel(client, cells, specs, template,
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1157, in evaluate_panel
+    rows = list(ex.map(one_eval, jobs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1130, in one_eval
+    r = replay(client, template, cell, inst,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 543, in replay
+    raw = client.chat([{"role": "user", "content": msg}],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/harness.py", line 166, in chat
+    raise RuntimeError(f"ollama call failed 8x over ~6 min: "
+RuntimeError: ollama call failed 8x over ~6 min: timed out
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+v0 amazon-google    dPC=+0.0162 d|C|=-0.23% pairs=+21 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 amazon-google    dPC=+0.0131 d|C|=-0.61% pairs=+17 ops={'move_to_x': 23, 'move_to_y': 9}
+v0 cora             dPC=+0.0061 d|C|=+2.36% pairs=+104 ops={'move_to_y': 7, 'move_to_x': 25}
+v0 cora             dPC=-0.0100 d|C|=-4.54% pairs=-171 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 amazon-google    dPC=+0.0131 d|C|=-0.07% pairs=+17 ops={'move_to_y': 11, 'move_to_x': 21}
+v0 amazon-google    dPC=+0.0154 d|C|=-0.04% pairs=+20 ops={'move_to_x': 23, 'move_to_y': 9}
+v0 dblp-acm         dPC=+0.0099 d|C|=-0.25% pairs=+22 ops={'move_to_y': 4, 'move_to_x': 28}
+v0 amazon-google    dPC=+0.0185 d|C|=-0.88% pairs=+24 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 cora             dPC=+0.0173 d|C|=+7.95% pairs=+298 ops={'move_to_x': 23, 'move_to_y': 9}
+v0 amazon-google    dPC=+0.0138 d|C|=-0.21% pairs=+18 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 cora             dPC=+0.0161 d|C|=+2.84% pairs=+276 ops={'move_to_y': 9, 'move_to_x': 23}
+v0 cora             dPC=+0.0013 d|C|=-4.38% pairs=+22 ops={'move_to_x': 28, 'move_to_y': 4}
+v0 cora             dPC=+0.0026 d|C|=-0.12% pairs=+44 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 dblp-acm         dPC=+0.0081 d|C|=-0.15% pairs=+18 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 cora             dPC=+0.0253 d|C|=+4.83% pairs=+435 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 amazon-google    dPC=+0.0108 d|C|=-0.44% pairs=+14 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 walmart-amazon   dPC=+0.0234 d|C|=-0.04% pairs=+27 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 walmart-amazon   dPC=+0.0225 d|C|=-0.07% pairs=+26 ops={'move_to_x': 32}
+v0 amazon-google    dPC=+0.0138 d|C|=-0.49% pairs=+18 ops={'move_to_x': 20, 'move_to_y': 12}
+v0 walmart-amazon   dPC=+0.0243 d|C|=-0.10% pairs=+28 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 walmart-amazon   dPC=+0.0182 d|C|=-0.09% pairs=+21 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 cora             dPC=-0.0141 d|C|=-3.45% pairs=-243 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 cora             dPC=-0.0010 d|C|=-0.17% pairs=-18 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 cora             dPC=-0.0002 d|C|=-0.58% pairs=-3 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 dblp-acm         dPC=+0.0126 d|C|=-0.87% pairs=+28 ops={'move_to_y': 8, 'move_to_x': 24}
+v0 cora             dPC=-0.0085 d|C|=-2.26% pairs=-146 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 cora             dPC=-0.0239 d|C|=-0.00% pairs=-410 ops={'move_to_x': 26, 'move_to_y': 6}
+v0 dblp-acm         dPC=+0.0121 d|C|=-0.59% pairs=+27 ops={'move_to_x': 26, 'move_to_y': 6}
+v0 dblp-acm         dPC=+0.0108 d|C|=-0.31% pairs=+24 ops={'move_to_x': 29, 'move_to_y': 3}
+v0 dblp-acm         dPC=+0.0103 d|C|=-0.11% pairs=+23 ops={'move_to_x': 22, 'move_to_y': 10}
+v0 dblp-acm         dPC=+0.0108 d|C|=-0.27% pairs=+24 ops={'move_to_x': 29, 'move_to_y': 3}
+v0 cora             dPC=-0.0027 d|C|=-1.07% pairs=-46 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 dblp-acm         dPC=+0.0108 d|C|=-0.12% pairs=+24 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 cora             dPC=+0.0176 d|C|=+2.77% pairs=+303 ops={'move_to_y': 10, 'move_to_x': 22}
+Traceback (most recent call last):
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1465, in <module>
+    main()
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1305, in main
+    evaluate_panel(client, cells, specs, template,
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1157, in evaluate_panel
+    rows = list(ex.map(one_eval, jobs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1130, in one_eval
+    r = replay(client, template, cell, inst,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 543, in replay
+    raw = client.chat([{"role": "user", "content": msg}],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/harness.py", line 166, in chat
+    raise RuntimeError(f"ollama call failed 8x over ~6 min: "
+RuntimeError: ollama call failed 8x over ~6 min: timed out
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+v0 amazon-google    dPC=+0.0108 d|C|=-0.07% pairs=+14 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 amazon-google    dPC=+0.0131 d|C|=-0.21% pairs=+17 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 amazon-google    dPC=+0.0092 d|C|=-0.34% pairs=+12 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 cora             dPC=-0.0098 d|C|=-4.52% pairs=-168 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 amazon-google    dPC=+0.0138 d|C|=-0.39% pairs=+18 ops={'move_to_x': 20, 'move_to_y': 12}
+v0 cora             dPC=+0.0294 d|C|=+5.62% pairs=+506 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 cora             dPC=+0.0043 d|C|=-0.28% pairs=+74 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 cora             dPC=-0.0062 d|C|=+0.87% pairs=-107 ops={'move_to_y': 9, 'move_to_x': 23}
+v0 amazon-google    dPC=+0.0162 d|C|=-0.65% pairs=+21 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 cora             dPC=+0.0032 d|C|=+0.51% pairs=+55 ops={'move_to_y': 7, 'move_to_x': 25}
+v0 amazon-google    dPC=+0.0177 d|C|=+0.02% pairs=+23 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 amazon-google    dPC=+0.0154 d|C|=-0.18% pairs=+20 ops={'move_to_x': 26, 'move_to_y': 6}
+v0 amazon-google    dPC=+0.0185 d|C|=-0.89% pairs=+24 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 dblp-acm         dPC=+0.0081 d|C|=-0.25% pairs=+18 ops={'move_to_y': 4, 'move_to_x': 28}
+v0 cora             dPC=+0.0008 d|C|=-4.66% pairs=+13 ops={'move_to_x': 28, 'move_to_y': 4}
+v0 dblp-acm         dPC=+0.0081 d|C|=-0.08% pairs=+18 ops={'move_to_x': 26, 'move_to_y': 6}
+v0 walmart-amazon   dPC=+0.0217 d|C|=-0.03% pairs=+25 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 walmart-amazon   dPC=+0.0260 d|C|=-0.08% pairs=+30 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 cora             dPC=+0.0142 d|C|=+4.10% pairs=+244 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 dblp-acm         dPC=+0.0121 d|C|=-0.82% pairs=+27 ops={'move_to_x': 23, 'move_to_y': 9}
+v0 walmart-amazon   dPC=+0.0199 d|C|=-0.14% pairs=+23 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 cora             dPC=-0.0079 d|C|=-2.18% pairs=-136 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 walmart-amazon   dPC=+0.0234 d|C|=-0.09% pairs=+27 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 cora             dPC=-0.0141 d|C|=-3.45% pairs=-243 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 cora             dPC=-0.0002 d|C|=-0.58% pairs=-3 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 dblp-acm         dPC=+0.0103 d|C|=-0.26% pairs=+23 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 dblp-acm         dPC=+0.0117 d|C|=-0.27% pairs=+26 ops={'move_to_x': 29, 'move_to_y': 3}
+v0 dblp-acm         dPC=+0.0112 d|C|=-0.54% pairs=+25 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 cora             dPC=+0.0002 d|C|=+0.00% pairs=+3 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 cora             dPC=-0.0009 d|C|=+0.15% pairs=-15 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 cora             dPC=-0.0249 d|C|=+0.96% pairs=-428 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 dblp-acm         dPC=+0.0094 d|C|=-0.32% pairs=+21 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 cora             dPC=+0.0177 d|C|=-1.55% pairs=+305 ops={'move_to_x': 21, 'move_to_y': 11}
+Traceback (most recent call last):
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1465, in <module>
+    main()
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1305, in main
+    evaluate_panel(client, cells, specs, template,
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1157, in evaluate_panel
+    rows = list(ex.map(one_eval, jobs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1130, in one_eval
+    r = replay(client, template, cell, inst,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 543, in replay
+    raw = client.chat([{"role": "user", "content": msg}],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/harness.py", line 166, in chat
+    raise RuntimeError(f"ollama call failed 8x over ~6 min: "
+RuntimeError: ollama call failed 8x over ~6 min: timed out
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+Terminated
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+v0 cora             dPC=-0.0012 d|C|=+0.37% pairs=-20 ops={'move_to_y': 8, 'move_to_x': 24}
+v0 dblp-acm         dPC=+0.0112 d|C|=-1.04% pairs=+25 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 cora             dPC=-0.0100 d|C|=-4.56% pairs=-172 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 amazon-google    dPC=+0.0169 d|C|=-0.08% pairs=+22 ops={'move_to_y': 9, 'move_to_x': 23}
+v0 amazon-google    dPC=+0.0138 d|C|=-0.58% pairs=+18 ops={'move_to_x': 19, 'move_to_y': 13}
+v0 dblp-acm         dPC=+0.0076 d|C|=-0.23% pairs=+17 ops={'move_to_y': 4, 'move_to_x': 28}
+v0 amazon-google    dPC=+0.0169 d|C|=-0.66% pairs=+22 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 cora             dPC=+0.0037 d|C|=+0.53% pairs=+64 ops={'move_to_y': 10, 'move_to_x': 22}
+v0 cora             dPC=+0.0286 d|C|=+6.09% pairs=+492 ops={'move_to_x': 26, 'move_to_y': 6}
+v0 dblp-acm         dPC=+0.0090 d|C|=-0.10% pairs=+20 ops={'move_to_x': 27, 'move_to_y': 5}
+v0 amazon-google    dPC=+0.0085 d|C|=-0.31% pairs=+11 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 amazon-google    dPC=+0.0169 d|C|=-0.16% pairs=+22 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 amazon-google    dPC=+0.0131 d|C|=-0.25% pairs=+17 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 amazon-google    dPC=+0.0177 d|C|=-0.02% pairs=+23 ops={'move_to_x': 23, 'move_to_y': 9}
+v0 cora             dPC=+0.0013 d|C|=-4.38% pairs=+22 ops={'move_to_x': 28, 'move_to_y': 4}
+v0 cora             dPC=+0.0042 d|C|=-0.75% pairs=+72 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 cora             dPC=+0.0201 d|C|=+5.61% pairs=+345 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 amazon-google    dPC=+0.0138 d|C|=-0.65% pairs=+18 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 walmart-amazon   dPC=+0.0243 d|C|=-0.06% pairs=+28 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 walmart-amazon   dPC=+0.0234 d|C|=-0.09% pairs=+27 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 walmart-amazon   dPC=+0.0217 d|C|=-0.04% pairs=+25 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 cora             dPC=-0.0057 d|C|=-1.88% pairs=-98 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 cora             dPC=-0.0004 d|C|=-0.61% pairs=-7 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 cora             dPC=-0.0153 d|C|=-3.61% pairs=-263 ops={'move_to_x': 29, 'move_to_y': 3}
+v0 dblp-acm         dPC=+0.0121 d|C|=-0.37% pairs=+27 ops={'move_to_x': 28, 'move_to_y': 4}
+v0 cora             dPC=-0.0010 d|C|=-0.17% pairs=-18 ops={'move_to_x': 31, 'move_to_y': 1}
+v0 dblp-acm         dPC=+0.0126 d|C|=-0.93% pairs=+28 ops={'move_to_x': 21, 'move_to_y': 11}
+v0 cora             dPC=-0.0239 d|C|=+0.69% pairs=-411 ops={'move_to_x': 25, 'move_to_y': 7}
+v0 walmart-amazon   dPC=+0.0191 d|C|=-0.13% pairs=+22 ops={'move_to_x': 30, 'move_to_y': 2}
+v0 cora             dPC=-0.0046 d|C|=-0.80% pairs=-79 ops={'move_to_y': 9, 'move_to_x': 23}
+v0 dblp-acm         dPC=+0.0126 d|C|=-0.17% pairs=+28 ops={'move_to_x': 26, 'move_to_y': 6}
+v0 cora             dPC=-0.0027 d|C|=-0.93% pairs=-46 ops={'move_to_y': 8, 'move_to_x': 24}
+v0 cora             dPC=+0.0189 d|C|=-1.31% pairs=+324 ops={'move_to_x': 22, 'move_to_y': 10}
+v0 dblp-acm         dPC=+0.0117 d|C|=-0.34% pairs=+26 ops={'move_to_x': 27, 'move_to_y': 5}
+v0 dblp-acm         dPC=+0.0099 d|C|=-0.20% pairs=+22 ops={'move_to_x': 24, 'move_to_y': 8}
+v0 dblp-acm         dPC=+0.0108 d|C|=-0.30% pairs=+24 ops={'move_to_x': 27, 'move_to_y': 5}
+Traceback (most recent call last):
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1465, in <module>
+    main()
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1305, in main
+    evaluate_panel(client, cells, specs, template,
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1157, in evaluate_panel
+    rows = list(ex.map(one_eval, jobs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 1130, in one_eval
+    r = replay(client, template, cell, inst,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/v2.py", line 543, in replay
+    raw = client.chat([{"role": "user", "content": msg}],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/project/dblab/rsirjani/entity-matching-llm-blocking/v2e/pc_gepa/harness.py", line 166, in chat
+    raise RuntimeError(f"ollama call failed 8x over ~6 min: "
+RuntimeError: ollama call failed 8x over ~6 min: timed out
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 8 workers
+Terminated

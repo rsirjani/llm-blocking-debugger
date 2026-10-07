@@ -1,0 +1,164 @@
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+[panel] instance val:simcse:amazon-google:v0:0 failed: curve targets != score denominator
+[panel] instance val:lambdafold:cora:v0:0 failed: curve targets != score denominator
+[panel] instance val:simcse:amazon-google:v0:2 failed: curve targets != score denominator
+[panel] instance val:simcse:amazon-google:v0:1 failed: curve targets != score denominator
+[panel] instance val:simcse:amazon-google:v0:3 failed: curve targets != score denominator
+[panel] instance val:lambdafold:dblp-acm:v0:1 failed: curve targets != score denominator
+[panel] instance val:simcse:dblp-acm:v0:0 failed: curve targets != score denominator
+[panel] instance val:lambdafold:dblp-acm:v0:2 failed: curve targets != score denominator
+[panel] instance val:simcse:dblp-acm:v0:2 failed: curve targets != score denominator
+[panel] instance val:lambdafold:dblp-acm:v0:0 failed: curve targets != score denominator
+[panel] instance val:simcse:dblp-acm:v0:1 failed: curve targets != score denominator
+[panel] instance val:lambdafold:dblp-acm:v0:3 failed: curve targets != score denominator
+[panel] instance val:lambdafold:cora:v0:1 failed: curve targets != score denominator
+[panel] instance val:lambdafold:cora:v0:2 failed: curve targets != score denominator
+[panel] instance val:simcse:dblp-acm:v0:3 failed: curve targets != score denominator
+[panel] instance val:reclin2:amazon-google:v0:0 failed: curve targets != score denominator
+[panel] instance val:reclin2:amazon-google:v0:2 failed: curve targets != score denominator
+[panel] instance val:lambdafold:cora:v0:3 failed: curve targets != score denominator
+[panel] instance val:reclin2:amazon-google:v0:1 failed: curve targets != score denominator
+[panel] instance val:reclin2:amazon-google:v0:3 failed: curve targets != score denominator
+[panel] instance val:simcse:cora:v0:0 failed: curve targets != score denominator
+[panel] instance val:simcse:cora:v0:1 failed: curve targets != score denominator
+[panel] instance val:simcse:cora:v0:2 failed: curve targets != score denominator
+[panel] instance val:simcse:cora:v0:3 failed: curve targets != score denominator
+[panel] instance val:klsh:cora:v0:0 failed: curve targets != score denominator
+[panel] instance val:reclin2:walmart-amazon:v0:0 failed: curve targets != score denominator
+[panel] instance val:reclin2:walmart-amazon:v0:1 failed: curve targets != score denominator
+[panel] instance val:reclin2:walmart-amazon:v0:2 failed: curve targets != score denominator
+[panel] instance val:reclin2:walmart-amazon:v0:3 failed: curve targets != score denominator
+[panel] instance val:reclin2:cora:v0:0 failed: curve targets != score denominator
+[panel] instance val:reclin2:cora:v0:1 failed: curve targets != score denominator
+[panel] instance val:reclin2:cora:v0:2 failed: curve targets != score denominator
+[panel] instance val:reclin2:cora:v0:3 failed: curve targets != score denominator
+[panel] instance val:klsh:dblp-acm:v0:0 failed: curve targets != score denominator
+[panel] instance val:klsh:dblp-acm:v0:1 failed: curve targets != score denominator
+[panel] instance val:klsh:dblp-acm:v0:2 failed: curve targets != score denominator
+[panel] instance val:klsh:dblp-acm:v0:3 failed: curve targets != score denominator
+[panel] instance val:klsh:cora:v0:1 failed: curve targets != score denominator
+[panel] instance val:klsh:cora:v0:2 failed: curve targets != score denominator
+[panel] instance val:klsh:cora:v0:3 failed: curve targets != score denominator
+[panel] 40 of 40 instances were lost to errors and are excluded from the means below
+{
+  "variants": 1,
+  "n_pairs_per_instance": 32,
+  "order": "random",
+  "per_cell": {},
+  "macro_d_pc": 0.0,
+  "macro_score": 0.0,
+  "instances_lost": 40,
+  "calls_failed": 0,
+  "runtime_s": 14188.2
+}
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+v0 dblp-acm         dPC=-0.0049 d|C|=-9.00% pairs=-11 ops={'move_to_x': 16, 'move_to_y': 15, 'none': 1}
+v0 dblp-acm         dPC=-0.0108 d|C|=-20.84% pairs=-24 ops={'move_to_y': 17, 'move_to_x': 11, 'none': 5}
+v0 dblp-acm         dPC=-0.0031 d|C|=-9.22% pairs=-7 ops={'move_to_y': 16, 'move_to_x': 17, 'none': 1}
+v0 dblp-acm         dPC=+0.0081 d|C|=-5.93% pairs=+18 ops={'move_to_y': 14, 'move_to_x': 20}
+v0 dblp-acm         dPC=-0.0027 d|C|=+5.39% pairs=-6 ops={'move_to_y': 15, 'move_to_x': 13, 'none': 4}
+v0 amazon-google    dPC=+0.0346 d|C|=+0.34% pairs=+45 ops={'move_to_y': 23, 'move_to_x': 9}
+v0 dblp-acm         dPC=-0.0130 d|C|=+5.38% pairs=-29 ops={'move_to_y': 19, 'move_to_x': 11, 'none': 2}
+v0 amazon-google    dPC=+0.0385 d|C|=-0.47% pairs=+50 ops={'move_to_x': 15, 'move_to_y': 20, 'new_block': 3}
+v0 amazon-google    dPC=+0.0354 d|C|=+0.30% pairs=+46 ops={'move_to_x': 9, 'move_to_y': 25}
+v0 amazon-google    dPC=+0.0331 d|C|=+0.80% pairs=+43 ops={'move_to_y': 18, 'move_to_x': 15}
+v0 dblp-acm         dPC=-0.0108 d|C|=+7.66% pairs=-24 ops={'none': 4, 'move_to_y': 16, 'move_to_x': 12}
+v0 cora             dPC=+0.0176 d|C|=-14.51% pairs=+302 ops={'move_to_y': 15, 'new_block': 2, 'none': 6, 'move_to_x': 10}
+v0 amazon-google    dPC=+0.0354 d|C|=-2.13% pairs=+46 ops={'move_to_x': 18, 'move_to_y': 15}
+v0 cora             dPC=+0.0109 d|C|=-5.81% pairs=+188 ops={'new_block': 1, 'move_to_y': 16, 'move_to_x': 12, 'none': 3}
+v0 dblp-acm         dPC=-0.0247 d|C|=+6.57% pairs=-55 ops={'move_to_y': 17, 'move_to_x': 9, 'none': 6}
+v0 amazon-google    dPC=+0.0323 d|C|=-2.50% pairs=+42 ops={'move_to_y': 18, 'move_to_x': 14}
+v0 cora             dPC=+0.0223 d|C|=-3.46% pairs=+383 ops={'move_to_x': 10, 'move_to_y': 14, 'new_block': 3, 'none': 5}
+v0 amazon-google    dPC=+0.0246 d|C|=-3.30% pairs=+32 ops={'move_to_x': 20, 'move_to_y': 13}
+v0 amazon-google    dPC=+0.0362 d|C|=-3.51% pairs=+47 ops={'move_to_x': 14, 'move_to_y': 18}
+v0 cora             dPC=+0.0180 d|C|=-8.54% pairs=+310 ops={'move_to_y': 14, 'move_to_x': 12, 'none': 6}
+v0 cora             dPC=+0.0981 d|C|=+16.96% pairs=+1686 ops={'move_to_x': 11, 'none': 8, 'move_to_y': 11}
+v0 cora             dPC=+0.0886 d|C|=+17.51% pairs=+1522 ops={'move_to_y': 16, 'move_to_x': 6, 'none': 7, 'new_block': 1}
+v0 cora             dPC=+0.1377 d|C|=+23.99% pairs=+2366 ops={'move_to_x': 14, 'none': 3, 'move_to_y': 14, 'new_block': 1}
+v0 cora             dPC=+0.0931 d|C|=+21.38% pairs=+1600 ops={'move_to_y': 17, 'move_to_x': 9, 'none': 6}
+v0 cora             dPC=+0.0240 d|C|=+2.78% pairs=+413 ops={'move_to_y': 24, 'none': 2, 'move_to_x': 5}
+v0 walmart-amazon   dPC=+0.0373 d|C|=-0.17% pairs=+43 ops={'move_to_y': 15, 'move_to_x': 18}
+v0 walmart-amazon   dPC=+0.0364 d|C|=-0.21% pairs=+42 ops={'move_to_x': 19, 'move_to_y': 13}
+v0 walmart-amazon   dPC=+0.0347 d|C|=-0.49% pairs=+40 ops={'move_to_y': 11, 'move_to_x': 19, 'new_block': 2}
+v0 walmart-amazon   dPC=+0.0347 d|C|=-0.24% pairs=+40 ops={'move_to_y': 12, 'move_to_x': 21}
+v0 cora             dPC=+0.0065 d|C|=+0.89% pairs=+111 ops={'move_to_y': 16, 'move_to_x': 10, 'none': 5, 'new_block': 1}
+v0 cora             dPC=+0.0084 d|C|=+1.25% pairs=+144 ops={'none': 8, 'move_to_x': 12, 'move_to_y': 11}
+v0 cora             dPC=+0.0084 d|C|=+1.18% pairs=+144 ops={'none': 4, 'move_to_x': 13, 'move_to_y': 14, 'new_block': 1}
+v0 cora             dPC=+0.0128 d|C|=+1.76% pairs=+220 ops={'move_to_y': 12, 'new_block': 2, 'move_to_x': 13, 'none': 5}
+v0 dblp-acm         dPC=+0.0126 d|C|=-0.85% pairs=+28 ops={'move_to_x': 12, 'move_to_y': 18, 'none': 2}
+v0 dblp-acm         dPC=+0.0049 d|C|=-0.72% pairs=+11 ops={'none': 5, 'move_to_y': 18, 'move_to_x': 10}
+v0 dblp-acm         dPC=-0.0045 d|C|=-0.25% pairs=-10 ops={'move_to_y': 20, 'move_to_x': 9, 'none': 3}
+v0 dblp-acm         dPC=+0.0135 d|C|=+2.76% pairs=+30 ops={'move_to_y': 18, 'none': 3, 'move_to_x': 11}
+v0 cora             dPC=+0.0507 d|C|=+5.52% pairs=+871 ops={'move_to_y': 25, 'move_to_x': 6, 'none': 1}
+v0 cora             dPC=+0.0143 d|C|=-1.46% pairs=+246 ops={'move_to_x': 9, 'move_to_y': 21, 'none': 2}
+v0 cora             dPC=+0.0816 d|C|=+3.13% pairs=+1403 ops={'move_to_x': 12, 'move_to_y': 21}
+{
+  "variants": 1,
+  "n_pairs_per_instance": 32,
+  "order": "random",
+  "per_cell": {
+    "klsh/cora": {
+      "d_pc_mean": 0.042670507448789585,
+      "d_pc_spread": 0.06733007448789574,
+      "d_c_rel_mean": 0.024902250619874118,
+      "pairs_gained_mean": 733.25,
+      "score_mean": 0.6767560232956115,
+      "n": 4
+    },
+    "klsh/dblp-acm": {
+      "d_pc_mean": 0.006632194244604234,
+      "d_pc_spread": 0.017985611510791366,
+      "d_c_rel_mean": 0.0023576833167051423,
+      "pairs_gained_mean": 14.75,
+      "score_mean": 0.8428997696263997,
+      "n": 4
+    },
+    "lambdafold/cora": {
+      "d_pc_mean": 0.01721077746741151,
+      "d_pc_spread": 0.011347765363128481,
+      "d_c_rel_mean": -0.08081164534627261,
+      "pairs_gained_mean": 295.75,
+      "score_mean": 1.0656838036735756,
+      "n": 4
+    },
+    "lambdafold/dblp-acm": {
+      "d_pc_mean": -0.0026978417266186883,
+      "d_pc_spread": 0.01888489208633093,
+      "d_c_rel_mean": -0.11248522797158947,
+      "pairs_gained_mean": -6.0,
+      "score_mean": 0.48520855112659717,
+      "n": 4
+    },
+    "reclin2/amazon-google": {
+      "d_pc_mean": 0.032115384615384615,
+      "d_pc_spread": 0.011538461538461553,
+      "d_c_rel_mean": -0.028591585021719143,
+      "pairs_gained_mean": 41.75,
+      "score_mean": 1.1349920232053123,
+      "n": 4
+    },
+    "reclin2/cora": {
+      "d_pc_mean": 0.009005470204841687,
+      "d_pc_spread": 0.006343109869646146,
+      "d_c_rel_mean": 0.012713563808454318,
+      "pairs_gained_mean

@@ -1,0 +1,77 @@
+[exh_v1] frozen_specs pinned to variant=1
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 10 instances, 10 workers
+v0 walmart-amazon   dPC=+0.0390 d|C|=-0.23% pairs=+45 ops={'move_to_y': 17, 'move_to_x': 20}
+v0 amazon-google    dPC=+0.0923 d|C|=-0.60% pairs=+120 ops={'move_to_y': 57, 'move_to_x': 30, 'none': 1}
+v0 cora             dPC=+0.3122 d|C|=+56.85% pairs=+5365 ops={'none': 19, 'move_to_x': 31, 'move_to_y': 39}
+v0 amazon-google    dPC=+0.1069 d|C|=-9.59% pairs=+139 ops={'move_to_x': 57, 'move_to_y': 60}
+v0 dblp-acm         dPC=+0.0594 d|C|=-2.23% pairs=+132 ops={'move_to_x': 61, 'move_to_y': 73}
+v0 dblp-acm         dPC=+0.0701 d|C|=-5.27% pairs=+156 ops={'move_to_y': 86, 'move_to_x': 73}
+v0 cora             dPC=+0.2463 d|C|=+1.86% pairs=+4233 ops={'move_to_y': 83, 'move_to_x': 62, 'none': 12, 'new_block': 1}
+v0 dblp-acm         dPC=+0.1030 d|C|=-3.92% pairs=+229 ops={'move_to_y': 165, 'move_to_x': 69}
+v0 cora             dPC=+0.3671 d|C|=-22.36% pairs=+6308 ops={'move_to_x': 134, 'none': 48, 'move_to_y': 149, 'new_block': 5}
+v0 cora             dPC=+0.3586 d|C|=+48.64% pairs=+6163 ops={'move_to_y': 145, 'move_to_x': 146, 'none': 56, 'new_block': 6}
+{
+  "variants": 1,
+  "n_pairs_per_instance": 700,
+  "order": "random",
+  "per_cell": {
+    "klsh/cora": {
+      "d_pc_mean": 0.2463337988826816,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.01864390616059508,
+      "pairs_gained_mean": 4233.0,
+      "score_mean": 0.5544242880464738,
+      "n": 1
+    },
+    "klsh/dblp-acm": {
+      "d_pc_mean": 0.10296762589928055,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": -0.03915392850120524,
+      "pairs_gained_mean": 229.0,
+      "score_mean": 0.744930313968856,
+      "n": 1
+    },
+    "lambdafold/cora": {
+      "d_pc_mean": 0.3670856610800745,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": -0.22364358182620203,
+      "pairs_gained_mean": 6308.0,
+      "score_mean": 1.857378912177647,
+      "n": 1
+    },
+    "lambdafold/dblp-acm": {
+      "d_pc_mean": 0.07014388489208634,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": -0.05273011202623994,
+      "pairs_gained_mean": 156.0,
+      "score_mean": 0.5128518380864713,
+      "n": 1
+    },
+    "reclin2/amazon-google": {
+      "d_pc_mean": 0.10692307692307695,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": -0.09593202067281778,
+      "pairs_gained_mean": 139.0,
+      "score_mean": 0.9814651575157135,
+      "n": 1
+    },
+    "reclin2/cora": {
+      "d_pc_mean": 0.3586475791433892,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.48640410684206303,
+      "pairs_gained_mean": 6163.0,
+      "score_mean": -1.5072006062391266,
+      "n": 1
+    },
+    "reclin2/walmart-amazon": {
+      "d_pc

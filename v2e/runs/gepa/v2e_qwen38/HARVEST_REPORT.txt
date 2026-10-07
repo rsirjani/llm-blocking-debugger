@@ -1,0 +1,36 @@
+==============================================================================
+CONTROL -- v0 is the panel GEPA selected against.
+The best arm's v0 mean must reproduce the val mean the search
+reported. A mismatch means this harness is wrong.
+==============================================================================
+  seed  v0 score  mean +0.1969  sd 0.6369  n=40
+  best  v0 score  mean +0.5920  sd 0.7580  n=40
+
+HELD-OUT (variants [1, 2]): block pairs no candidate
+was ever selected on. Same partition, same records, same gold --
+this is region transfer within a cell, not dataset transfer.
+
+cell                        seed score  best score    delta  seed dPC  best dPC  d|C| best
+klsh/cora                      -0.0511      0.8651  +0.9161   +0.0627   +0.1142     +2.12%
+klsh/dblp-acm                   0.1799      0.6036  +0.4236   +0.0216   +0.0282     -1.12%
+lambdafold/cora                 0.8106      1.6326  +0.8220   +0.0300   +0.0452    -16.63%
+lambdafold/dblp-acm             0.3563      0.3265  -0.0298   +0.0110   +0.0289     -2.02%
+reclin2/amazon-google           0.3823      0.7866  +0.4042   +0.0547   +0.0627     -5.08%
+reclin2/cora                    0.5329      0.8572  +0.3243   +0.0242   +0.0406     +4.81%
+reclin2/walmart-amazon          0.8865      0.9835  +0.0970   +0.0344   +0.0379     -0.23%
+simcse/amazon-google            0.6446      0.7514  +0.1067   +0.0605   +0.0637     -0.40%
+simcse/cora                    -0.5254     -1.3428  -0.8174   +0.0799   +0.1951    +40.25%
+simcse/dblp-acm                -1.3514      0.4355  +1.7869   -0.0318   +0.0284     -1.14%
+
+per-cell win/loss on held-out variants (paired by instance id)
+  best beats seed on 67/80 paired instances
+
+parse failures and skipped steps (held-out)
+  seed  steps_run   4865  skipped    33  parse_failures    6 (0.1%)
+  best  steps_run   4789  skipped    66  parse_failures   49 (1.0%)
+
+CAVEAT to carry into any write-up: an instance is a whole-cell
+replay, so all instances of a cell score the same partition.
+Independent evaluated objects = 10 cells, not the
+instance count. Four of those are the same 1,295 cora records
+under different blockers.

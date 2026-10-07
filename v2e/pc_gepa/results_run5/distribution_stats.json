@@ -1,0 +1,118 @@
+{
+  "legend": {
+    "dataset": "benchmark name (two-table clean-clean ER dataset)",
+    "domain": "what the records are and which two sources are matched",
+    "K": "lambda-fold blocker granularity: number of Bloom-filter bit positions sampled to form each record's block signature; auto-selected per dataset so PC lands closest to 0.6 (higher K = finer blocks = lower PC)",
+    "PC": "pair completeness of the base blocking = fraction of gold matched pairs whose two records share a block, BEFORE any LLM debugging",
+    "gold": "total ground-truth matched pairs in the dataset",
+    "missed": "gold pairs the blocker split across two blocks (= (1-PC) * gold, the debuggable error mass)",
+    "episodes": "debug episodes built from this dataset: directional block-pairs containing >= 2 missed gold pairs (1 seed + >= 1 hidden target each)",
+    "splits": "episode counts per split; train datasets get train/val (75/25, seed 0), held-out datasets are test-only",
+    "targets": "hidden target pairs across all episodes = missed gold pairs to recover, EXCLUDING the one exposed seed per episode; the denominator of recall",
+    "med_targets_per_ep": "median hidden targets per episode",
+    "med_cross_pairs": "median episode search-space size: |A-side records of block X| x |B-side records of block Y| = number of possible record pairs the sampler must choose from in a typical episode",
+    "max_cross_pairs": "same as med_cross_pairs but for the largest episode \u2014 the worst-case search space the sampler must survive (20s time limit)"
+  },
+  "datasets": [
+    {
+      "dataset": "abt-buy",
+      "domain": "consumer electronics products: Abt vs Buy.com",
+      "K": 6,
+      "PC": 0.552,
+      "gold": 1097,
+      "missed": 492,
+      "episodes": 58,
+      "splits": {
+        "test": 58
+      },
+      "targets": 376,
+      "med_targets_per_ep": 3.0,
+      "med_cross_pairs": 2786,
+      "max_cross_pairs": 53728
+    },
+    {
+      "dataset": "amazon-google",
+      "domain": "software products: Amazon vs Google Shopping",
+      "K": 8,
+      "PC": 0.597,
+      "gold": 1300,
+      "missed": 524,
+      "episodes": 70,
+      "splits": {
+        "train": 52,
+        "val": 18
+      },
+      "targets": 375,
+      "med_targets_per_ep": 2.5,
+      "med_cross_pairs": 14450,
+      "max_cross_pairs": 185300
+    },
+    {
+      "dataset": "dblp-acm",
+      "domain": "bibliographic records: DBLP vs ACM (papers)",
+      "K": 6,
+      "PC": 0.632,
+      "gold": 2224,
+      "missed": 819,
+      "episodes": 66,
+      "splits": {
+        "train": 49,
+        "val": 17
+      },
+      "targets": 672,
+      "med_targets_per_ep": 3.0,
+      "med_cross_pairs": 14097,
+      "max_cross_pairs": 313851
+    },
+    {
+      "dataset": "dblp-scholar",
+      "domain": "bibliographic records: DBLP vs Google Scholar",
+      "K": 6,
+      "PC": 0.592,
+      "gold": 5347,
+      "missed": 2183,
+      "episodes": 175,
+      "splits": {
+        "test": 175
+      },
+      "targets": 1901,
+      "med_targets_per_ep": 3,
+      "med_cross_pairs": 121875,
+      "max_cross_pairs": 6452150
+    },
+    {
+      "dataset": "fodors-zagats",
+      "domain": "restaurants: Fodors vs Zagat guides",
+      "K": 15,
+      "PC": 0.705,
+      "gold": 112,
+      "missed": 33,
+      "episodes": 4,
+      "splits": {
+        "train": 3,
+        "val": 1
+      },
+      "targets": 6,
+      "med_targets_per_ep": 1.0,
+      "med_cross_pairs": 1681,
+      "max_cross_pairs": 6900
+    },
+    {
+      "dataset": "walmart-amazon",
+      "domain": "retail products: Walmart vs Amazon",
+      "K": 8,
+      "PC": 0.612,
+      "gold": 1154,
+      "missed": 448,
+      "episodes": 73,
+      "splits": {
+        "train": 54,
+        "val": 19
+      },
+      "targets": 255,
+      "med_targets_per_ep": 2,
+      "med_cross_pairs": 130732,
+      "max_cross_pairs": 1445220
+    }
+  ]
+}

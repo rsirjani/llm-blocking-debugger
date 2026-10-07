@@ -1,0 +1,90 @@
+[
+  {
+    "idx": 0,
+    "val": 0.03345454545454546,
+    "rel_gain": null,
+    "rollout": 0,
+    "parent": null,
+    "mutated": "seed"
+  },
+  {
+    "idx": 1,
+    "val": 0.0870909090909091,
+    "rel_gain": 1.603260869565217,
+    "rollout": 103,
+    "parent": 0,
+    "mutated": "filter_code"
+  },
+  {
+    "idx": 2,
+    "val": 0.19614023403497088,
+    "rel_gain": 1.2521321235748222,
+    "rollout": 174,
+    "parent": 1,
+    "mutated": "filter_code"
+  },
+  {
+    "idx": 5,
+    "val": 0.2540311900239305,
+    "rel_gain": 0.2951508458924237,
+    "rollout": 363,
+    "parent": 3,
+    "mutated": "filter_code"
+  },
+  {
+    "idx": 8,
+    "val": 0.26572698062171746,
+    "rel_gain": 0.04604076608342933,
+    "rollout": 664,
+    "parent": 2,
+    "mutated": "instruction"
+  },
+  {
+    "idx": 14,
+    "val": 0.27400769990243673,
+    "rel_gain": 0.031162508456405134,
+    "rollout": 1122,
+    "parent": 11,
+    "mutated": "instruction"
+  },
+  {
+    "idx": 16,
+    "val": 0.2984849361165151,
+    "rel_gain": 0.0893304685335257,
+    "rollout": 1364,
+    "parent": 14,
+    "mutated": "instruction"
+  },
+  {
+    "idx": 17,
+    "val": 0.2999835661414609,
+    "rel_gain": 0.005020789472473648,
+    "rollout": 1443,
+    "parent": 11,
+    "mutated": "filter_code"
+  },
+  {
+    "idx": 21,
+    "val": 0.32939241518898343,
+    "rel_gain": 0.09803486712886951,
+    "rollout": 1735,
+    "parent": 9,
+    "mutated": "filter_code"
+  },
+  {
+    "idx": 28,
+    "val": 0.3354775973627648,
+    "rel_gain": 0.018473959609209802,
+    "rollout": 2420,
+    "parent": 16,
+    "mutated": "filter_code"
+  },
+  {
+    "idx": 41,
+    "val": 0.3552675997122458,
+    "rel_gain": 0.05899053321310556,
+    "rollout": 3631,
+    "parent": 34,
+    "mutated": "filter_code"
+  }
+]

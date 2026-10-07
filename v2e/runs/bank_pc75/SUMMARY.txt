@@ -1,0 +1,4 @@
+simcse      dblp-acm          clean param=(10, 5.0)    PC=0.683 failed=   705 bp=  358 case3=  129 recs=4910
+simcse      cora              dirty param=(3, 0.6)     PC=0.678 failed=  5541 bp=   55 case3=   55 recs=1295
+reclin2     dblp-acm          FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'Rscript'
+reclin2     cora              FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'Rscript'

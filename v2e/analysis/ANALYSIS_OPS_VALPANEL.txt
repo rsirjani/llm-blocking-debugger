@@ -1,0 +1,136 @@
+RESTRICTED to split=val variant=v0 -- the matched
+panel every candidate was scored on. Cross-candidate
+comparisons below are like-for-like.
+
+events tagged v2: 110186
+  outside the matched panel  : 58598
+  attributed to a candidate : 35245
+  response unparsable       : 623
+  no candidate matched      : 15720
+  malformed tag / no msgs   : 0
+
+  'no candidate matched' is expected, not noise: eight proposals
+  were rolled out on the minibatch and then lost the paired gate,
+  so their text was never written to candidates.json. Those calls
+  are real judge decisions under an instruction we cannot name.
+
+========================================================================
+E6  operation mix per candidate
+========================================================================
+cand         n     move_to_x   move_to_y   new_block        none  unparsed
+cand0    17967         87.9%        5.0%        0.0%        7.1%       347
+cand2     2853         47.2%        5.3%        1.5%       46.0%       163
+cand3     2430         80.2%        4.2%        0.0%       15.5%         8
+cand4     2404         85.4%        4.3%        1.2%        9.1%        32
+cand5     2430         16.6%       76.7%        0.9%        5.8%         2
+cand6     2397         29.8%       65.2%        1.3%        3.7%        25
+cand7     2397         40.8%       53.9%        1.3%        4.0%        34
+cand8     2412         61.1%       32.6%        0.0%        6.3%        12
+
+========================================================================
+E7  operation mix by position within the instance (5 buckets)
+========================================================================
+cand0
+  bucket        n     move_to_x   move_to_y   new_block        none
+    0-20     4543         87.7%        4.9%        0.0%        7.4%
+   20-40     3470         87.5%        4.7%        0.0%        7.8%
+   40-60     3422         88.1%        4.2%        0.0%        7.7%
+   60-80     3377         87.9%        5.1%        0.0%        7.0%
+   80-100    3129         88.6%        5.9%        0.0%        5.4%
+
+cand2
+  bucket        n     move_to_x   move_to_y   new_block        none
+    0-20      585         44.1%        4.3%        2.2%       49.4%
+   20-40      577         45.1%        6.2%        1.4%       47.3%
+   40-60      578         49.1%        5.5%        0.2%       45.2%
+   60-80      570         47.0%        5.3%        1.6%       46.1%
+   80-100     532         50.6%        5.5%        1.7%       42.3%
+
+cand3
+  bucket        n     move_to_x   move_to_y   new_block        none
+    0-20      500         79.0%        4.8%        0.0%       16.2%
+   20-40      490         80.6%        3.3%        0.0%       16.1%
+   40-60      496         78.6%        4.6%        0.0%       16.7%
+   60-80      491         81.1%        4.5%        0.2%       14.3%
+   80-100     452         82.1%        3.8%        0.0%       14.2%
+
+cand4
+  bucket        n     move_to_x   move_to_y   new_block        none
+    0-20      491         84.9%        3.5%        1.2%       10.4%
+   20-40      489         84.7%        4.9%        1.2%        9.2%
+   40-60      488         87.1%        3.1%        1.0%        8.8%
+   60-80      489         83.6%        5.1%        1.0%       10.2%
+   80-100     442         87.1%        5.0%        1.4%        6.6%
+
+cand5
+  bucket        n     move_to_x   move_to_y   new_block        none
+    0-20      500         14.6%       78.6%        0.8%        6.0%
+   20-40      495         16.2%       77.0%        1.4%        5.5%
+   40-60      494         18.4%       73.9%        0.8%        6.9%
+   60-80      492         16.3%       76.2%        0.8%        6.7%
+   80-100     449         17.8%       78.0%        0.4%        3.8%
+
+cand6
+  bucket        n     move_to_x   move_to_y   new_block        none
+    0-20      495         29.5%       63.8%        2.2%        4.4%
+   20-40      489         28.4%       66.5%        1.4%        3.7%
+   40-60      485         34.6%       60.4%        1.2%        3.7%
+   60-80      486         27.0%       67.9%        0.8%        4.3%
+   80-100     441         29.5%       67.8%        0.7%        2.0%
+
+cand7
+  bucket        n     move_to_x   move_to_y   new_block        none
+    0-20      491         37.9%       56.4%        2.0%        3.7%
+   20-40      488         42.4%       52.0%        1.6%        3.9%
+   40-60      487         41.5%       52.2%        0.6%        5.7%
+   60-80      484         38.2%       57.0%        0.8%        3.9%
+   80-100     447         44.5%       51.7%        1.1%        2.7%
+
+cand8
+  bucket        n     move_to_x   move_to_y   new_block        none
+    0-20      497         59.6%       33.8%        0.0%        6.6%
+   20-40      491         62.5%       31.2%        0.0%        6.3%
+   40-60      489         60.3%       32.5%        0.0%        7.2%
+   60-80      486         60.1%       34.0%        0.0%        6.0%
+   80-100     448         63.2%       31.5%        0.0%        5.4%
+
+========================================================================
+E8a  predicate anatomy
+========================================================================
+multi-action = one reply carrying >1 {operation, predicate} action
+              (MAX_ACTIONS=5). multi-clause = one predicate whose
+              condition is a conjunction of >1 field tests.
+              These are different axes; do not conflate them.
+
+cand0  replies=17941  actions/reply>1=24 (0.13%)   clauses/predicate>1=3205 (17.84%)
+   operators: contains=66.4%, equals=29.2%, regex=3.1%, not_contains=0.8%, is_not_null=0.3%, lte=0.1%
+   fields:    title=54.2%, name=13.1%, year=9.4%, venue=7.9%, authors=4.1%, modelno=3.3%
+
+cand2  replies=2842  actions/reply>1=9 (0.32%)   clauses/predicate>1=206 (7.22%)
+   operators: contains=76.4%, equals=19.2%, regex=2.1%, not_contains=1.9%, is_not_null=0.2%, lte=0.1%
+   fields:    title=52.1%, name=18.9%, modelno=9.2%, venue=5.3%, year=4.2%, description=2.9%
+
+cand3  replies=2429  actions/reply>1=1 (0.04%)   clauses/predicate>1=181 (7.45%)
+   operators: contains=80.2%, equals=19.2%, regex=0.3%, not_contains=0.2%, between=0.0%, is_null=0.0%
+   fields:    title=72.0%, name=12.3%, modelno=4.0%, venue=3.1%, year=2.2%, authors=2.0%
+
+cand4  replies=2399  actions/reply>1=5 (0.21%)   clauses/predicate>1=198 (8.24%)
+   operators: contains=90.7%, equals=8.4%, regex=0.5%, not_contains=0.3%, gte=0.0%, lte=0.0%
+   fields:    title=71.6%, name=11.6%, year=3.9%, modelno=3.5%, author=3.0%, authors=1.6%
+
+cand5  replies=2430  actions/reply>1=0 (0.00%)   clauses/predicate>1=519 (21.36%)
+   operators: contains=85.3%, equals=13.4%, regex=0.8%, not_contains=0.2%, is_not_null=0.2%, lte=0.1%
+   fields:    title=61.5%, name=14.5%, author=6.4%, authors=4.4%, venue=3.3%, modelno=3.2%
+
+cand6  replies=2396  actions/reply>1=1 (0.04%)   clauses/predicate>1=152 (6.34%)
+   operators: contains=96.9%, equals=2.6%, regex=0.2%, not_contains=0.1%, is_null=0.0%, gte=0.0%
+   fields:    title=73.5%, name=13.3%, author=3.3%, modelno=3.0%, description=2.9%, year=1.5%
+
+cand7  replies=2397  actions/reply>1=0 (0.00%)   clauses/predicate>1=135 (5.63%)
+   operators: contains=97.5%, equals=2.0%, regex=0.2%, gte=0.1%, not_contains=0.1%, lte=0.0%
+   fields:    title=74.2%, name=13.3%, description=3.0%, modelno=2.9%, author=1.9%, venue=1.8%
+
+cand8  replies=2411  actions/reply>1=1 (0.04%)   clauses/predicate>1=95 (3.94%)
+   operators: contains=96.7%, equals=3.2%, gte=0.0%
+   fields:    title=72.6%, name=14.7%, description=6.2%, modelno=3.0%, author=0.8%, year=0.8%
+

@@ -1,0 +1,75 @@
+You are auditing a blocking algorithm's output for entity resolution between
+two product catalogs: Source A = Amazon, Source B = Google Shopping. Records
+tagged [A...] come from Amazon, [B...] from Google.
+
+GROUND TRUTH: Record 1 and Record 2 (below) are confirmed to describe the
+same product but were placed in different blocks (X and Y). Your job is to
+determine why, and to characterize a GENERAL RULE describing every record
+affected by the same root cause — not just this one pair.
+
+IMPORTANT: You are NOT seeing the full blocks, only samples (sizes stated
+below). Any pattern you propose must be expressed as a RULE that could be
+applied to records you have not seen — do not assume the sample is
+exhaustive, and do not describe the fix in terms of specific IDs alone.
+
+{SEED_BLOCK}
+
+{SAMPLES}
+
+FAILURE MODE DEFINITIONS (choose the single best-fitting primary cause):
+- vocabulary_mismatch: same attribute expressed with non-overlapping tokens
+  that the blocking key didn't normalize.
+- description_swamping: a long free-text field dilutes the blocking signal
+  from a short, distinguishing field.
+- size_cap_split: a numeric value falls on opposite sides of a bucket
+  boundary used by the blocking key.
+- brand_line_granularity: blocking key operates at brand level but the true
+  match key is a sub-line/model family.
+- typo_corruption: a misspelling or OCR-like error in the blocking key field.
+- missing_attribute: the field the blocking key relies on is null/empty in
+  one record.
+- generic_title: the title is too generic/templated to differentiate.
+- other: none of the above; explain in rationale.
+
+Think about what specifically differs between Record 1 and Record 2, then
+scan both samples for other records sharing that same discrepancy. Identify
+the SMALLEST set of field-level conditions that (a) matches every affected
+record you can see and (b) would plausibly match affected records outside
+the sample, without also matching unaffected records.
+
+REMEDY RUBRIC:
+- merge_blocks: only if the two blocks show substantial overlap across a
+  large share of both blocks (the blocking key is not discriminative here).
+  This adds EVERY cross-block record pair — expensive, use sparingly.
+- move_records: if a minority subset is misfiled due to the identified
+  cause. Predicate in move_to_block_X selects records of block Y that
+  belong in X; move_to_block_Y selects records of X that belong in Y.
+- split_new_block: only if a distinct sub-population sharing the root cause
+  exists across BOTH blocks and deserves its own key (predicate in
+  move_to_new_block is applied to both blocks).
+
+PREDICATE FORMAT: a list of conditions ANDed together:
+  {"field": "title" | "manufacturer" | "price" | "description",
+   "operator": "equals" | "contains" | "not_contains" | "regex" |
+               "in_range" | "is_null" | "is_not_null",
+   "value": string, or [min, max] for in_range}
+Base every condition on the field(s) tied to the failure_mode, not on
+incidental properties of the sampled records. matched_sample_ids must be
+copied verbatim from sample IDs shown above (without the A/B prefix is
+fine); never invent IDs.
+
+Respond with valid JSON only:
+{
+  "failure_mode": "...",
+  "confidence": "high" | "medium" | "low",
+  "rationale": "2-3 sentences citing specific sample record IDs and fields",
+  "evidence_tokens": ["2-6 literal substrings from Record 1/2 titles"],
+  "remedy": "merge_blocks" | "move_records" | "split_new_block",
+  "move_specification": {
+    "move_to_block_X": {"predicate": [...], "matched_sample_ids": []},
+    "move_to_block_Y": {"predicate": [...], "matched_sample_ids": []},
+    "move_to_new_block": {"predicate": [...], "matched_sample_ids": []}
+  },
+  "generalization_confidence": "high" | "medium" | "low",
+  "generalization_note": "why the predicate should generalize beyond the sample"
+}

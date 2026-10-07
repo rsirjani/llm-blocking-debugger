@@ -1,0 +1,119 @@
+2026-10-06 18:00:49 waiting: judge work still running
+2026-10-06 18:01:49 waiting: judge work still running
+2026-10-06 18:02:50 waiting: judge work still running
+2026-10-06 18:03:50 waiting: judge work still running
+2026-10-06 18:04:50 waiting: judge work still running
+2026-10-06 18:05:50 waiting: judge work still running
+2026-10-06 18:06:50 waiting: judge work still running
+2026-10-06 18:07:50 waiting: judge work still running
+2026-10-06 18:08:50 waiting: judge work still running
+2026-10-06 18:09:50 waiting: judge work still running
+2026-10-06 18:10:50 waiting: judge work still running
+2026-10-06 18:11:50 waiting: judge work still running
+2026-10-06 18:12:50 waiting: judge work still running
+2026-10-06 18:13:50 waiting: judge work still running
+2026-10-06 18:14:50 waiting: judge work still running
+2026-10-06 18:15:50 waiting: judge work still running
+2026-10-06 18:16:50 waiting: judge work still running
+2026-10-06 18:17:50 waiting: judge work still running
+2026-10-06 18:18:50 waiting: judge work still running
+2026-10-06 18:19:50 waiting: judge work still running
+2026-10-06 18:20:50 waiting: judge work still running
+2026-10-06 18:21:50 waiting: judge work still running
+2026-10-06 18:22:50 waiting: judge work still running
+2026-10-06 18:23:50 waiting: judge work still running
+2026-10-06 18:24:50 waiting: judge work still running
+2026-10-06 18:25:50 waiting: judge work still running
+2026-10-06 18:26:51 waiting: judge work still running
+2026-10-06 18:27:51 waiting: judge work still running
+2026-10-06 18:28:51 waiting: judge work still running
+2026-10-06 18:29:51 waiting: judge work still running
+2026-10-06 18:30:51 waiting: judge work still running
+2026-10-06 18:31:51 waiting: judge work still running
+2026-10-06 18:32:51 waiting: judge work still running
+2026-10-06 18:33:51 waiting: judge work still running
+2026-10-06 18:34:51 waiting: judge work still running
+2026-10-06 18:35:51 waiting: judge work still running
+2026-10-06 18:36:51 waiting: judge work still running
+2026-10-06 18:37:51 waiting: judge work still running
+2026-10-06 18:38:51 waiting: judge work still running
+2026-10-06 18:39:51 waiting: judge work still running
+2026-10-06 18:40:51 waiting: judge work still running
+2026-10-06 18:41:51 waiting: judge work still running
+[exh_v1] frozen_specs pinned to variant=1
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 10 instances, 10 workers
+v0 walmart-amazon   dPC=+0.0329 d|C|=-0.12% pairs=+38 ops={'move_to_x': 37}
+v0 amazon-google    dPC=+0.0800 d|C|=+1.31% pairs=+104 ops={'move_to_x': 90}
+v0 cora             dPC=+0.1554 d|C|=+30.43% pairs=+2670 ops={'none': 32, 'move_to_x': 57, 'move_to_y': 18}
+v0 amazon-google    dPC=+0.1000 d|C|=+3.52% pairs=+130 ops={'move_to_x': 117}
+v0 dblp-acm         dPC=-0.0432 d|C|=+61.66% pairs=-96 ops={'move_to_x': 129, 'move_to_y': 2, 'none': 1}
+v0 dblp-acm         dPC=+0.0175 d|C|=-12.59% pairs=+39 ops={'move_to_x': 155, 'move_to_y': 1, 'none': 3}
+v0 cora             dPC=+0.1711 d|C|=+39.65% pairs=+2940 ops={'move_to_x': 132, 'none': 10, 'move_to_y': 26}
+v0 dblp-acm         dPC=+0.0265 d|C|=+21.41% pairs=+59 ops={'move_to_x': 233}
+v0 cora             dPC=+0.3631 d|C|=+3.72% pairs=+6239 ops={'move_to_x': 302, 'none': 34, 'move_to_y': 28}
+v0 cora             dPC=+0.3259 d|C|=+42.42% pairs=+5601 ops={'move_to_x': 331, 'none': 82, 'move_to_y': 48}
+{
+  "variants": 1,
+  "n_pairs_per_instance": 700,
+  "order": "random",
+  "per_cell": {
+    "klsh/cora": {
+      "d_pc_mean": 0.1710893854748603,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.3964810223154682,
+      "pairs_gained_mean": 2940.0,
+      "score_mean": -1.532588710108553,
+      "n": 1
+    },
+    "klsh/dblp-acm": {
+      "d_pc_mean": 0.026528776978417268,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.21411769846413772,
+      "pairs_gained_mean": 59.0,
+      "score_mean": -0.9291016817691298,
+      "n": 1
+    },
+    "lambdafold/cora": {
+      "d_pc_mean": 0.3630702979515828,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.037229819144243496,
+      "pairs_gained_mean": 6239.0,
+      "score_mean": 0.5449266014899379,
+      "n": 1
+    },
+    "lambdafold/dblp-acm": {
+      "d_pc_mean": 0.01753597122302164,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": -0.12592400545057703,
+      "pairs_gained_mean": 39.0,
+      "score_mean": 0.691920346741703,
+      "n": 1
+    },
+    "reclin2/amazon-google": {
+      "d_pc_mean": 0.10000000000000003,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.03523256920003805,
+      "pairs_gained_mean": 130.0,
+      "score_mean": 0.29315123342219246,
+      "n": 1
+    },
+    "reclin2/cora": {
+      "d_pc_mean": 0.32594273743016755,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.4241597818240154,
+      "pairs_gained_mean": 5601.0,
+      "score_mean": -1.2803127146422861,
+      "n": 1
+    },
+    "reclin2/walmart-amazon": {
+      "d_pc_

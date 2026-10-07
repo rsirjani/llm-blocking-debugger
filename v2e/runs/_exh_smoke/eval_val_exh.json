@@ -1,0 +1,1210 @@
+{
+  "variants": 1,
+  "n_pairs_per_instance": 700,
+  "order": "random",
+  "per_cell": {
+    "reclin2/walmart-amazon": {
+      "d_pc_mean": 0.03986135181975736,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": -0.0024832801873747776,
+      "pairs_gained_mean": 46.0,
+      "score_mean": 1.034638623159096,
+      "n": 1
+    }
+  },
+  "macro_d_pc": 0.03986135181975736,
+  "macro_score": 1.034638623159096,
+  "instances_lost": 0,
+  "calls_failed": 0,
+  "rows": [
+    {
+      "variant": 0,
+      "cell": [
+        "reclin2",
+        "walmart-amazon"
+      ],
+      "instance_id": "val:reclin2:walmart-amazon:v0:0",
+      "score": 1.034638623159096,
+      "d_pc": 0.03986135181975736,
+      "d_c_rel": -0.0024832801873747776,
+      "pc_before": 0.4861351819757366,
+      "pc_after": 0.5259965337954939,
+      "pairs_gained": 46,
+      "steps_run": 37,
+      "skipped": 0,
+      "parse_failures": 0,
+      "ops": {
+        "move_to_x": 21,
+        "move_to_y": 16
+      },
+      "curve": [
+        {
+          "k": 0,
+          "hits": 562,
+          "c": 318891,
+          "targets": 1,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 0,
+          "ltot": 45
+        },
+        {
+          "k": 1,
+          "hits": 563,
+          "c": 318879,
+          "targets": 2,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 0,
+          "ltot": 45
+        },
+        {
+          "k": 2,
+          "hits": 565,
+          "c": 318878,
+          "targets": 3,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 3,
+          "hits": 566,
+          "c": 318835,
+          "targets": 4,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 4,
+          "hits": 567,
+          "c": 318834,
+          "targets": 5,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 5,
+          "hits": 568,
+          "c": 318801,
+          "targets": 6,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 6,
+          "hits": 570,
+          "c": 318803,
+          "targets": 7,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 2,
+          "ltot": 45
+        },
+        {
+          "k": 7,
+          "hits": 571,
+          "c": 318774,
+          "targets": 8,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 2,
+          "ltot": 45
+        },
+        {
+          "k": 8,
+          "hits": 572,
+          "c": 318768,
+          "targets": 9,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 2,
+          "ltot": 45
+        },
+        {
+          "k": 9,
+          "hits": 574,
+          "c": 318765,
+          "targets": 10,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 3,
+          "ltot": 45
+        },
+        {
+          "k": 10,
+          "hits": 575,
+          "c": 318723,
+          "targets": 14,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 3,
+          "ltot": 45
+        },
+        {
+          "k": 11,
+          "hits": 576,
+          "c": 318716,
+          "targets": 15,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 3,
+          "ltot": 45
+        },
+        {
+          "k": 12,
+          "hits": 577,
+          "c": 318705,
+          "targets": 16,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 3,
+          "ltot": 45
+        },
+        {
+          "k": 13,
+          "hits": 579,
+          "c": 318445,
+          "targets": 18,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 14,
+          "hits": 581,
+          "c": 318447,
+          "targets": 19,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 15,
+          "hits": 582,
+          "c": 318447,
+          "targets": 20,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 16,
+          "hits": 583,
+          "c": 318400,
+          "targets": 21,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 17,
+          "hits": 584,
+          "c": 318396,
+          "targets": 22,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 18,
+          "hits": 585,
+          "c": 318365,
+          "targets": 24,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 19,
+          "hits": 586,
+          "c": 318338,
+          "targets": 25,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 20,
+          "hits": 587,
+          "c": 318337,
+          "targets": 26,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 21,
+          "hits": 588,
+          "c": 318346,
+          "targets": 28,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 22,
+          "hits": 589,
+          "c": 318339,
+          "targets": 29,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 23,
+          "hits": 590,
+          "c": 318339,
+          "targets": 30,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 24,
+          "hits": 591,
+          "c": 318273,
+          "targets": 31,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 25,
+          "hits": 592,
+          "c": 318266,
+          "targets": 32,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 26,
+          "hits": 593,
+          "c": 318259,
+          "targets": 33,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 27,
+          "hits": 594,
+          "c": 318235,
+          "targets": 34,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 28,
+          "hits": 595,
+          "c": 318226,
+          "targets": 35,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 29,
+          "hits": 597,
+          "c": 318226,
+          "targets": 36,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 6,
+          "ltot": 45
+        },
+        {
+          "k": 30,
+          "hits": 599,
+          "c": 318222,
+          "targets": 38,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 7,
+          "ltot": 45
+        },
+        {
+          "k": 31,
+          "hits": 600,
+          "c": 318223,
+          "targets": 39,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 7,
+          "ltot": 45
+        },
+        {
+          "k": 32,
+          "hits": 602,
+          "c": 318221,
+          "targets": 40,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 8,
+          "ltot": 45
+        },
+        {
+          "k": 33,
+          "hits": 603,
+          "c": 318212,
+          "targets": 41,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 8,
+          "ltot": 45
+        },
+        {
+          "k": 34,
+          "hits": 604,
+          "c": 318175,
+          "targets": 42,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 8,
+          "ltot": 45
+        },
+        {
+          "k": 35,
+          "hits": 605,
+          "c": 318145,
+          "targets": 44,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 8,
+          "ltot": 45
+        },
+        {
+          "k": 36,
+          "hits": 607,
+          "c": 318141,
+          "targets": 45,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 9,
+          "ltot": 45
+        }
+      ],
+      "exemplars": [
+        {
+          "step": 0,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "S041062"
+            }
+          ],
+          "n_moved": 3,
+          "note": "the condition matched 3 of the 20 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -42,
+          "seed": [
+            "B:7150",
+            "A:397"
+          ]
+        },
+        {
+          "step": 1,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "PF15.6W"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 16 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -12,
+          "seed": [
+            "A:851",
+            "B:8444"
+          ]
+        },
+        {
+          "step": 2,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "regex",
+              "value": "SLR[-]?5"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group X, which moved into group Y",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -1,
+          "seed": [
+            "A:482",
+            "B:14854"
+          ]
+        },
+        {
+          "step": 3,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Da-Plex Base Rear Projection Screen - 57 3 4 x 77 Video Format"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 47 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265165127,
+          "d_c": -43,
+          "seed": [
+            "A:54",
+            "B:17893"
+          ]
+        },
+        {
+          "step": 4,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "WAN-2140"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 9 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -1,
+          "seed": [
+            "A:164",
+            "B:124"
+          ]
+        },
+        {
+          "step": 5,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "GB01959"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 48 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -33,
+          "seed": [
+            "A:1535",
+            "B:1091"
+          ]
+        },
+        {
+          "step": 6,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Tilt Lock Single Pair or Container of 12 pairs"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 1 records in group X, which moved into group Y",
+          "d_pc": 0.0017331022530329143,
+          "d_c": 2,
+          "seed": [
+            "A:578",
+            "B:19368"
+          ]
+        },
+        {
+          "step": 7,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "VMAX92UWV2"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 41 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -29,
+          "seed": [
+            "A:2543",
+            "B:6691"
+          ]
+        },
+        {
+          "step": 8,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "108R00657"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 13 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -6,
+          "seed": [
+            "B:20175",
+            "A:337"
+          ]
+        },
+        {
+          "step": 9,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "5029"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329698,
+          "d_c": -3,
+          "seed": [
+            "B:4283",
+            "A:16"
+          ]
+        },
+        {
+          "step": 10,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "WaterShed File Folders"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 80 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -42,
+          "seed": [
+            "B:17104",
+            "A:1700"
+          ]
+        },
+        {
+          "step": 11,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "TWIN2X4096-6400C5C"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -7,
+          "seed": [
+            "B:8520",
+            "A:325"
+          ]
+        },
+        {
+          "step": 12,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Envirotec Recycled File Folders 1 3 Cut Top Tab Letter Brown"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 14 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -11,
+          "seed": [
+            "A:782",
+            "B:17484"
+          ]
+        },
+        {
+          "step": 13,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "FileMate Imagine Series M2810"
+            }
+          ],
+          "n_moved": 4,
+          "note": "the condition matched 4 of the 74 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -260,
+          "seed": [
+            "A:1154",
+            "B:13246"
+          ]
+        },
+        {
+          "step": 14,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "ACDSee Pro 4 Box Full Version"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 2 records in group X, which moved into group Y",
+          "d_pc": 0.0017331022530329143,
+          "d_c": 2,
+          "seed": [
+            "B:18429",
+            "A:1234"
+          ]
+        },
+        {
+          "step": 15,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "HD7102"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 3 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 0,
+          "seed": [
+            "B:10274",
+            "A:661"
+          ]
+        },
+        {
+          "step": 16,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "TS-A1684R"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 50 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -47,
+          "seed": [
+            "A:2073",
+            "B:4160"
+          ]
+        },
+        {
+          "step": 17,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "30272"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -4,
+          "seed": [
+            "A:1306",
+            "B:2559"
+          ]
+        },
+        {
+          "step": 18,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Da-Glas Deluxe Rear Projection Screen - 96 x 96 AV Format"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 46 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265165682,
+          "d_c": -31,
+          "seed": [
+            "B:18154",
+            "A:1179"
+          ]
+        },
+        {
+          "step": 19,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "GC23073"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 47 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -27,
+          "seed": [
+            "B:9086",
+            "A:1139"
+          ]
+        },
+        {
+          "step": 20,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "108R00645"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 12 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -1,
+          "seed": [
+            "A:262",
+            "B:5193"
+          ]
+        },
+        {
+          "step": 21,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Super Heavy Weight Sheet Protector"
+            }
+          ],
+          "n_moved": 3,
+          "note": "the condition matched 3 of the 27 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 9,
+          "seed": [
+            "B:16667",
+            "A:1507"
+          ]
+        },
+        {
+          "step": 22,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "KFC-6993PS"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 10 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -7,
+          "seed": [
+            "A:1944",
+            "B:15781"
+          ]
+        },
+        {
+          "step": 23,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "DC6250"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 4 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 0,
+          "seed": [
+            "A:1844",
+            "B:4901"
+          ]
+        },
+        {
+          "step": 24,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Cosmopolitan Electrol"
+            }
+          ],
+          "n_moved": 6,
+          "note": "the condition matched 6 of the 23 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -66,
+          "seed": [
+            "A:933",
+            "B:2814"
+          ]
+        },
+        {
+          "step": 25,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "LJDFF2GBASBNA"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 19 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -7,
+          "seed": [
+            "B:21326",
+            "A:1864"
+          ]
+        },
+        {
+          "step": 26,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "108R00676"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -7,
+          "seed": [
+            "B:18143",
+            "A:1008"
+          ]
+        },
+        {
+          "step": 27,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Hinged Screen Joining Clamp"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 29 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -24,
+          "seed": [
+            "A:560",
+            "B:20714"
+          ]
+        },
+        {
+          "step": 28,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "regex",
+              "value": "1EN5\\.?019\\.?02"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -9,
+          "seed": [
+            "A:1110",
+            "B:8092"
+          ]
+        },
+        {
+          "step": 29,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "AK-334"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 3 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": 0,
+          "seed": [
+            "A:454",
+            "B:4893"
+          ]
+        },
+        {
+          "step": 30,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "ICC1112CLR"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 6 records in group X, which moved into group Y",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -4,
+          "seed": [
+            "B:19032",
+            "A:247"
+          ]
+        },
+        {
+          "step": 31,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "IT4LO-BLU/BLK"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 6 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265165682,
+          "d_c": 1,
+          "seed": [
+            "A:1045",
+            "B:3010"
+          ]
+        },
+        {
+          "step": 32,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "ANT 9DBI In Outdoor Omni-Direc"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 5 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -2,
+          "seed": [
+            "B:17367",
+            "A:2197"
+          ]
+        },
+        {
+          "step": 33,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Clarion VX401"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 15 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -9,
+          "seed": [
+            "B:13935",
+            "A:2143"
+          ]
+        },
+        {
+          "step": 34,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "TE0046AC"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 40 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -37,
+          "seed": [
+            "A:2211",
+            "B:16561"
+          ]
+        },
+        {
+          "step": 35,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Fire Red"
+            }
+          ],
+          "n_moved": 3,
+          "note": "the condition matched 3 of the 20 records in group X, which moved into group Y",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -30,
+          "seed": [
+            "A:1530",
+            "B:1442"
+          ]
+        },
+        {
+          "step": 36,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "EDGE Tech ProShot 4GB SDHC Class 6 Memory Card"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -4,
+          "seed": [
+            "B:9165",
+            "A:57"
+          ]
+        }
+      ],
+      "base_hits": 561,
+      "base_c": 318933,
+      "rule_stats": {
+        "helped": 37,
+        "hurt": 0,
+        "inert": 0
+      },
+      "reach_hist": {
+        "2-5": 7,
+        "1": 29,
+        "6-20": 1
+      },
+      "book": {},
+      "local_recall": 0.2,
+      "local_hits": 9,
+      "local_targets": 45
+    }
+  ],
+  "runtime_s": 480.7
+}

@@ -1,0 +1,39 @@
+Two groups from a grouping procedure, X and Y, are shown below with their true sizes and how many records of each are shown. One pair known to describe the same real-world entity landed on opposite sides. Name a change to the grouping — as a condition on record fields — that would reunite pairs like this one without pulling in many records that do not belong.
+
+{STATS}
+
+Known same-entity pair (one from each group):
+{SEED}
+
+Sample from group X:
+{SAMPLE_X}
+
+Sample from group Y:
+{SAMPLE_Y}
+
+Method:
+
+1. Set the two seed records beside each other and find the longest stretch of text they carry word-for-word — a full title, a product name, a paper name, a model code. Copy that stretch verbatim from one of the two, keeping its case and punctuation. The "contains" operator matches without regard to case, so you do not need to alter what you copy.
+
+2. Steer clear of short generic tokens as a sole condition: a bare manufacturer name, a bare venue name, a lone author surname, a single common word, a year. Each sweeps in many unrelated records and rarely pays back what it costs.
+
+3. Read the phrase you copied against the other group's sample. If several records there carry the same phrase but are clearly different entities (a shared series title, a co-authored paper's title reused on other papers, a product line shared across items), add a second field condition inside the same rule. The two conditions are joined by AND. Only add a second condition if the field it names is present in both seed records — a condition on a field absent from the seed pair usually matches zero.
+
+4. Prefer "contains" over "equals". "equals" needs the whole field value identical, including trailing punctuation and case, and often matches nothing when the two representations differ by a period or a spacing change.
+
+5. "new_block" pulls records satisfying the condition, from either group, into a group of their own. Reach for it when the matching subset looks like one coherent entity but neither X nor Y as they stand is a clean home for it.
+
+6. If nothing in the two seed records is specific enough to write a condition that would not also match unrelated records, answer "none". A no-op costs zero; a broad guess usually costs more than it earns.
+
+Scoring, in one line: for every separated same-entity pair your condition reunites anywhere in the collection you gain credit; you pay five times the relative growth in within-group comparisons. A rule matching one to a few records is almost always safe. A rule matching twenty or more records has to reunite same-entity records in the great majority of cases, or it loses more than it earns.
+
+Reply with one JSON object. One rule:
+{"operation": "move_to_x" | "move_to_y" | "new_block" | "none",
+ "predicate": [{"field": "<field name>", "operator": "equals" | "contains" | "not_contains" | "regex" | "is_null" | "is_not_null" | "gte" | "lte" | "between", "value": "<text>"}],
+ "reason": "<one sentence>"}
+
+Or up to five rules at once, applied in order, each acting on the grouping the earlier rules left:
+{"actions": [{"operation": "...", "predicate": [...]}, {"operation": "...", "predicate": [...]}],
+ "reason": "<one sentence>"}
+
+Operator notes: "contains" is a case-insensitive text match on the field; "regex" is a full regular expression on the field; "gte" and "lte" compare the first number found in the field to "value"; "between" takes "value": [low, high] and is true when the number lies in the range, endpoints included. Conditions within one rule are combined with AND. Field names must be ones that actually appear in the records shown.

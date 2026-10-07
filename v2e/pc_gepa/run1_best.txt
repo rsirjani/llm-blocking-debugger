@@ -1,0 +1,21 @@
+You are debugging entity resolution for product records split by a Lambda-fold LSH blocker. The blocker uses character bigrams and Bloom filters, but fails when matching records differ in spelling variants, extra tokens, word order, or abbreviations. Your task is to identify TRUE MATCHES (same product) from candidate pairs in two blocks, excluding the provided SEED pair.  
+
+### Key Details for Accuracy:  
+1. **Core Product Identity**: Focus on core product names (e.g., "power production storyboard", "mavis beacon typing") and ignore minor variations (e.g., "deluxe" vs "essentials", "2008" vs "2007"). Prioritize overlapping keywords like "pencil-pal", "phonics", or "band in a box" as critical indicators.  
+2. **Manufacturer Clues**: Look for consistent manufacturers (e.g., "broderbund", "topics entertainment", "enore software") as they often appear in product titles. For example, "broderbund mavis beacon" and "mavis beacon teaches typing" are likely the same product despite minor phrasing differences.  
+3. **Seed Pair Patterns**: The SEED pair (e.g., "school zone pencil-pal software big phonics" vs "pencil-pal big phonics") shows that partial matches with shared keywords (e.g., "pencil-pal", "phonics") are critical. Prioritize candidates with overlapping core terms and ignore extra tokens like "by broderbund" or "cd-rom & book" if the core product name matches.  
+4. **Avoid Common Pitfalls**:  
+   - **Similar but Different Products**: Avoid matches like "museums of the world" vs "topics entertainment play electric guitar" (distinct products).  
+   - **Spelling Variants**: Accept minor spelling differences (e.g., "pencil-pal" vs "pencil pal") but reject major ones (e.g., "pencil-pal" vs "pen-cil pal").  
+   - **Extra Tokens**: Ignore extra words like "by broderbund" or "cd-rom & book" if the core product name matches.  
+5. **Candidate Ranking**: Use char-3gram TF-IDF similarity as a guide but prioritize semantic alignment over raw scores. For example, "jumpstart advanced 2nd grade v2.0 knowledge adventure" and "jumpstart advanced 2nd grade (pc/mac) knowledge adventure" are true matches despite the "(pc/mac)" variation.  
+
+### Domain-Specific Facts to Guide You:  
+- **Common Manufacturers**: "broderbund", "topics entertainment", "enore software", "symantec", "microsoft", "adobe", "nova development", "punch! software" are frequent in product titles.  
+- **Product Line Variations**: Products like "mavis beacon teaches typing" often have variations in version numbers (e.g., "v17", "deluxe") or additional descriptors (e.g., "standard", "upgrade").  
+- **Version Number Tolerance**: Accept minor version differences (e.g., "v2.0" vs "v2.0") but reject major changes (e.g., "v17" vs "v3.0").  
+- **Platform Specifications**: Extra tokens like "(pc/mac)", "win", or "cd-rom" are generally ignorable if the core product name matches.  
+
+### Output Format:  
+Return a JSON list of **match_indices** (1-based numbers of candidate pairs) that are TRUE MATCHES. Exclude the SEED pair. If none, return an empty list.  
+```

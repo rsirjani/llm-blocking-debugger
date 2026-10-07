@@ -1,0 +1,310 @@
+{
+  "variants": 1,
+  "n_pairs_per_instance": 5,
+  "order": "random",
+  "per_cell": {
+    "reclin2/walmart-amazon": {
+      "d_pc_mean": 0.006065857885615256,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": -0.000834030972022337,
+      "pairs_gained_mean": 7.0,
+      "score_mean": 1.0041701548601116,
+      "n": 1
+    }
+  },
+  "macro_d_pc": 0.006065857885615256,
+  "macro_score": 1.0041701548601116,
+  "rows": [
+    {
+      "variant": 0,
+      "cell": [
+        "reclin2",
+        "walmart-amazon"
+      ],
+      "instance_id": "val:reclin2:walmart-amazon:v0:0",
+      "score": 1.0041701548601116,
+      "d_pc": 0.006065857885615256,
+      "d_c_rel": -0.000834030972022337,
+      "pc_before": 0.4861351819757366,
+      "pc_after": 0.49220103986135183,
+      "pairs_gained": 7,
+      "steps_run": 5,
+      "skipped": 0,
+      "parse_failures": 0,
+      "ops": {
+        "new_block": 5
+      },
+      "curve": [
+        {
+          "k": 0,
+          "hits": 563,
+          "c": 318926,
+          "targets": 2,
+          "ops": [
+            "new_block"
+          ]
+        },
+        {
+          "k": 1,
+          "hits": 564,
+          "c": 318917,
+          "targets": 3,
+          "ops": [
+            "new_block"
+          ]
+        },
+        {
+          "k": 2,
+          "hits": 566,
+          "c": 318894,
+          "targets": 4,
+          "ops": [
+            "new_block"
+          ]
+        },
+        {
+          "k": 3,
+          "hits": 567,
+          "c": 318680,
+          "targets": 6,
+          "ops": [
+            "new_block"
+          ]
+        },
+        {
+          "k": 4,
+          "hits": 568,
+          "c": 318667,
+          "targets": 7,
+          "ops": [
+            "new_block"
+          ]
+        }
+      ],
+      "exemplars": [
+        {
+          "step": 0,
+          "op": "new_block",
+          "model_op": "new_block",
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "iPod nano 6G Clear Type Protective Film"
+            }
+          ],
+          "n_moved": 3,
+          "note": "the condition matched 3 records across the two groups, which moved into a group of their own",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -7,
+          "seed": [
+            "B:19032",
+            "A:247"
+          ],
+          "counterfactual": {
+            "move_to_x": {
+              "n_moved": 1,
+              "d_pc": 0.0017331022530329143,
+              "d_c": 5
+            },
+            "move_to_y": {
+              "n_moved": 2,
+              "d_pc": 0.0017331022530329143,
+              "d_c": -4
+            },
+            "new_block": {
+              "n_moved": 3,
+              "d_pc": 0.0017331022530329143,
+              "d_c": -7
+            },
+            "none": {
+              "n_moved": 0,
+              "d_pc": 0.0,
+              "d_c": 0
+            }
+          }
+        },
+        {
+          "step": 1,
+          "op": "new_block",
+          "model_op": "new_block",
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "IT4LO-BLU/BLK"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 records across the two groups, which moved into a group of their own",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -9,
+          "seed": [
+            "A:1045",
+            "B:3010"
+          ],
+          "counterfactual": {
+            "move_to_x": {
+              "n_moved": 1,
+              "d_pc": 0.0008665511265164572,
+              "d_c": 1
+            },
+            "move_to_y": {
+              "n_moved": 1,
+              "d_pc": 0.0008665511265164572,
+              "d_c": 1
+            },
+            "new_block": {
+              "n_moved": 2,
+              "d_pc": 0.0008665511265164572,
+              "d_c": -9
+            },
+            "none": {
+              "n_moved": 0,
+              "d_pc": 0.0,
+              "d_c": 0
+            }
+          }
+        },
+        {
+          "step": 2,
+          "op": "new_block",
+          "model_op": "new_block",
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "TWIN2X4096-6400C5"
+            }
+          ],
+          "n_moved": 4,
+          "note": "the condition matched 4 records across the two groups, which moved into a group of their own",
+          "d_pc": 0.0017331022530329698,
+          "d_c": -23,
+          "seed": [
+            "B:8520",
+            "A:2038"
+          ],
+          "counterfactual": {
+            "move_to_x": {
+              "n_moved": 3,
+              "d_pc": 0.0017331022530329698,
+              "d_c": -15
+            },
+            "move_to_y": {
+              "n_moved": 1,
+              "d_pc": 0.0017331022530329698,
+              "d_c": 9
+            },
+            "new_block": {
+              "n_moved": 4,
+              "d_pc": 0.0017331022530329698,
+              "d_c": -23
+            },
+            "none": {
+              "n_moved": 0,
+              "d_pc": 0.0,
+              "d_c": 0
+            }
+          }
+        },
+        {
+          "step": 3,
+          "op": "new_block",
+          "model_op": "new_block",
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "FileMate Imagine Series K2010 USB Standard Keyboard"
+            }
+          ],
+          "n_moved": 4,
+          "note": "the condition matched 4 records across the two groups, which moved into a group of their own",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -214,
+          "seed": [
+            "A:2462",
+            "B:13244"
+          ],
+          "counterfactual": {
+            "move_to_x": {
+              "n_moved": 3,
+              "d_pc": 0.0008665511265164572,
+              "d_c": -198
+            },
+            "move_to_y": {
+              "n_moved": 1,
+              "d_pc": 0.0008665511265164572,
+              "d_c": 70
+            },
+            "new_block": {
+              "n_moved": 4,
+              "d_pc": 0.0008665511265164572,
+              "d_c": -214
+            },
+            "none": {
+              "n_moved": 0,
+              "d_pc": 0.0,
+              "d_c": 0
+            }
+          }
+        },
+        {
+          "step": 4,
+          "op": "new_block",
+          "model_op": "new_block",
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "108R00676"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 records across the two groups, which moved into a group of their own",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -13,
+          "seed": [
+            "B:18143",
+            "A:1008"
+          ],
+          "counterfactual": {
+            "move_to_x": {
+              "n_moved": 1,
+              "d_pc": 0.0008665511265164572,
+              "d_c": -9
+            },
+            "move_to_y": {
+              "n_moved": 1,
+              "d_pc": 0.0008665511265164572,
+              "d_c": 11
+            },
+            "new_block": {
+              "n_moved": 2,
+              "d_pc": 0.0008665511265164572,
+              "d_c": -13
+            },
+            "none": {
+              "n_moved": 0,
+              "d_pc": 0.0,
+              "d_c": 0
+            }
+          }
+        }
+      ],
+      "base_hits": 561,
+      "base_c": 318933,
+      "rule_stats": {
+        "helped": 5,
+        "hurt": 0,
+        "inert": 0
+      },
+      "reach_hist": {
+        "2-5": 5
+      },
+      "book": {}
+    }
+  ],
+  "runtime_s": 41.8
+}

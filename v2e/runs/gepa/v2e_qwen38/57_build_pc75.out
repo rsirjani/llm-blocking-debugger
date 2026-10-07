@@ -1,0 +1,38 @@
+simcse/dblp-acm: 4910 records, 2224 gold pairs (clean)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19732.07it/s]
+  encoded 0/4910
+  param=(3, 0.1) PC=0.999 blocks=22 case3=0
+  param=(3, 0.3) PC=0.988 blocks=28 case3=4
+  param=(3, 0.6) PC=0.984 blocks=40 case3=4
+  param=(3, 1.0) PC=0.985 blocks=61 case3=1
+  param=(5, 1.0) PC=0.912 blocks=26 case3=37
+  param=(5, 5.0) PC=0.890 blocks=117 case3=27
+  param=(10, 5.0) PC=0.683 blocks=84 case3=129
+  param=(5, 20.0) PC=0.850 blocks=291 case3=19
+  param=(10, 20.0) PC=0.705 blocks=267 case3=86
+  param=(10, 60.0) PC=0.705 blocks=650 case3=46
+  param=(10, 150.0) PC=0.661 blocks=1299 case3=38
+  chosen param=(10, 5.0) PC=0.683 case3=129
+simcse      dblp-acm          clean param=(10, 5.0)    PC=0.683 failed=   705 bp=  358 case3=  129 recs=4910
+simcse/cora: 1295 records, 17184 gold pairs (dirty)
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8622.86it/s]
+  encoded 0/1295
+  param=(3, 0.1) PC=0.751 blocks=55 case3=49
+  param=(3, 0.3) PC=0.704 blocks=61 case3=54
+  param=(3, 0.6) PC=0.678 blocks=64 case3=55
+  param=(3, 1.0) PC=0.578 blocks=74 case3=69
+  param=(5, 1.0) PC=0.753 blocks=45 case3=36
+  param=(5, 5.0) PC=0.566 blocks=67 case3=80
+  param=(10, 5.0) PC=0.723 blocks=47 case3=52
+  param=(5, 20.0) PC=0.360 blocks=116 case3=179
+  param=(10, 20.0) PC=0.496 blocks=88 case3=107
+  param=(10, 60.0) PC=0.233 blocks=242 case3=720
+  param=(10, 150.0) PC=0.036 blocks=976 case3=1982
+  chosen param=(3, 0.6) PC=0.678 case3=55
+simcse      cora              dirty param=(3, 0.6)     PC=0.678 failed=  5541 bp=   55 case3=   55 recs=1295
+reclin2/dblp-acm: 4910 records, 2224 gold pairs (clean)
+reclin2     dblp-acm          FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'Rscript'
+reclin2/cora: 1295 records, 17184 gold pairs (dirty)
+reclin2     cora              FAILED: FileNotFoundError: [Errno 2] No such file or directory: 'Rscript'
+cells built: 2

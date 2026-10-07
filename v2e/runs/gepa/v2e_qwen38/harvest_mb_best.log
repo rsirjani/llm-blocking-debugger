@@ -1,0 +1,36 @@
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/musicbrainz-20k: 113 of 195 Case-3 block pairs (58%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] reclin2/musicbrainz-20k: PC 0.302 outside [0.45, 0.8]
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/musicbrainz-20k: PC 0.437 outside [0.45, 0.8]
+[panel] 8 instances, 8 workers
+v0 musicbrainz-20k  dPC=+0.0079 d|C|=-0.46% pairs=+128 ops={'move_to_y': 25, 'move_to_x': 37, 'new_block': 1}
+v0 musicbrainz-20k  dPC=+0.0073 d|C|=-0.44% pairs=+119 ops={'move_to_y': 34, 'move_to_x': 26, 'new_block': 1, 'none': 1}
+v0 musicbrainz-20k  dPC=+0.0087 d|C|=-0.49% pairs=+141 ops={'move_to_x': 31, 'move_to_y': 30, 'new_block': 2}
+v0 musicbrainz-20k  dPC=+0.0071 d|C|=-0.41% pairs=+115 ops={'move_to_x': 27, 'move_to_y': 28, 'none': 2}
+v0 musicbrainz-20k  dPC=+0.0076 d|C|=-0.48% pairs=+124 ops={'move_to_x': 23, 'move_to_y': 35}
+v0 musicbrainz-20k  dPC=+0.0066 d|C|=-0.60% pairs=+107 ops={'move_to_y': 37, 'move_to_x': 20, 'new_block': 2, 'none': 2}
+v0 musicbrainz-20k  dPC=+0.0076 d|C|=-0.46% pairs=+123 ops={'move_to_y': 32, 'move_to_x': 30, 'new_block': 1}
+v0 musicbrainz-20k  dPC=+0.0081 d|C|=-0.45% pairs=+131 ops={'move_to_x': 31, 'move_to_y': 29, 'none': 2, 'new_block': 2}
+{
+  "variants": 1,
+  "n_pairs_per_instance": 64,
+  "order": "random",
+  "per_cell": {
+    "simcse/musicbrainz-20k": {
+      "d_pc_mean": 0.007600000000000037,
+      "d_pc_spread": 0.0020923076923077266,
+      "d_c_rel_mean": -0.00473127938371265,
+      "pairs_gained_mean": 123.5,
+      "score_mean": 0.48290431326175515,
+      "n": 8
+    }
+  },
+  "macro_d_pc": 0.007600000000000037,
+  "macro_score": 0.48290431326175515,
+  "runtime_s": 16438.4
+}

@@ -1,0 +1,41 @@
+[excluded] simcse/abt-buy: not built
+[excluded] reclin2/dblp-acm: not built
+[excluded] reclin2/cora: not built
+[excluded] reclin2/abt-buy: not built
+[panel] 8 instances, 8 workers
+v0 cora             dPC=+0.0506 d|C|=-6.96% pairs=+869 ops={'none': 5, 'move_to_y': 16, 'move_to_x': 9}
+v0 cora             dPC=+0.0568 d|C|=-5.44% pairs=+976 ops={'move_to_y': 17, 'move_to_x': 9, 'none': 5}
+v0 dblp-acm         dPC=+0.0144 d|C|=-0.65% pairs=+32 ops={'move_to_y': 21, 'move_to_x': 11}
+v0 dblp-acm         dPC=+0.0139 d|C|=-0.82% pairs=+31 ops={'move_to_x': 15, 'move_to_y': 17}
+v0 dblp-acm         dPC=+0.0144 d|C|=-0.70% pairs=+32 ops={'move_to_x': 15, 'move_to_y': 17}
+v0 dblp-acm         dPC=+0.0144 d|C|=-0.49% pairs=+32 ops={'move_to_y': 19, 'move_to_x': 13}
+v0 cora             dPC=+0.0988 d|C|=-7.40% pairs=+1698 ops={'move_to_y': 18, 'move_to_x': 8, 'none': 5}
+v0 cora             dPC=+0.1233 d|C|=-8.73% pairs=+2118 ops={'move_to_x': 9, 'move_to_y': 18, 'none': 4}
+{
+  "variants": 1,
+  "n_pairs_per_instance": 32,
+  "order": "random",
+  "per_cell": {
+    "simcse/cora": {
+      "d_pc_mean": 0.08235858938547486,
+      "d_pc_spread": 0.07268389199255121,
+      "d_c_rel_mean": -0.07131826176483205,
+      "pairs_gained_mean": 1415.25,
+      "score_mean": 0.7544029125448067,
+      "n": 4
+    },
+    "simcse/dblp-acm": {
+      "d_pc_mean": 0.014276079136690656,
+      "d_pc_spread": 0.0004496402877698369,
+      "d_c_rel_mean": -0.006658409815067695,
+      "pairs_gained_mean": 31.75,
+      "score_mean": 0.4357953428829801,
+      "n": 4
+    }
+  },
+  "macro_d_pc": 0.048317334261082756,
+  "macro_score": 0.5950991277138934,
+  "instances_lost": 0,
+  "calls_failed": 0,
+  "runtime_s": 2609.7
+}

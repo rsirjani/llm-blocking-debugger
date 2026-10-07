@@ -1,0 +1,522 @@
+[
+  {
+    "example_index": 0,
+    "id_a": 583,
+    "id_b": 268,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in the two blocks. Record 1 is part of a large block containing many other restaurants, while Record 2 is part of a smaller block with more specific and similar establishments.\",\n  \"evidence_tokens\": [\"montrachet\", \"239 w. broadway\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 583, \"block_id\": 1},\n      {\"id\": 268, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 7.509420871734619
+  },
+  {
+    "example_index": 1,
+    "id_a": 592,
+    "id_b": 277,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand names in each block. The blocker separated them because it was unable to match the brand name 'Second Avenue Deli' with its variant 'second avenue deli'.\",\n  \"evidence_tokens\": [\"second avenue deli\", \"156 second ave.\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 277, \"name\": \"Second Avenue Deli\"},\n      {\"id\": 592, \"name\": \"Second Avenue Deli\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.470914602279663
+  },
+  {
+    "example_index": 2,
+    "id_a": 574,
+    "id_b": 259,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, 'la cote basque', but are grouped differently due to differences in brand line granularity between the two blocks.\",\n  \"evidence_tokens\": [\"french\", \"american\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 1, \"record_id\": 574},\n      {\"block_id\": 2, \"record_id\": 259}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.033135890960693
+  },
+  {
+    "example_index": 3,
+    "id_a": 560,
+    "id_b": 245,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in the two blocks. Record 1 is part of a large block containing many other restaurants in New York City, while Record 2 is part of a smaller block containing mostly high-end restaurants.\",\n  \"evidence_tokens\": [\"new york\", \"zagats\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 245, \"name\": \"cafe lalo\"},\n      {\"id\": 246, \"name\": \"cafe des artistes\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.417705059051514
+  },
+  {
+    "example_index": 4,
+    "id_a": 579,
+    "id_b": 264,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in the two blocks. Record 1 is part of a large block containing many other restaurants in New York City, while Record 2 is part of a smaller block containing mostly Asian and international cuisine.\",\n  \"evidence_tokens\": [\"new york\", \"new york city\"],\n  \"remedy\": {\n    \"type\": \"move records\",\n    \"records_to_move\": [\n      {\"id\": 579, \"block_id\": 1},\n      {\"id\": 264, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.322540044784546
+  },
+  {
+    "example_index": 5,
+    "id_a": 588,
+    "id_b": 273,
+    "raw_output": "```json\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in each block. Record 1 is part of a large block containing many other restaurants in New York City, while Record 2 is part of a smaller block containing mostly Asian and international cuisine.\",\n  \"evidence_tokens\": [\"new york\", \"city\"],\n  \"remedy\": {\n    \"type\": \"Move records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 588, \"block_id\": 1},\n      {\"id\": 273, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.336619138717651
+  },
+  {
+    "example_index": 6,
+    "id_a": 597,
+    "id_b": 282,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, 'tavern on the green', but are grouped differently in each block due to differences in brand or product line granularity.\",\n  \"evidence_tokens\": [\"central park west\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 282, \"name\": \"'tavern on the green'\"},\n      {\"id\": 597, \"name\": \"'tavern on the green'\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.229360818862915
+  },
+  {
+    "example_index": 7,
+    "id_a": 565,
+    "id_b": 250,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in each block. Record 1 is part of a large block containing many French restaurants, while Record 2 is part of a smaller block with more diverse cuisine.\",\n  \"evidence_tokens\": [\"french\", \"new york city\"],\n  \"remedy\": \"Move the records from Block B to Block A\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.690194129943848
+  },
+  {
+    "example_index": 8,
+    "id_a": 598,
+    "id_b": 283,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, 'uncle nick's', but are grouped differently due to differences in brand or product line granularity between the two blocks.\",\n  \"evidence_tokens\": [\"nick's\", \"ninth ave.\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 1, \"record_id\": 598},\n      {\"block_id\": 2, \"record_id\": 283}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.114658355712891
+  },
+  {
+    "example_index": 9,
+    "id_a": 551,
+    "id_b": 236,
+    "raw_output": "```json\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because 'philippe\\'s the original' in Block A is grouped by a more specific title, while 'philippe the original' in Block B is grouped by a less specific title. This discrepancy in granularity causes the blocker to place them in different blocks.\",\n  \"evidence_tokens\": [\"philippe's\", \"the original\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 236, \"record_id\": 2},\n      {\"block_id\": 551, \"record_id\": 1}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.5248634815216064
+  },
+  {
+    "example_index": 10,
+    "id_a": 570,
+    "id_b": 255,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but the blocker grouped them by different brand lines (Fodors and Zagats). The titles of the records are similar, but the block contents suggest that Fodors has a more granular approach to grouping products by brand line.\",\n  \"evidence_tokens\": [\"gramercy tavern\", \"42 e. 20th st.\", \"new york\"],\n  \"remedy\": {\n    \"type\": \"move_records\",\n    \"records_to_move\": [\n      {\"id\": 570, \"block_id\": 1},\n      {\"id\": 255, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.845421075820923
+  },
+  {
+    "example_index": 11,
+    "id_a": 561,
+    "id_b": 246,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in the two blocks. Record 1 is part of a large block containing many other restaurants in New York City, while Record 2 is part of a smaller block containing mostly high-end French restaurants.\",\n  \"evidence_tokens\": [\"new york\", \"french (classic)\", \"continental\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 246, \"name\": \"cafe des artistes\"},\n      {\"id\": 245, \"name\": \"cafe lalo\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.555335521697998
+  },
+  {
+    "example_index": 12,
+    "id_a": 552,
+    "id_b": 237,
+    "raw_output": "```json\n{\n  \"primary_failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because they are grouped by brand or product line at different granularity in the two blocks. Record 1 is part of a large block containing many restaurants in Los Angeles, while Record 2 is part of a smaller block containing only four records.\",\n  \"evidence_tokens\": [\"pinot bistro\", \"12969 ventura blvd.\", \"studio city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 237, \"record_id\": 237},\n      {\"block_id\": 552, \"record_id\": 552}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.689759731292725
+  },
+  {
+    "example_index": 13,
+    "id_a": 593,
+    "id_b": 278,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product but are grouped by different brand lines in each block. Record 1 is part of a large block containing many other restaurants, while Record 2 is part of a smaller block with more specific and similar establishments.\",\n  \"evidence_tokens\": [\"seryna\", \"Fodors\", \"Zagats\"],\n  \"remedy\": \"Move the records from Block A to Block B, specifically Records [557], [558], ..., [912] should be moved.\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.443721771240234
+  },
+  {
+    "example_index": 14,
+    "id_a": 556,
+    "id_b": 241,
+    "raw_output": "```json\n{\n  \"primary_failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because they are grouped by brand or product line at different granularity in the two blocks. Record 1 is part of a large block containing many restaurants in Los Angeles, while Record 2 is part of a smaller block containing only restaurants in Pasadena.\",\n  \"evidence_tokens\": [\"los angeles\", \"pasadena\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 556, \"block_id\": 1},\n      {\"id\": 241, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.551738262176514
+  },
+  {
+    "example_index": 15,
+    "id_a": 557,
+    "id_b": 242,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but the blocker separated them because they were grouped by brand or product line at different granularity in the two blocks. Record 1 is from Fodors and has a more detailed address, while Record 2 is from Zagats and has a shorter address.\",\n  \"evidence_tokens\": [\"21 club\", \"21 w. 52nd st.\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 69, \"name\": \"'afghan kebab house'\"},\n      {\"id\": 70, \"name\": \"arcadia\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.07584023475647
+  },
+  {
+    "example_index": 16,
+    "id_a": 566,
+    "id_b": 251,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product but are grouped by different brand lines in each block. Record 1 is part of a block containing many other restaurants, while Record 2 is part of a block containing mostly Indian and Asian restaurants.\",\n  \"evidence_tokens\": [\"dawat\", \"indian\"],\n  \"remedy\": \"Move the records from Block A to Block B, specifically Records [566] and [251].\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.932613849639893
+  },
+  {
+    "example_index": 17,
+    "id_a": 575,
+    "id_b": 260,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, 'le bernardin', but are grouped differently in each block due to differences in brand line granularity.\",\n  \"evidence_tokens\": [\"new york\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 575, \"block_id\": 1},\n      {\"id\": 260, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.1633830070495605
+  },
+  {
+    "example_index": 18,
+    "id_a": 543,
+    "id_b": 228,
+    "raw_output": "```json\n{\n  \"primary_failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because they are grouped by brand or product line at different granularity in the two blocks. Record 1 is part of a large block containing many restaurants in Los Angeles, while Record 2 is part of a smaller block containing only a few restaurants in Beverly Hills.\",\n  \"evidence_tokens\": [\"los angeles\", \"beverly hills\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 228, \"block_id\": 2},\n      {\"id\": 4, \"block_id\": 1}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.711778402328491
+  },
+  {
+    "example_index": 19,
+    "id_a": 584,
+    "id_b": 269,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in each block. Record 1 is part of a large block containing many other restaurants in New York City, while Record 2 is part of a smaller block containing mostly high-end restaurants.\",\n  \"evidence_tokens\": [\"new york\", \"new york city\"],\n  \"remedy\": \"Move some records from one block to the other. Move all records with 'new york' in their address from Block A to Block B, and move all records with 'new york city' in their address from Block B to Block A.\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.753656625747681
+  },
+  {
+    "example_index": 20,
+    "id_a": 594,
+    "id_b": 279,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product but are grouped by different brand names in each block: 'shun lee west' vs 'shun lee palace'. This suggests that the blocker is grouping by brand name at a different granularity.\",\n  \"evidence_tokens\": [\"shun lee west\", \"shun lee palace\"],\n  \"remedy\": \"Move record [279] from Block B to Block A, and merge the two blocks entirely.\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.786360502243042
+  },
+  {
+    "example_index": 21,
+    "id_a": 562,
+    "id_b": 247,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product 'carmine's' but are grouped by different attributes in each block: Record 1 is grouped by address and city, while Record 2 is grouped by name. This suggests that the blocker was grouping by brand or product line at different granularities.\",\n  \"evidence_tokens\": [\"2450 broadway\", \"new york\", \"carmine's\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 1, \"record_id\": 562},\n      {\"block_id\": 2, \"record_id\": 247}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.573832988739014
+  },
+  {
+    "example_index": 22,
+    "id_a": 571,
+    "id_b": 256,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product 'Island Spice' but are grouped by different brand lines in each block. The first block contains a mix of generic and specific brands, while the second block is more focused on specific brands.\",\n  \"evidence_tokens\": [\"island spice\", \"tel caribbean\", \"caribbean\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 571, \"block_id\": 1},\n      {\"id\": 256, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.430890321731567
+  },
+  {
+    "example_index": 23,
+    "id_a": 580,
+    "id_b": 265,
+    "raw_output": "```json\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product but are grouped by different brand lines in each block. Record 1 is part of a large block containing many American restaurants, while Record 2 is part of a smaller block with more specific and varied cuisine types.\",\n  \"evidence_tokens\": [\"american\", \"new york city\"],\n  \"remedy\": {\n    \"type\": \"Move records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 69, \"name\": \"afghan kebab house\"},\n      {\"id\": 70, \"name\": \"arcadia\"},\n      {\"id\": 71, \"name\": \"benny's burritos\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.6556396484375
+  },
+  {
+    "example_index": 24,
+    "id_a": 589,
+    "id_b": 274,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in the two blocks. Record 1 is part of a large block containing many other restaurants, while Record 2 is part of a smaller block with more specific and similar establishments.\",\n  \"evidence_tokens\": [\"rainbow room\", \"30 rockefeller plaza\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 274, \"name\": \"rainbow room\"},\n      {\"id\": 589, \"name\": \"rainbow room\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.3793625831604
+  },
+  {
+    "example_index": 25,
+    "id_a": 599,
+    "id_b": 284,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in each block. Record 1 is part of a large block containing many other restaurants in New York City, while Record 2 is part of a smaller block containing mostly high-end restaurants.\",\n  \"evidence_tokens\": [\"new york\", \"new york city\"],\n  \"remedy\": \"Move some records from one block to the other. Move all records with 'new york' in their address from Block A to Block B, and move all records with 'new york city' in their address from Block B to Block A.\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.281670093536377
+  },
+  {
+    "example_index": 26,
+    "id_a": 585,
+    "id_b": 270,
+    "raw_output": "```json\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product but are grouped by different brand names in each block. The blocker separated them because it was unable to match the 'Fodors' and 'Zagats' versions of the product.\",\n  \"evidence_tokens\": [\"park avenue cafe\", \"(new york city)\", \"100 e. 63rd st.\", \"212-644-1900\"],\n  \"remedy\": {\n    \"type\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 585, \"block_id\": 1},\n      {\"id\": 270, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.512201309204102
+  },
+  {
+    "example_index": 27,
+    "id_a": 567,
+    "id_b": 252,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in the two blocks. Record 1 is part of a large block containing many Italian restaurants, while Record 2 is part of a smaller block containing various types of cuisine.\",\n  \"evidence_tokens\": [\"felidia\", \"Fodors\", \"Zagats\"],\n  \"remedy\": \"Move some records from one block to the other. Move all the Zagats records with 'new york city' in their address to the Fodors block, and move all the Italian restaurants from the large block to the smaller block.\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.282461881637573
+  },
+  {
+    "example_index": 28,
+    "id_a": 576,
+    "id_b": 261,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product 'les celebrites' but are grouped by different brand lines in each block. In Block A, it's part of a list of French restaurants, while in Block B, it's listed under a more general category.\",\n  \"evidence_tokens\": [\"french\", \"american\"],\n  \"remedy\": \"Move the record from Block A to Block B\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.64343523979187
+  },
+  {
+    "example_index": 29,
+    "id_a": 544,
+    "id_b": 229,
+    "raw_output": "```json\n{\n  \"primary_failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because they were grouped by brand or product line at different granularity in the two blocks. Record 1 is part of a block containing many other restaurants, while Record 2 is in its own separate block.\",\n  \"evidence_tokens\": [\"katsu\", \"japanese\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 229, \"name\": \"katsu\"},\n      {\"id\": 544, \"name\": \"'restaurant katsu'\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.400334596633911
+  },
+  {
+    "example_index": 30,
+    "id_a": 586,
+    "id_b": 271,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product but are grouped by different brand lines in each block. Record 1 is part of a large block containing many other restaurants, while Record 2 is part of a smaller block with mostly Asian and international cuisine.\",\n  \"evidence_tokens\": [\"petrossian\", \"french\", \"russian\"],\n  \"remedy\": \"Move the record from Block B to Block A\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.167330503463745
+  },
+  {
+    "example_index": 31,
+    "id_a": 595,
+    "id_b": 280,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but the blocker grouped them by different brand lines (Fodors and Zagats). The titles of the records are similar, but the block contents show that Fodors has a more granular approach to grouping products by brand line.\",\n  \"evidence_tokens\": [\"sign of the dove\", \"1110 third ave.\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 595, \"block_id\": 1},\n      {\"id\": 280, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.542389869689941
+  },
+  {
+    "example_index": 32,
+    "id_a": 549,
+    "id_b": 234,
+    "raw_output": "```json\n{\n  \"primary_failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because they are grouped by brand or product line at different granularity in the two blocks. Record 1 is part of a block containing many restaurants in Los Angeles, while Record 2 is part of a smaller block containing only a few restaurants in West Hollywood.\",\n  \"evidence_tokens\": [\"the palm\", \"palm the (los angeles)\", \"9001 santa monica blvd.\", \"w. hollywood\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 234, \"block_id\": 2},\n      {\"id\": 230, \"block_id\": 1}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.8281121253967285
+  },
+  {
+    "example_index": 33,
+    "id_a": 581,
+    "id_b": 266,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, 'mesa grill', but are grouped differently in each block due to differences in brand or product line granularity.\",\n  \"evidence_tokens\": [\"102 fifth ave.\", \"102 5th ave.\"],\n  \"remedy\": \"Move a few records from one block to the other. Move record [581] from Block A to Block B, and move record [266] from Block B to Block A.\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.305736064910889
+  },
+  {
+    "example_index": 34,
+    "id_a": 572,
+    "id_b": 257,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product 'jo jo' but are grouped by different attributes in each block: Record 1 is grouped by 'type: american', while Record 2 is grouped by 'type: french bistro'. This suggests that the blocker was grouping products by brand or product line at different granularities.\",\n  \"evidence_tokens\": [\"american\", \"french bistro\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 1, \"record_id\": 572},\n      {\"block_id\": 2, \"record_id\": 257}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.5267884731292725
+  },
+  {
+    "example_index": 35,
+    "id_a": 558,
+    "id_b": 243,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in the two blocks. Record 1 is part of a block containing many other restaurants in New York City, while Record 2 is part of a block containing mostly Scandinavian and French restaurants.\",\n  \"evidence_tokens\": [\"continental\", \"scandinavian\"],\n  \"remedy\": \"Move some records from one block to the other\"\n}\n```\n\nTo be specific, I would move the following records:\n\n* From Block A (Fodors) to Block B (Zagats):\n\t+ Record 1: [558] name: aquavit | addr: '13 w. 54th st.' | city: 'new york' | phone: 212/307-7311 | type: continental\n* From Block B (Zagats) to Block A (Fodors):\n\t+ Records that are similar in style and content to Record 2, such as [246] name: 'cafe des artistes' | addr: '1 w. 67th st.' | city: 'new york city' | phone: 212/877-3500 | type: french\n\nThis would create a more cohesive block for each source, with similar records grouped together.",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 8.15131688117981
+  },
+  {
+    "example_index": 36,
+    "id_a": 591,
+    "id_b": 276,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in the two blocks. Record 1 is part of a large block containing many other restaurants, while Record 2 is part of a smaller block with more specific and similar establishments.\",\n  \"evidence_tokens\": [\"san domenico\", \"240 central park s.\", \"new york\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 591, \"block_id\": 1},\n      {\"id\": 276, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.446808576583862
+  },
+  {
+    "example_index": 37,
+    "id_a": 577,
+    "id_b": 262,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brands in each block. Record 1 is part of a large block containing many American restaurants, while Record 2 is part of a smaller block containing mostly Asian and international restaurants.\",\n  \"evidence_tokens\": [\"lespinasse\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 262, \"name\": \"lespinasse (new york city)\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.289541959762573
+  },
+  {
+    "example_index": 38,
+    "id_a": 545,
+    "id_b": 230,
+    "raw_output": "```json\n{\n  \"primary_failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because they are grouped by brand or product line at different granularity in the two blocks. Record 1 is part of a block containing many restaurants in Los Angeles, while Record 2 is part of a smaller block containing only a few restaurants in West Hollywood.\",\n  \"evidence_tokens\": [\"los angeles\", \"w. hollywood\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 1, \"record_id\": 230},\n      {\"block_id\": 2, \"record_id\": 16}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.618946075439453
+  },
+  {
+    "example_index": 39,
+    "id_a": 600,
+    "id_b": 285,
+    "raw_output": "```json\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product but are grouped by different brand names in each block: 'virgil\\'s' vs 'virgil\\'s real bbq'. This suggests that the blocker is grouping by brand name at a different granularity.\",\n  \"evidence_tokens\": [\"virgil's\", \"virgil's real bbq\"],\n  \"remedy\": {\n    \"type\": \"Move records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 1, \"record_id\": 600},\n      {\"block_id\": 2, \"record_id\": 285}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.80756688117981
+  },
+  {
+    "example_index": 40,
+    "id_a": 554,
+    "id_b": 239,
+    "raw_output": "```json\n{\n  \"primary_failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because they are grouped by brand or product line at different granularity in the two blocks. Record 1 is part of a block containing many other restaurants, while Record 2 is part of a smaller block with only six records.\",\n  \"evidence_tokens\": [\"spago\", \"los angeles\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 239, \"record_id\": 239},\n      {\"block_id\": 534, \"record_id\": 554}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.498944520950317
+  },
+  {
+    "example_index": 41,
+    "id_a": 563,
+    "id_b": 248,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand names in each block. Record 1 is part of a large block containing many other restaurants in New York City, while Record 2 is part of a smaller block with more specific and detailed descriptions.\",\n  \"evidence_tokens\": [\"carnegie deli\", \"854 seventh ave.\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 248, \"name\": \"carnegie deli\"},\n      {\"id\": 249, \"name\": \"carmine's\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.016592025756836
+  },
+  {
+    "example_index": 42,
+    "id_a": 573,
+    "id_b": 258,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, 'la caravelle', but are grouped differently due to differences in brand line granularity between the two blocks.\",\n  \"evidence_tokens\": [\"french\", \"french (classic)\", \"american\"],\n  \"remedy\": \"Move a few records from one block to the other. Move Record 1 from Block A to Block B, and move Records [69], [244] from Block B to Block A.\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.897715330123901
+  },
+  {
+    "example_index": 43,
+    "id_a": 582,
+    "id_b": 267,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product 'mi cocina' but are grouped by different brand lines in each block. Record 1 is part of a larger list of New York restaurants, while Record 2 is part of a smaller list of New York City restaurants.\",\n  \"evidence_tokens\": [\"new york\", \"new york city\"],\n  \"remedy\": \"Move the records from Block A to Block B\"\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.7814764976501465
+  },
+  {
+    "example_index": 44,
+    "id_a": 559,
+    "id_b": 244,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but the blocker separated them because they were grouped by brand or product line at different granularity in the two blocks. Record 1 is from a block containing many American restaurants, while Record 2 is from a block containing more specific types of cuisine.\",\n  \"evidence_tokens\": [\"american\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 244, \"name\": \"aureole\"},\n      {\"id\": 245, \"name\": \"cafe lalo\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.467625379562378
+  },
+  {
+    "example_index": 45,
+    "id_a": 568,
+    "id_b": 253,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but the blocker separated them because they were grouped by brand or product line at different granularity in the two blocks. Record 1 is from Fodors and has a more detailed address, while Record 2 is from Zagats and has a shorter address.\",\n  \"evidence_tokens\": [\"99 e. 52nd st.\", \"new york\", \"212/754-9494\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 253, \"name\": \"four seasons\"},\n      {\"id\": 568, \"name\": \"four seasons grill room\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.634061098098755
+  },
+  {
+    "example_index": 46,
+    "id_a": 541,
+    "id_b": 226,
+    "raw_output": "```json\n{\n  \"primary_failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The blocker separated these two records because they are grouped by brand or product line at different granularity in the two blocks. Record 1 is part of a block containing only one record, while Record 2 is part of a block containing multiple records with similar characteristics.\",\n  \"evidence_tokens\": [\"fenix\", \"'fenix at the argyle'\", \"american\", \"'french (new)'\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"block_id\": 541, \"record_id\": 226},\n      {\"block_id\": 16, \"record_id\": 541}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 4.3066980838775635
+  },
+  {
+    "example_index": 47,
+    "id_a": 596,
+    "id_b": 281,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand names in each block. In Block A, 'smith & wollensky' is listed as a standalone restaurant, while in Block B, it is listed under the brand name 'smith & wollensky'. This discrepancy suggests that the blocker was grouping records based on brand or product line at different granularities.\",\n  \"evidence_tokens\": [\"smith & wollensky\", \"797 third ave.\", \"212-753-1530\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 281, \"name\": \"'smith & wollensky'\"},\n      {\"id\": 596, \"name\": \"'smith & wollensky'\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 5.109239339828491
+  },
+  {
+    "example_index": 48,
+    "id_a": 569,
+    "id_b": 254,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but the blocker separated them because they were grouped by brand or product line at different granularity in the two blocks. Record 1 is from block A and has a more detailed address, while Record 2 is from block B and has a shorter address.\",\n  \"evidence_tokens\": [\"new york\", \"new york city\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 69, \"name\": \"'afghan kebab house'\"},\n      {\"id\": 242, \"name\": \"'21 club'\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.606501579284668
+  },
+  {
+    "example_index": 49,
+    "id_a": 578,
+    "id_b": 263,
+    "raw_output": "```\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in each block. Record 1 is part of a large block containing many other restaurants, while Record 2 is part of a smaller block with more specific and similar establishments.\",\n  \"evidence_tokens\": [\"lutece\", \"249 e. 50th st.\", \"new york\", \"212/752-2225\", \"french\"],\n  \"remedy\": {\n    \"action\": \"Move a few records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 578, \"block_id\": 1},\n      {\"id\": 263, \"block_id\": 2}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.723162651062012
+  },
+  {
+    "example_index": 50,
+    "id_a": 587,
+    "id_b": 272,
+    "raw_output": "```json\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product but are grouped by different brand lines in each block. Record 1 is part of a large block containing many other restaurants, while Record 2 is part of a smaller block with more specific and similar establishments.\",\n  \"evidence_tokens\": [\"picholine\", \"35 w. 64th st.\", \"new york\"],\n  \"remedy\": {\n    \"type\": \"move_records\",\n    \"records_to_move\": [\n      {\"id\": 272, \"block_id\": 2},\n      {\"id\": 587, \"block_id\": 1}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.298116683959961
+  },
+  {
+    "example_index": 51,
+    "id_a": 564,
+    "id_b": 249,
+    "raw_output": "```json\n{\n  \"failure_mode\": \"brand_line_granularity\",\n  \"rationale\": \"The two records describe the same product, but they are grouped by different brand lines in each block. Record 1 is part of a large block containing many American restaurants, while Record 2 is part of a smaller block containing mostly French and Italian restaurants.\",\n  \"evidence_tokens\": [\"chanterelle\", \"american\", \"french (new)\"],\n  \"remedy\": {\n    \"type\": \"Move records from one block to the other\",\n    \"records_to_move\": [\n      {\"id\": 249, \"name\": \"chanterelle\"},\n      {\"id\": 250, \"name\": \"daniel\"}\n    ]\n  }\n}\n```",
+    "parsed": null,
+    "malformed_json": true,
+    "error": null,
+    "latency_s": 6.557438850402832
+  }
+]

@@ -1,0 +1,5377 @@
+{
+  "variants": 1,
+  "n_pairs_per_instance": 64,
+  "order": "random",
+  "per_cell": {
+    "reclin2/walmart-amazon": {
+      "d_pc_mean": 0.036395147313691534,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": -0.0011444409954441842,
+      "pairs_gained_mean": 42.0,
+      "score_mean": 0.9390555383105542,
+      "n": 1
+    },
+    "simcse/cora": {
+      "d_pc_mean": 0.09037476722532595,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.190976273823415,
+      "pairs_gained_mean": 1553.0,
+      "score_mean": -0.676864899371282,
+      "n": 1
+    },
+    "simcse/dblp-acm": {
+      "d_pc_mean": -0.008992805755395739,
+      "d_pc_spread": 0.0,
+      "d_c_rel_mean": 0.13905328421603558,
+      "pairs_gained_mean": -20.0,
+      "score_mean": -0.814314040127797,
+      "n": 1
+    }
+  },
+  "macro_d_pc": 0.03925903626120725,
+  "macro_score": -0.18404113372950826,
+  "instances_lost": 0,
+  "calls_failed": 0,
+  "rows": [
+    {
+      "variant": 0,
+      "cell": [
+        "simcse",
+        "cora"
+      ],
+      "instance_id": "val:simcse:cora:v0:0",
+      "score": -0.676864899371282,
+      "d_pc": 0.09037476722532595,
+      "d_c_rel": 0.190976273823415,
+      "pc_before": 0.4865572625698324,
+      "pc_after": 0.5769320297951583,
+      "pairs_gained": 1553,
+      "steps_run": 64,
+      "skipped": 0,
+      "parse_failures": 0,
+      "ops": {
+        "move_to_x": 41,
+        "none": 17,
+        "move_to_y": 6
+      },
+      "curve": [
+        {
+          "k": 0,
+          "hits": 8361,
+          "c": 10284,
+          "targets": 298,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 0,
+          "ltot": 5586
+        },
+        {
+          "k": 1,
+          "hits": 8361,
+          "c": 10284,
+          "targets": 407,
+          "ops": [
+            "none"
+          ],
+          "lhits": 0,
+          "ltot": 5586
+        },
+        {
+          "k": 2,
+          "hits": 8385,
+          "c": 10303,
+          "targets": 430,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 23,
+          "ltot": 5586
+        },
+        {
+          "k": 3,
+          "hits": 8385,
+          "c": 10303,
+          "targets": 498,
+          "ops": [
+            "none"
+          ],
+          "lhits": 23,
+          "ltot": 5586
+        },
+        {
+          "k": 4,
+          "hits": 8385,
+          "c": 10303,
+          "targets": 673,
+          "ops": [
+            "none"
+          ],
+          "lhits": 23,
+          "ltot": 5586
+        },
+        {
+          "k": 5,
+          "hits": 8385,
+          "c": 10303,
+          "targets": 678,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 23,
+          "ltot": 5586
+        },
+        {
+          "k": 6,
+          "hits": 8396,
+          "c": 10307,
+          "targets": 688,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 33,
+          "ltot": 5586
+        },
+        {
+          "k": 7,
+          "hits": 8356,
+          "c": 10297,
+          "targets": 702,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 42,
+          "ltot": 5586
+        },
+        {
+          "k": 8,
+          "hits": 8356,
+          "c": 10297,
+          "targets": 989,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 42,
+          "ltot": 5586
+        },
+        {
+          "k": 9,
+          "hits": 8356,
+          "c": 10297,
+          "targets": 1204,
+          "ops": [
+            "none"
+          ],
+          "lhits": 42,
+          "ltot": 5586
+        },
+        {
+          "k": 10,
+          "hits": 8356,
+          "c": 10297,
+          "targets": 1211,
+          "ops": [
+            "none"
+          ],
+          "lhits": 42,
+          "ltot": 5586
+        },
+        {
+          "k": 11,
+          "hits": 8356,
+          "c": 10297,
+          "targets": 1317,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 42,
+          "ltot": 5586
+        },
+        {
+          "k": 12,
+          "hits": 8411,
+          "c": 10342,
+          "targets": 1388,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 105,
+          "ltot": 5586
+        },
+        {
+          "k": 13,
+          "hits": 8411,
+          "c": 10342,
+          "targets": 1709,
+          "ops": [
+            "none"
+          ],
+          "lhits": 105,
+          "ltot": 5586
+        },
+        {
+          "k": 14,
+          "hits": 8451,
+          "c": 10356,
+          "targets": 1748,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 144,
+          "ltot": 5586
+        },
+        {
+          "k": 15,
+          "hits": 8456,
+          "c": 10348,
+          "targets": 1759,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 149,
+          "ltot": 5586
+        },
+        {
+          "k": 16,
+          "hits": 8776,
+          "c": 10705,
+          "targets": 1918,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 308,
+          "ltot": 5586
+        },
+        {
+          "k": 17,
+          "hits": 8776,
+          "c": 10705,
+          "targets": 1933,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 308,
+          "ltot": 5586
+        },
+        {
+          "k": 18,
+          "hits": 8776,
+          "c": 10705,
+          "targets": 2076,
+          "ops": [
+            "none"
+          ],
+          "lhits": 308,
+          "ltot": 5586
+        },
+        {
+          "k": 19,
+          "hits": 8792,
+          "c": 10704,
+          "targets": 2125,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 323,
+          "ltot": 5586
+        },
+        {
+          "k": 20,
+          "hits": 8792,
+          "c": 10704,
+          "targets": 2128,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 323,
+          "ltot": 5586
+        },
+        {
+          "k": 21,
+          "hits": 8807,
+          "c": 10749,
+          "targets": 2199,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 382,
+          "ltot": 5586
+        },
+        {
+          "k": 22,
+          "hits": 8807,
+          "c": 10749,
+          "targets": 2360,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 382,
+          "ltot": 5586
+        },
+        {
+          "k": 23,
+          "hits": 9275,
+          "c": 11204,
+          "targets": 2622,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 641,
+          "ltot": 5586
+        },
+        {
+          "k": 24,
+          "hits": 9278,
+          "c": 11237,
+          "targets": 2624,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 643,
+          "ltot": 5586
+        },
+        {
+          "k": 25,
+          "hits": 9281,
+          "c": 11270,
+          "targets": 2626,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 645,
+          "ltot": 5586
+        },
+        {
+          "k": 26,
+          "hits": 9281,
+          "c": 11270,
+          "targets": 2638,
+          "ops": [
+            "none"
+          ],
+          "lhits": 645,
+          "ltot": 5586
+        },
+        {
+          "k": 27,
+          "hits": 9281,
+          "c": 11270,
+          "targets": 2701,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 645,
+          "ltot": 5586
+        },
+        {
+          "k": 28,
+          "hits": 9293,
+          "c": 11279,
+          "targets": 2712,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 29,
+          "hits": 9293,
+          "c": 11284,
+          "targets": 2714,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 30,
+          "hits": 9293,
+          "c": 11284,
+          "targets": 2731,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 31,
+          "hits": 9293,
+          "c": 11284,
+          "targets": 2742,
+          "ops": [
+            "none"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 32,
+          "hits": 9293,
+          "c": 11284,
+          "targets": 2759,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 33,
+          "hits": 9293,
+          "c": 11284,
+          "targets": 2773,
+          "ops": [
+            "none"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 34,
+          "hits": 9293,
+          "c": 11284,
+          "targets": 2788,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 35,
+          "hits": 9293,
+          "c": 11284,
+          "targets": 2947,
+          "ops": [
+            "none"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 36,
+          "hits": 9293,
+          "c": 11284,
+          "targets": 2985,
+          "ops": [
+            "none"
+          ],
+          "lhits": 656,
+          "ltot": 5586
+        },
+        {
+          "k": 37,
+          "hits": 9313,
+          "c": 11303,
+          "targets": 3004,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 675,
+          "ltot": 5586
+        },
+        {
+          "k": 38,
+          "hits": 9315,
+          "c": 11323,
+          "targets": 3005,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 676,
+          "ltot": 5586
+        },
+        {
+          "k": 39,
+          "hits": 9315,
+          "c": 11323,
+          "targets": 3212,
+          "ops": [
+            "none"
+          ],
+          "lhits": 676,
+          "ltot": 5586
+        },
+        {
+          "k": 40,
+          "hits": 9315,
+          "c": 11323,
+          "targets": 3307,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 676,
+          "ltot": 5586
+        },
+        {
+          "k": 41,
+          "hits": 9315,
+          "c": 11323,
+          "targets": 3315,
+          "ops": [
+            "none"
+          ],
+          "lhits": 676,
+          "ltot": 5586
+        },
+        {
+          "k": 42,
+          "hits": 9359,
+          "c": 11351,
+          "targets": 3458,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 740,
+          "ltot": 5586
+        },
+        {
+          "k": 43,
+          "hits": 9359,
+          "c": 11351,
+          "targets": 3475,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 740,
+          "ltot": 5586
+        },
+        {
+          "k": 44,
+          "hits": 9363,
+          "c": 11355,
+          "targets": 3744,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 757,
+          "ltot": 5586
+        },
+        {
+          "k": 45,
+          "hits": 9372,
+          "c": 11553,
+          "targets": 3752,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 765,
+          "ltot": 5586
+        },
+        {
+          "k": 46,
+          "hits": 9372,
+          "c": 11553,
+          "targets": 3765,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 765,
+          "ltot": 5586
+        },
+        {
+          "k": 47,
+          "hits": 9366,
+          "c": 11553,
+          "targets": 4034,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 775,
+          "ltot": 5586
+        },
+        {
+          "k": 48,
+          "hits": 9367,
+          "c": 11553,
+          "targets": 4037,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 776,
+          "ltot": 5586
+        },
+        {
+          "k": 49,
+          "hits": 9559,
+          "c": 11729,
+          "targets": 4356,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1031,
+          "ltot": 5586
+        },
+        {
+          "k": 50,
+          "hits": 9559,
+          "c": 11729,
+          "targets": 4475,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1031,
+          "ltot": 5586
+        },
+        {
+          "k": 51,
+          "hits": 9559,
+          "c": 11693,
+          "targets": 4476,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1031,
+          "ltot": 5586
+        },
+        {
+          "k": 52,
+          "hits": 9559,
+          "c": 11693,
+          "targets": 4488,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1031,
+          "ltot": 5586
+        },
+        {
+          "k": 53,
+          "hits": 9559,
+          "c": 11693,
+          "targets": 4649,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1031,
+          "ltot": 5586
+        },
+        {
+          "k": 54,
+          "hits": 9572,
+          "c": 11707,
+          "targets": 4901,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 1053,
+          "ltot": 5586
+        },
+        {
+          "k": 55,
+          "hits": 9567,
+          "c": 11718,
+          "targets": 4923,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1053,
+          "ltot": 5586
+        },
+        {
+          "k": 56,
+          "hits": 9567,
+          "c": 11718,
+          "targets": 5039,
+          "ops": [
+            "none"
+          ],
+          "lhits": 1053,
+          "ltot": 5586
+        },
+        {
+          "k": 57,
+          "hits": 9587,
+          "c": 11938,
+          "targets": 5044,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1075,
+          "ltot": 5586
+        },
+        {
+          "k": 58,
+          "hits": 9591,
+          "c": 11910,
+          "targets": 5047,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1078,
+          "ltot": 5586
+        },
+        {
+          "k": 59,
+          "hits": 9591,
+          "c": 11910,
+          "targets": 5056,
+          "ops": [
+            "none"
+          ],
+          "lhits": 1078,
+          "ltot": 5586
+        },
+        {
+          "k": 60,
+          "hits": 9911,
+          "c": 12230,
+          "targets": 5433,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1413,
+          "ltot": 5586
+        },
+        {
+          "k": 61,
+          "hits": 9911,
+          "c": 12230,
+          "targets": 5567,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1413,
+          "ltot": 5586
+        },
+        {
+          "k": 62,
+          "hits": 9911,
+          "c": 12230,
+          "targets": 5584,
+          "ops": [
+            "none"
+          ],
+          "lhits": 1413,
+          "ltot": 5586
+        },
+        {
+          "k": 63,
+          "hits": 9914,
+          "c": 12248,
+          "targets": 5586,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1415,
+          "ltot": 5586
+        }
+      ],
+      "exemplars": [
+        {
+          "step": 0,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "efficient noise-tolerant learning from statistical queries"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1993"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 24 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "885",
+            "861"
+          ]
+        },
+        {
+          "step": 1,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "143",
+            "173"
+          ]
+        },
+        {
+          "step": 2,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "inference of finite automata using homing sequences"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 6 records in group Y, which moved into group X",
+          "d_pc": 0.0013966480446927498,
+          "d_c": 19,
+          "seed": [
+            "1126",
+            "1142"
+          ]
+        },
+        {
+          "step": 3,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "892",
+            "1019"
+          ]
+        },
+        {
+          "step": 4,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "169",
+            "164"
+          ]
+        },
+        {
+          "step": 5,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "eurocolt"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 7 records in group X, which moved into group Y",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "296",
+            "314"
+          ]
+        },
+        {
+          "step": 6,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "inf. and computation"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 8 records in group Y, which moved into group X",
+          "d_pc": 0.0006401303538174918,
+          "d_c": 4,
+          "seed": [
+            "162",
+            "140"
+          ]
+        },
+        {
+          "step": 7,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "the strength of weak learnability."
+            },
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "machine learning,"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1990."
+            }
+          ],
+          "n_moved": 10,
+          "note": "the condition matched 10 of the 15 records in group Y, which moved into group X",
+          "d_pc": -0.002327746741154546,
+          "d_c": -10,
+          "seed": [
+            "1215",
+            "1202"
+          ]
+        },
+        {
+          "step": 8,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1993"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 14 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "1136",
+            "1146"
+          ]
+        },
+        {
+          "step": 9,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "47",
+            "58"
+          ]
+        },
+        {
+          "step": 10,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "73",
+            "65"
+          ]
+        },
+        {
+          "step": 11,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "siam j. comput."
+            },
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "exact identification of read-once formulas"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 11 records in group X, which moved into group Y",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "439",
+            "481"
+          ]
+        },
+        {
+          "step": 12,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "experiments with a new boosting algorithm."
+            },
+            {
+              "field": "year",
+              "operator": "regex",
+              "value": "1996"
+            }
+          ],
+          "n_moved": 9,
+          "note": "the condition matched 9 of the 12 records in group Y, which moved into group X",
+          "d_pc": 0.0032006517690875147,
+          "d_c": 45,
+          "seed": [
+            "371",
+            "347"
+          ]
+        },
+        {
+          "step": 13,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "675",
+            "653"
+          ]
+        },
+        {
+          "step": 14,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "learning in the presence of malicious errors"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 15 records in group Y, which moved into group X",
+          "d_pc": 0.002327746741154546,
+          "d_c": 14,
+          "seed": [
+            "703",
+            "690"
+          ]
+        },
+        {
+          "step": 15,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "publisher",
+              "operator": "contains",
+              "value": "morgan kaufmann"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 22 records in group Y, which moved into group X",
+          "d_pc": 0.0002909683426443599,
+          "d_c": -8,
+          "seed": [
+            "291",
+            "299"
+          ]
+        },
+        {
+          "step": 16,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "experiments with a new boosting algorithm"
+            }
+          ],
+          "n_moved": 17,
+          "note": "the condition matched 17 of the 17 records in group Y, which moved into group X",
+          "d_pc": 0.018621973929236424,
+          "d_c": 357,
+          "seed": [
+            "343",
+            "371"
+          ]
+        },
+        {
+          "step": 17,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "equivalence of models for polynomial learnability"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1991"
+            },
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "information and computation"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 6 records in group X, which moved into group Y",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "521",
+            "517"
+          ]
+        },
+        {
+          "step": 18,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "47",
+            "69"
+          ]
+        },
+        {
+          "step": 19,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "eurocolt95"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 21 records in group Y, which moved into group X",
+          "d_pc": 0.0009310986964619072,
+          "d_c": -1,
+          "seed": [
+            "309",
+            "314"
+          ]
+        },
+        {
+          "step": 20,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1988"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 23 records in group X, which moved into group Y",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "685",
+            "690"
+          ]
+        },
+        {
+          "step": 21,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "cryptographic limitations on learning boolean formulae and finite automata"
+            },
+            {
+              "field": "pages",
+              "operator": "contains",
+              "value": "67-95"
+            },
+            {
+              "field": "year",
+              "operator": "contains",
+              "value": "1994"
+            }
+          ],
+          "n_moved": 15,
+          "note": "the condition matched 15 of the 22 records in group Y, which moved into group X",
+          "d_pc": 0.0008729050279329131,
+          "d_c": 45,
+          "seed": [
+            "991",
+            "981"
+          ]
+        },
+        {
+          "step": 22,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1993"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 10 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "49",
+            "76"
+          ]
+        },
+        {
+          "step": 23,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "experiments with a new boosting algorithm"
+            }
+          ],
+          "n_moved": 13,
+          "note": "the condition matched 13 of the 16 records in group Y, which moved into group X",
+          "d_pc": 0.0272346368715084,
+          "d_c": 455,
+          "seed": [
+            "361",
+            "382"
+          ]
+        },
+        {
+          "step": 24,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "an experimental and theoretical comparison of model selection methods"
+            }
+          ],
+          "n_moved": 3,
+          "note": "the condition matched 3 of the 12 records in group Y, which moved into group X",
+          "d_pc": 0.00017458100558653822,
+          "d_c": 33,
+          "seed": [
+            "1027",
+            "1024"
+          ]
+        },
+        {
+          "step": 25,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "equivalence of models for polynomial learnability."
+            }
+          ],
+          "n_moved": 3,
+          "note": "the condition matched 3 of the 6 records in group Y, which moved into group X",
+          "d_pc": 0.00017458100558664924,
+          "d_c": 33,
+          "seed": [
+            "492",
+            "491"
+          ]
+        },
+        {
+          "step": 26,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "879",
+            "887"
+          ]
+        },
+        {
+          "step": 27,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1989"
+            },
+            {
+              "field": "pages",
+              "operator": "contains",
+              "value": "433-444"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 25 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "717",
+            "730"
+          ]
+        },
+        {
+          "step": 28,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "on-line prediction and conversion strategies"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 4 records in group Y, which moved into group X",
+          "d_pc": 0.0006983240223463749,
+          "d_c": 9,
+          "seed": [
+            "55",
+            "71"
+          ]
+        },
+        {
+          "step": 29,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "learning from a population of hypotheses"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 12 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 5,
+          "seed": [
+            "1019",
+            "887"
+          ]
+        },
+        {
+          "step": 30,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "the strength of weak learnability."
+            },
+            {
+              "field": "pages",
+              "operator": "equals",
+              "value": "197-227"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 18 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "1215",
+            "1212"
+          ]
+        },
+        {
+          "step": 31,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "1140",
+            "1142"
+          ]
+        },
+        {
+          "step": 32,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "a decision-theoretic generalization of on-line learning and an application to boosting"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1995"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 14 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "292",
+            "302"
+          ]
+        },
+        {
+          "step": 33,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "36",
+            "71"
+          ]
+        },
+        {
+          "step": 34,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "bounds on the sample complexity of bayesian learning"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 17 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "542",
+            "580"
+          ]
+        },
+        {
+          "step": 35,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "146",
+            "156"
+          ]
+        },
+        {
+          "step": 36,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "877",
+            "1019"
+          ]
+        },
+        {
+          "step": 37,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "pattern classification and scene analysis"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 3 records in group X, which moved into group Y",
+          "d_pc": 0.0011638733705772175,
+          "d_c": 19,
+          "seed": [
+            "99",
+            "93"
+          ]
+        },
+        {
+          "step": 38,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "learning under persistent drift"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 12 records in group Y, which moved into group X",
+          "d_pc": 0.00011638733705776616,
+          "d_c": 20,
+          "seed": [
+            "432",
+            "433"
+          ]
+        },
+        {
+          "step": 39,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "530",
+            "577"
+          ]
+        },
+        {
+          "step": 40,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "a decision-theoretic generalization of on-line learning and an application to boosting"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1995"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 22 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "300",
+            "313"
+          ]
+        },
+        {
+          "step": 41,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "71",
+            "33"
+          ]
+        },
+        {
+          "step": 42,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "bounds on the sample complexity of bayesian learning using information theory and the vc dimension"
+            },
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "workshop on computational learning theory"
+            }
+          ],
+          "n_moved": 4,
+          "note": "the condition matched 4 of the 13 records in group Y, which moved into group X",
+          "d_pc": 0.0025605214152700784,
+          "d_c": 28,
+          "seed": [
+            "543",
+            "534"
+          ]
+        },
+        {
+          "step": 43,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "an experimental and theoretical comparison of model selection methods"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1995"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "1023",
+            "1026"
+          ]
+        },
+        {
+          "step": 44,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "pages",
+              "operator": "contains",
+              "value": "382-392"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 15 records in group Y, which moved into group X",
+          "d_pc": 0.0002327746741154213,
+          "d_c": 4,
+          "seed": [
+            "47",
+            "37"
+          ]
+        },
+        {
+          "step": 45,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "a bound on the error of cross validation"
+            }
+          ],
+          "n_moved": 9,
+          "note": "the condition matched 9 of the 9 records in group Y, which moved into group X",
+          "d_pc": 0.0005237430167597257,
+          "d_c": 198,
+          "seed": [
+            "1037",
+            "1031"
+          ]
+        },
+        {
+          "step": 46,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "equivalence of models for polynomial learnability"
+            },
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "information and computation"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1991"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 13 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "521",
+            "502"
+          ]
+        },
+        {
+          "step": 47,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "combining regression estimates"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 18 records in group Y, which moved into group X",
+          "d_pc": -0.00034916201117318746,
+          "d_c": 0,
+          "seed": [
+            "1196",
+            "1171"
+          ]
+        },
+        {
+          "step": 48,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "learning boolean formulae or finite au tomata is as hard as factoring"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 25 records in group Y, which moved into group X",
+          "d_pc": 5.819366852888308e-05,
+          "d_c": 0,
+          "seed": [
+            "711",
+            "712"
+          ]
+        },
+        {
+          "step": 49,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "cryptographic limitations on learning boolean formulae and finite automata"
+            }
+          ],
+          "n_moved": 16,
+          "note": "the condition matched 16 of the 21 records in group Y, which moved into group X",
+          "d_pc": 0.011173184357541888,
+          "d_c": 176,
+          "seed": [
+            "731",
+            "726"
+          ]
+        },
+        {
+          "step": 50,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "journal of the acm"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 9 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "78",
+            "65"
+          ]
+        },
+        {
+          "step": 51,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "learning boolean formulae or finite automata is as hard as factoring"
+            },
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "technical report tr-14-88"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 25 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": -36,
+          "seed": [
+            "710",
+            "711"
+          ]
+        },
+        {
+          "step": 52,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "bounds on the sample complexity"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 17 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "579",
+            "580"
+          ]
+        },
+        {
+          "step": 53,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "toward efficient agnostic learning"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1992"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "825",
+            "831"
+          ]
+        },
+        {
+          "step": 54,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "institution",
+              "operator": "is_not_null"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 11 records in group X, which moved into group Y",
+          "d_pc": 0.000756517690875258,
+          "d_c": 14,
+          "seed": [
+            "859",
+            "880"
+          ]
+        },
+        {
+          "step": 55,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "colt 88"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group Y, which moved into group X",
+          "d_pc": -0.0002909683426443044,
+          "d_c": 11,
+          "seed": [
+            "131",
+            "132"
+          ]
+        },
+        {
+          "step": 56,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "538",
+            "578"
+          ]
+        },
+        {
+          "step": 57,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "an experimental and theoretical comparison of model selection methods"
+            }
+          ],
+          "n_moved": 10,
+          "note": "the condition matched 10 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0011638733705773285,
+          "d_c": 220,
+          "seed": [
+            "1027",
+            "1021"
+          ]
+        },
+        {
+          "step": 58,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "data filtering and distribution modeling algorithms for machine learning"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 24 records in group Y, which moved into group X",
+          "d_pc": 0.0002327746741154213,
+          "d_c": -28,
+          "seed": [
+            "262",
+            "264"
+          ]
+        },
+        {
+          "step": 59,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "145",
+            "140"
+          ]
+        },
+        {
+          "step": 60,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "author",
+              "operator": "contains",
+              "value": "schapire"
+            },
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "strength of weak learnability"
+            },
+            {
+              "field": "year",
+              "operator": "contains",
+              "value": "1990"
+            }
+          ],
+          "n_moved": 16,
+          "note": "the condition matched 16 of the 17 records in group Y, which moved into group X",
+          "d_pc": 0.01862197392923648,
+          "d_c": 320,
+          "seed": [
+            "1182",
+            "1169"
+          ]
+        },
+        {
+          "step": 61,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1993"
+            },
+            {
+              "field": "pages",
+              "operator": "contains",
+              "value": "382-391"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 10 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "51",
+            "42"
+          ]
+        },
+        {
+          "step": 62,
+          "op": "none",
+          "model_op": null,
+          "predicate": [],
+          "n_moved": 0,
+          "note": "no change",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "1224",
+            "1169"
+          ]
+        },
+        {
+          "step": 63,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "a comparison of new and old algorithms for a mixture estimation problem"
+            }
+          ],
+          "n_moved": 6,
+          "note": "the condition matched 6 of the 12 records in group Y, which moved into group X",
+          "d_pc": 0.00017458100558664924,
+          "d_c": 18,
+          "seed": [
+            "596",
+            "597"
+          ]
+        }
+      ],
+      "base_hits": 8361,
+      "base_c": 10284,
+      "rule_stats": {
+        "helped": 24,
+        "hurt": 3,
+        "inert": 37
+      },
+      "reach_hist": {
+        "0": 35,
+        "1": 12,
+        "6-20": 10,
+        "2-5": 7
+      },
+      "book": {},
+      "local_recall": 0.25331185105621196,
+      "local_hits": 1415,
+      "local_targets": 5586
+    },
+    {
+      "variant": 0,
+      "cell": [
+        "simcse",
+        "dblp-acm"
+      ],
+      "instance_id": "val:simcse:dblp-acm:v0:0",
+      "score": -0.814314040127797,
+      "d_pc": -0.008992805755395739,
+      "d_c_rel": 0.13905328421603558,
+      "pc_before": 0.6830035971223022,
+      "pc_after": 0.6740107913669064,
+      "pairs_gained": -20,
+      "steps_run": 64,
+      "skipped": 0,
+      "parse_failures": 0,
+      "ops": {
+        "move_to_x": 64,
+        "move_to_y": 1
+      },
+      "curve": [
+        {
+          "k": 0,
+          "hits": 1520,
+          "c": 198723,
+          "targets": 3,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 0,
+          "ltot": 168
+        },
+        {
+          "k": 1,
+          "hits": 1500,
+          "c": 200490,
+          "targets": 4,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 168
+        },
+        {
+          "k": 2,
+          "hits": 1501,
+          "c": 200587,
+          "targets": 6,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 168
+        },
+        {
+          "k": 3,
+          "hits": 1502,
+          "c": 200542,
+          "targets": 7,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 168
+        },
+        {
+          "k": 4,
+          "hits": 1503,
+          "c": 200580,
+          "targets": 8,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 168
+        },
+        {
+          "k": 5,
+          "hits": 1504,
+          "c": 199956,
+          "targets": 9,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 168
+        },
+        {
+          "k": 6,
+          "hits": 1505,
+          "c": 200066,
+          "targets": 10,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 168
+        },
+        {
+          "k": 7,
+          "hits": 1507,
+          "c": 200094,
+          "targets": 11,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 2,
+          "ltot": 168
+        },
+        {
+          "k": 8,
+          "hits": 1508,
+          "c": 199992,
+          "targets": 12,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 2,
+          "ltot": 168
+        },
+        {
+          "k": 9,
+          "hits": 1498,
+          "c": 206010,
+          "targets": 14,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 168
+        },
+        {
+          "k": 10,
+          "hits": 1499,
+          "c": 206071,
+          "targets": 15,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 168
+        },
+        {
+          "k": 11,
+          "hits": 1500,
+          "c": 206071,
+          "targets": 17,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 168
+        },
+        {
+          "k": 12,
+          "hits": 1501,
+          "c": 206206,
+          "targets": 21,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 168
+        },
+        {
+          "k": 13,
+          "hits": 1504,
+          "c": 206572,
+          "targets": 25,
+          "ops": [
+            "move_to_y",
+            "move_to_x"
+          ],
+          "lhits": 8,
+          "ltot": 168
+        },
+        {
+          "k": 14,
+          "hits": 1508,
+          "c": 211732,
+          "targets": 32,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 15,
+          "ltot": 168
+        },
+        {
+          "k": 15,
+          "hits": 1509,
+          "c": 211890,
+          "targets": 33,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 15,
+          "ltot": 168
+        },
+        {
+          "k": 16,
+          "hits": 1510,
+          "c": 211968,
+          "targets": 34,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 15,
+          "ltot": 168
+        },
+        {
+          "k": 17,
+          "hits": 1498,
+          "c": 211548,
+          "targets": 35,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 14,
+          "ltot": 168
+        },
+        {
+          "k": 18,
+          "hits": 1499,
+          "c": 211814,
+          "targets": 36,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 14,
+          "ltot": 168
+        },
+        {
+          "k": 19,
+          "hits": 1500,
+          "c": 211836,
+          "targets": 40,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 14,
+          "ltot": 168
+        },
+        {
+          "k": 20,
+          "hits": 1501,
+          "c": 211797,
+          "targets": 42,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 14,
+          "ltot": 168
+        },
+        {
+          "k": 21,
+          "hits": 1502,
+          "c": 211752,
+          "targets": 43,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 14,
+          "ltot": 168
+        },
+        {
+          "k": 22,
+          "hits": 1498,
+          "c": 214792,
+          "targets": 54,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 25,
+          "ltot": 168
+        },
+        {
+          "k": 23,
+          "hits": 1492,
+          "c": 214426,
+          "targets": 56,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 23,
+          "ltot": 168
+        },
+        {
+          "k": 24,
+          "hits": 1493,
+          "c": 214478,
+          "targets": 57,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 23,
+          "ltot": 168
+        },
+        {
+          "k": 25,
+          "hits": 1483,
+          "c": 216131,
+          "targets": 58,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 24,
+          "ltot": 168
+        },
+        {
+          "k": 26,
+          "hits": 1477,
+          "c": 222194,
+          "targets": 59,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 18,
+          "ltot": 168
+        },
+        {
+          "k": 27,
+          "hits": 1478,
+          "c": 222277,
+          "targets": 64,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 18,
+          "ltot": 168
+        },
+        {
+          "k": 28,
+          "hits": 1451,
+          "c": 221595,
+          "targets": 65,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 15,
+          "ltot": 168
+        },
+        {
+          "k": 29,
+          "hits": 1454,
+          "c": 238255,
+          "targets": 67,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 17,
+          "ltot": 168
+        },
+        {
+          "k": 30,
+          "hits": 1455,
+          "c": 238267,
+          "targets": 68,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 17,
+          "ltot": 168
+        },
+        {
+          "k": 31,
+          "hits": 1459,
+          "c": 238618,
+          "targets": 71,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 20,
+          "ltot": 168
+        },
+        {
+          "k": 32,
+          "hits": 1460,
+          "c": 238426,
+          "targets": 72,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 20,
+          "ltot": 168
+        },
+        {
+          "k": 33,
+          "hits": 1461,
+          "c": 238148,
+          "targets": 79,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 20,
+          "ltot": 168
+        },
+        {
+          "k": 34,
+          "hits": 1463,
+          "c": 238268,
+          "targets": 80,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 21,
+          "ltot": 168
+        },
+        {
+          "k": 35,
+          "hits": 1467,
+          "c": 246079,
+          "targets": 83,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 24,
+          "ltot": 168
+        },
+        {
+          "k": 36,
+          "hits": 1468,
+          "c": 245963,
+          "targets": 89,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 25,
+          "ltot": 168
+        },
+        {
+          "k": 37,
+          "hits": 1469,
+          "c": 245647,
+          "targets": 90,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 26,
+          "ltot": 168
+        },
+        {
+          "k": 38,
+          "hits": 1470,
+          "c": 245345,
+          "targets": 94,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 26,
+          "ltot": 168
+        },
+        {
+          "k": 39,
+          "hits": 1472,
+          "c": 244781,
+          "targets": 99,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 26,
+          "ltot": 168
+        },
+        {
+          "k": 40,
+          "hits": 1473,
+          "c": 244729,
+          "targets": 101,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 26,
+          "ltot": 168
+        },
+        {
+          "k": 41,
+          "hits": 1474,
+          "c": 244679,
+          "targets": 102,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 26,
+          "ltot": 168
+        },
+        {
+          "k": 42,
+          "hits": 1474,
+          "c": 228416,
+          "targets": 104,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 26,
+          "ltot": 168
+        },
+        {
+          "k": 43,
+          "hits": 1475,
+          "c": 228437,
+          "targets": 105,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 26,
+          "ltot": 168
+        },
+        {
+          "k": 44,
+          "hits": 1475,
+          "c": 227929,
+          "targets": 107,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 27,
+          "ltot": 168
+        },
+        {
+          "k": 45,
+          "hits": 1476,
+          "c": 228022,
+          "targets": 109,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 27,
+          "ltot": 168
+        },
+        {
+          "k": 46,
+          "hits": 1479,
+          "c": 229502,
+          "targets": 111,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 29,
+          "ltot": 168
+        },
+        {
+          "k": 47,
+          "hits": 1480,
+          "c": 229475,
+          "targets": 113,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 29,
+          "ltot": 168
+        },
+        {
+          "k": 48,
+          "hits": 1481,
+          "c": 229359,
+          "targets": 115,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 29,
+          "ltot": 168
+        },
+        {
+          "k": 49,
+          "hits": 1482,
+          "c": 229181,
+          "targets": 120,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 30,
+          "ltot": 168
+        },
+        {
+          "k": 50,
+          "hits": 1479,
+          "c": 227656,
+          "targets": 123,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 32,
+          "ltot": 168
+        },
+        {
+          "k": 51,
+          "hits": 1480,
+          "c": 227664,
+          "targets": 124,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 32,
+          "ltot": 168
+        },
+        {
+          "k": 52,
+          "hits": 1481,
+          "c": 227544,
+          "targets": 130,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 32,
+          "ltot": 168
+        },
+        {
+          "k": 53,
+          "hits": 1482,
+          "c": 227604,
+          "targets": 132,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 32,
+          "ltot": 168
+        },
+        {
+          "k": 54,
+          "hits": 1475,
+          "c": 220422,
+          "targets": 133,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 31,
+          "ltot": 168
+        },
+        {
+          "k": 55,
+          "hits": 1480,
+          "c": 220542,
+          "targets": 137,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 35,
+          "ltot": 168
+        },
+        {
+          "k": 56,
+          "hits": 1482,
+          "c": 220388,
+          "targets": 138,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 36,
+          "ltot": 168
+        },
+        {
+          "k": 57,
+          "hits": 1493,
+          "c": 224688,
+          "targets": 150,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 48,
+          "ltot": 168
+        },
+        {
+          "k": 58,
+          "hits": 1494,
+          "c": 224695,
+          "targets": 158,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 48,
+          "ltot": 168
+        },
+        {
+          "k": 59,
+          "hits": 1495,
+          "c": 224847,
+          "targets": 160,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 48,
+          "ltot": 168
+        },
+        {
+          "k": 60,
+          "hits": 1498,
+          "c": 225033,
+          "targets": 162,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 50,
+          "ltot": 168
+        },
+        {
+          "k": 61,
+          "hits": 1499,
+          "c": 225027,
+          "targets": 163,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 50,
+          "ltot": 168
+        },
+        {
+          "k": 62,
+          "hits": 1498,
+          "c": 226431,
+          "targets": 167,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 50,
+          "ltot": 168
+        },
+        {
+          "k": 63,
+          "hits": 1499,
+          "c": 226339,
+          "targets": 168,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 50,
+          "ltot": 168
+        }
+      ],
+      "exemplars": [
+        {
+          "step": 0,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "MultiMediaMiner"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 106 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 15,
+          "seed": [
+            "B:276388",
+            "A:conf/sigmod/ZaianeHLCC98"
+          ]
+        },
+        {
+          "step": 1,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 57,
+          "note": "the condition matched 57 of the 86 records in group Y, which moved into group X",
+          "d_pc": -0.008992805755395628,
+          "d_c": 1767,
+          "seed": [
+            "A:conf/vldb/AlsabtiRS97",
+            "B:673650"
+          ]
+        },
+        {
+          "step": 2,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Efficient Snapshot Differential Algorithms for Data Warehousing"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 34 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 97,
+          "seed": [
+            "B:673477",
+            "A:conf/vldb/LabioG96"
+          ]
+        },
+        {
+          "step": 3,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Sangam"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 89 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -45,
+          "seed": [
+            "A:conf/sigmod/ClaypoolRZSK01",
+            "B:375765"
+          ]
+        },
+        {
+          "step": 4,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Optimal Grid-Clustering: Towards Breaking the Curse of Dimensionality in High-Dimensional Clustering"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 84 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 38,
+          "seed": [
+            "A:conf/vldb/KeimH99",
+            "B:671505"
+          ]
+        },
+        {
+          "step": 5,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "year",
+              "operator": "gte",
+              "value": "2002"
+            }
+          ],
+          "n_moved": 39,
+          "note": "the condition matched 39 of the 128 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -624,
+          "seed": [
+            "A:conf/sigmod/RundensteinerWYD02",
+            "B:564786"
+          ]
+        },
+        {
+          "step": 6,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "On computing correlated aggregates over continual data streams"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 37 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 110,
+          "seed": [
+            "A:conf/sigmod/GehrkeKS01",
+            "B:375665"
+          ]
+        },
+        {
+          "step": 7,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 71 records in group Y, which moved into group X",
+          "d_pc": 0.0008992805755395628,
+          "d_c": 28,
+          "seed": [
+            "B:672372",
+            "A:conf/vldb/MarronL01"
+          ]
+        },
+        {
+          "step": 8,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Influence sets based on reverse nearest neighbor queries"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 147 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -102,
+          "seed": [
+            "B:335415",
+            "A:conf/sigmod/KornM00"
+          ]
+        },
+        {
+          "step": 9,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "The VLDB Journal"
+            }
+          ],
+          "n_moved": 118,
+          "note": "the condition matched 118 of the 155 records in group Y, which moved into group X",
+          "d_pc": -0.004496402877697814,
+          "d_c": 6018,
+          "seed": [
+            "A:journals/vldb/MedjahedBBNE03",
+            "B:775457"
+          ]
+        },
+        {
+          "step": 10,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Using Probabilistic Information in Data Integration"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 57 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 61,
+          "seed": [
+            "B:673654",
+            "A:conf/vldb/FlorescuKLP97"
+          ]
+        },
+        {
+          "step": 11,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Data Manager for Evolvable Real-time Command and Control Systems"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 45 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": 0,
+          "seed": [
+            "A:conf/vldb/GinisHKMT97",
+            "B:670997"
+          ]
+        },
+        {
+          "step": 12,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "ObjectGlobe: Ubiquitous query processing on the Internet"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 72 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 135,
+          "seed": [
+            "B:767137",
+            "A:journals/vldb/BraumandlKKKKSS01"
+          ]
+        },
+        {
+          "step": 13,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB"
+            }
+          ],
+          "n_moved": 8,
+          "note": "the condition matched 8 of the 76 records in group X, which moved into group Y",
+          "d_pc": 0.0013489208633093996,
+          "d_c": 504,
+          "seed": [
+            "A:conf/vldb/GutierrezPST94",
+            "B:672976"
+          ]
+        },
+        {
+          "step": 13,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB J."
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 139 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": -138,
+          "seed": [
+            "A:conf/vldb/GutierrezPST94",
+            "B:672976"
+          ]
+        },
+        {
+          "step": 14,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 129,
+          "note": "the condition matched 129 of the 136 records in group Y, which moved into group X",
+          "d_pc": 0.0017985611510791255,
+          "d_c": 5160,
+          "seed": [
+            "A:conf/vldb/TanEO01",
+            "B:672217"
+          ]
+        },
+        {
+          "step": 15,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Tree pattern query minimization"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 50 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 158,
+          "seed": [
+            "B:764203",
+            "A:journals/vldb/Amer-YahiaCLS02"
+          ]
+        },
+        {
+          "step": 16,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "CQ: a personalized update monitoring toolkit"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 45 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": 78,
+          "seed": [
+            "A:conf/sigmod/LiuPTBBZBHY98",
+            "B:276376"
+          ]
+        },
+        {
+          "step": 17,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB"
+            }
+          ],
+          "n_moved": 12,
+          "note": "the condition matched 12 of the 85 records in group Y, which moved into group X",
+          "d_pc": -0.0053956834532373765,
+          "d_c": -420,
+          "seed": [
+            "A:conf/vldb/Lesk94",
+            "B:672830"
+          ]
+        },
+        {
+          "step": 18,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB J."
+            }
+          ],
+          "n_moved": 7,
+          "note": "the condition matched 7 of the 39 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 266,
+          "seed": [
+            "B:950493",
+            "A:journals/vldb/HelmerM03"
+          ]
+        },
+        {
+          "step": 19,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "ROSE algebra"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 56 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": 22,
+          "seed": [
+            "B:615221",
+            "A:journals/vldb/GutingS95"
+          ]
+        },
+        {
+          "step": 20,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Space-Efficient Online Computation of Quantile Summaries"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 146 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": -39,
+          "seed": [
+            "B:375670",
+            "A:conf/sigmod/GreenwaldK01"
+          ]
+        },
+        {
+          "step": 21,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "SR-tree"
+            },
+            {
+              "field": "authors",
+              "operator": "contains",
+              "value": "Norio Katayama"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 123 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -45,
+          "seed": [
+            "B:253347",
+            "A:conf/sigmod/KatayamaS97"
+          ]
+        },
+        {
+          "step": 22,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 80,
+          "note": "the condition matched 80 of the 103 records in group Y, which moved into group X",
+          "d_pc": -0.0017985611510791255,
+          "d_c": 3040,
+          "seed": [
+            "A:conf/vldb/HasanM95",
+            "B:673143"
+          ]
+        },
+        {
+          "step": 23,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "VLDB J."
+            }
+          ],
+          "n_moved": 6,
+          "note": "the condition matched 6 of the 208 records in group Y, which moved into group X",
+          "d_pc": -0.0026978417266186883,
+          "d_c": -366,
+          "seed": [
+            "A:journals/vldb/SofferS98",
+            "B:765540"
+          ]
+        },
+        {
+          "step": 24,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "A foundation for representing and quering moving objects"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 71 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 52,
+          "seed": [
+            "B:352963",
+            "A:journals/tods/GutingBEJLSV00"
+          ]
+        },
+        {
+          "step": 25,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 29,
+          "note": "the condition matched 29 of the 44 records in group Y, which moved into group X",
+          "d_pc": -0.004496402877697814,
+          "d_c": 1653,
+          "seed": [
+            "A:conf/vldb/VriesDBA99",
+            "B:671530"
+          ]
+        },
+        {
+          "step": 26,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 129,
+          "note": "the condition matched 129 of the 176 records in group Y, which moved into group X",
+          "d_pc": -0.0026978417266186883,
+          "d_c": 6063,
+          "seed": [
+            "A:conf/vldb/JensenL01",
+            "B:672027"
+          ]
+        },
+        {
+          "step": 27,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Hilbert R-tree"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 55 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 83,
+          "seed": [
+            "B:673001",
+            "A:conf/vldb/KamelF94"
+          ]
+        },
+        {
+          "step": 28,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB"
+            }
+          ],
+          "n_moved": 31,
+          "note": "the condition matched 31 of the 138 records in group Y, which moved into group X",
+          "d_pc": -0.012140287769784153,
+          "d_c": -682,
+          "seed": [
+            "A:conf/vldb/Sullivan96",
+            "B:673489"
+          ]
+        },
+        {
+          "step": 29,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "The VLDB Journal"
+            }
+          ],
+          "n_moved": 119,
+          "note": "the condition matched 119 of the 202 records in group Y, which moved into group X",
+          "d_pc": 0.0013489208633093996,
+          "d_c": 16660,
+          "seed": [
+            "A:journals/vldb/GibsonKR00",
+            "B:764217"
+          ]
+        },
+        {
+          "step": 30,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "A Performance Study of Workfile Disk Management for Concurrent Mergesorts in a Multiprocessor Database System"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 107 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 12,
+          "seed": [
+            "A:conf/vldb/WuYCT95",
+            "B:673158"
+          ]
+        },
+        {
+          "step": 31,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB"
+            }
+          ],
+          "n_moved": 13,
+          "note": "the condition matched 13 of the 92 records in group Y, which moved into group X",
+          "d_pc": 0.0017985611510791255,
+          "d_c": 351,
+          "seed": [
+            "B:672838",
+            "A:conf/vldb/SetzerZ94"
+          ]
+        },
+        {
+          "step": 32,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "year",
+              "operator": "lte",
+              "value": "1997"
+            }
+          ],
+          "n_moved": 3,
+          "note": "the condition matched 3 of the 145 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -192,
+          "seed": [
+            "B:253409",
+            "A:conf/sigmod/Chakravarthy97"
+          ]
+        },
+        {
+          "step": 33,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Caching Strategies for Data-Intensive Web Sites"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "2000"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 342 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": -278,
+          "seed": [
+            "A:conf/vldb/YagoubFIV00",
+            "B:672020"
+          ]
+        },
+        {
+          "step": 34,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB"
+            }
+          ],
+          "n_moved": 6,
+          "note": "the condition matched 6 of the 105 records in group Y, which moved into group X",
+          "d_pc": 0.0008992805755395628,
+          "d_c": 120,
+          "seed": [
+            "B:673496",
+            "A:conf/vldb/IoannidisLGP96"
+          ]
+        },
+        {
+          "step": 35,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 73,
+          "note": "the condition matched 73 of the 73 records in group Y, which moved into group X",
+          "d_pc": 0.0017985611510791255,
+          "d_c": 7811,
+          "seed": [
+            "A:conf/vldb/ManegoldBK00",
+            "B:672010"
+          ]
+        },
+        {
+          "step": 36,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Improving Adaptable Similarity Query Processing by Using Approximations"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 180 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -116,
+          "seed": [
+            "A:conf/vldb/CherniackZ98",
+            "B:671177"
+          ]
+        },
+        {
+          "step": 37,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Intelligent Rollups in Multidimensional OLAP Data"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 341 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": -316,
+          "seed": [
+            "A:conf/vldb/MorishimaKKT01",
+            "B:672187"
+          ]
+        },
+        {
+          "step": 38,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Approximate query mapping: Accounting for translation closeness"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 340 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -302,
+          "seed": [
+            "A:journals/vldb/ChangG01",
+            "B:767145"
+          ]
+        },
+        {
+          "step": 39,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Lineage tracing for general data warehouse transformations"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 339 records in group Y, which moved into group X",
+          "d_pc": 0.0008992805755395628,
+          "d_c": -564,
+          "seed": [
+            "A:journals/vldb/CuiW03",
+            "B:775456"
+          ]
+        },
+        {
+          "step": 40,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Further Improvements on Integrity Constraint Checking for Stratifiable Deductive Databases"
+            },
+            {
+              "field": "authors",
+              "operator": "equals",
+              "value": "Sin Yeung Lee, Tok Wang Ling"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 147 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -52,
+          "seed": [
+            "A:conf/vldb/LeeL96",
+            "B:673331"
+          ]
+        },
+        {
+          "step": 41,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Evaluation of remote backup algorithms for transaction-processing systems"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 146 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": -50,
+          "seed": [
+            "B:185836",
+            "A:journals/tods/PolyzoisG94"
+          ]
+        },
+        {
+          "step": 42,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "VLDB Journal"
+            }
+          ],
+          "n_moved": 117,
+          "note": "the condition matched 117 of the 337 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": -16263,
+          "seed": [
+            "A:journals/vldb/DeWittNSV96",
+            "B:765751"
+          ]
+        },
+        {
+          "step": 43,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Reordering Query Execution in Tertiary Memory Databases"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 125 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": 21,
+          "seed": [
+            "A:conf/vldb/SarawagiS96",
+            "B:673632"
+          ]
+        },
+        {
+          "step": 44,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 127,
+          "note": "the condition matched 127 of the 220 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": -508,
+          "seed": [
+            "A:conf/vldb/AilamakiDHS01",
+            "B:672367"
+          ]
+        },
+        {
+          "step": 45,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "The hcC-tree: An Efficient Index Structure for Object Oriented Databases"
+            },
+            {
+              "field": "authors",
+              "operator": "equals",
+              "value": "B. Sreenath, S. Seshadri"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1994"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 54 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 93,
+          "seed": [
+            "B:672995",
+            "A:conf/vldb/SreenathS94"
+          ]
+        },
+        {
+          "step": 46,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "year",
+              "operator": "lte",
+              "value": "2000"
+            }
+          ],
+          "n_moved": 20,
+          "note": "the condition matched 20 of the 70 records in group Y, which moved into group X",
+          "d_pc": 0.0013489208633093996,
+          "d_c": 1480,
+          "seed": [
+            "B:671181",
+            "A:conf/vldb/Schoning98"
+          ]
+        },
+        {
+          "step": 47,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Gigascope: high performance network monitoring with an SQL interface"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 140 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": -27,
+          "seed": [
+            "A:conf/sigmod/CranorGJSS02",
+            "B:564777"
+          ]
+        },
+        {
+          "step": 48,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "An Efficient Algorithm for Mining Association Rules in Large Databases"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 147 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -116,
+          "seed": [
+            "A:conf/vldb/SavasereON95",
+            "B:673300"
+          ]
+        },
+        {
+          "step": 49,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Analyzing Quantitative Databases: Image is Everything"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 216 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": -178,
+          "seed": [
+            "A:conf/vldb/CooperSFHS01",
+            "B:672202"
+          ]
+        },
+        {
+          "step": 50,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 61,
+          "note": "the condition matched 61 of the 119 records in group Y, which moved into group X",
+          "d_pc": -0.0013489208633092886,
+          "d_c": -1525,
+          "seed": [
+            "A:conf/vldb/PoosalaI97",
+            "B:673638"
+          ]
+        },
+        {
+          "step": 51,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "A Structured Approach for the Definition of the Semantics of Active Databases"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 86 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 8,
+          "seed": [
+            "B:219042",
+            "A:journals/tods/FraternaliT95"
+          ]
+        },
+        {
+          "step": 52,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Probabilistic Optimization of Top N Queries"
+            },
+            {
+              "field": "authors",
+              "operator": "contains",
+              "value": "Donko Donjerkovic"
+            },
+            {
+              "field": "authors",
+              "operator": "contains",
+              "value": "Raghu Ramakrishnan"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1999"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 215 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": -120,
+          "seed": [
+            "A:conf/vldb/DonjerkovicR99",
+            "B:671510"
+          ]
+        },
+        {
+          "step": 53,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Supporting Periodic Authorizations and Temporal Reasoning in Database Access Control"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "1996"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 85 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 60,
+          "seed": [
+            "B:673475",
+            "A:conf/vldb/BertinoBFS96"
+          ]
+        },
+        {
+          "step": 54,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "Very Large Data Bases"
+            }
+          ],
+          "n_moved": 133,
+          "note": "the condition matched 133 of the 214 records in group Y, which moved into group X",
+          "d_pc": -0.003147482014388414,
+          "d_c": -7182,
+          "seed": [
+            "A:conf/vldb/ChaudhuriW00",
+            "B:671696"
+          ]
+        },
+        {
+          "step": 55,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB J."
+            }
+          ],
+          "n_moved": 6,
+          "note": "the condition matched 6 of the 64 records in group Y, which moved into group X",
+          "d_pc": 0.0022482014388488514,
+          "d_c": 120,
+          "seed": [
+            "B:765852",
+            "A:journals/vldb/AntoshenkovZ96"
+          ]
+        },
+        {
+          "step": 56,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB"
+            }
+          ],
+          "n_moved": 11,
+          "note": "the condition matched 11 of the 81 records in group Y, which moved into group X",
+          "d_pc": 0.0008992805755395628,
+          "d_c": -154,
+          "seed": [
+            "B:671496",
+            "A:conf/vldb/ChenCFGJMTW99"
+          ]
+        },
+        {
+          "step": 57,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB"
+            }
+          ],
+          "n_moved": 25,
+          "note": "the condition matched 25 of the 32 records in group Y, which moved into group X",
+          "d_pc": 0.004946043165467651,
+          "d_c": 4300,
+          "seed": [
+            "B:671358",
+            "A:conf/vldb/Kornacker99"
+          ]
+        },
+        {
+          "step": 58,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "C2P: Clustering based on Closest Pairs"
+            },
+            {
+              "field": "year",
+              "operator": "equals",
+              "value": "2001"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 160 records in group Y, which moved into group X",
+          "d_pc": 0.0004496402877698369,
+          "d_c": 7,
+          "seed": [
+            "A:conf/vldb/ManolopoulosT01",
+            "B:672358"
+          ]
+        },
+        {
+          "step": 59,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "The TreeScape System: Reuse of Pre-Computed Aggregates over Irregular OLAP Hierarchies"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 53 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": 152,
+          "seed": [
+            "B:671842",
+            "A:conf/vldb/PedersenJD00"
+          ]
+        },
+        {
+          "step": 60,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "equals",
+              "value": "VLDB J."
+            }
+          ],
+          "n_moved": 3,
+          "note": "the condition matched 3 of the 139 records in group Y, which moved into group X",
+          "d_pc": 0.0013489208633093996,
+          "d_c": 186,
+          "seed": [
+            "B:775454",
+            "A:journals/vldb/ShethTP03"
+          ]
+        },
+        {
+          "step": 61,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Merging Ranks from Heterogeneous Internet Sources"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 67 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": -6,
+          "seed": [
+            "A:conf/vldb/GravanoG97",
+            "B:670994"
+          ]
+        },
+        {
+          "step": 62,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "venue",
+              "operator": "contains",
+              "value": "The VLDB Journal"
+            }
+          ],
+          "n_moved": 117,
+          "note": "the condition matched 117 of the 201 records in group Y, which moved into group X",
+          "d_pc": -0.00044964028776972587,
+          "d_c": 1404,
+          "seed": [
+            "A:journals/vldb/KemperK95",
+            "B:615230"
+          ]
+        },
+        {
+          "step": 63,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "equals",
+              "value": "Evaluating Top-k Selection Queries"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 159 records in group Y, which moved into group X",
+          "d_pc": 0.00044964028776972587,
+          "d_c": -92,
+          "seed": [
+            "A:conf/vldb/ChaudhuriG99",
+            "B:671359"
+          ]
+        }
+      ],
+      "base_hits": 1519,
+      "base_c": 198708,
+      "rule_stats": {
+        "helped": 51,
+        "hurt": 11,
+        "inert": 3
+      },
+      "reach_hist": {
+        "1": 35,
+        ">20": 16,
+        "2-5": 5,
+        "6-20": 9
+      },
+      "book": {},
+      "local_recall": 0.2976190476190476,
+      "local_hits": 50,
+      "local_targets": 168
+    },
+    {
+      "variant": 0,
+      "cell": [
+        "reclin2",
+        "walmart-amazon"
+      ],
+      "instance_id": "val:reclin2:walmart-amazon:v0:0",
+      "score": 0.9390555383105542,
+      "d_pc": 0.036395147313691534,
+      "d_c_rel": -0.0011444409954441842,
+      "pc_before": 0.4861351819757366,
+      "pc_after": 0.5225303292894281,
+      "pairs_gained": 42,
+      "steps_run": 37,
+      "skipped": 0,
+      "parse_failures": 0,
+      "ops": {
+        "move_to_x": 36,
+        "move_to_y": 1
+      },
+      "curve": [
+        {
+          "k": 0,
+          "hits": 561,
+          "c": 318903,
+          "targets": 1,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 0,
+          "ltot": 45
+        },
+        {
+          "k": 1,
+          "hits": 562,
+          "c": 318891,
+          "targets": 2,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 0,
+          "ltot": 45
+        },
+        {
+          "k": 2,
+          "hits": 564,
+          "c": 318890,
+          "targets": 3,
+          "ops": [
+            "move_to_y"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 3,
+          "hits": 565,
+          "c": 318935,
+          "targets": 4,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 4,
+          "hits": 566,
+          "c": 318934,
+          "targets": 5,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 5,
+          "hits": 567,
+          "c": 318901,
+          "targets": 6,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 6,
+          "hits": 568,
+          "c": 318901,
+          "targets": 7,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 7,
+          "hits": 568,
+          "c": 318901,
+          "targets": 8,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 8,
+          "hits": 569,
+          "c": 318895,
+          "targets": 9,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 1,
+          "ltot": 45
+        },
+        {
+          "k": 9,
+          "hits": 571,
+          "c": 318892,
+          "targets": 10,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 2,
+          "ltot": 45
+        },
+        {
+          "k": 10,
+          "hits": 572,
+          "c": 318936,
+          "targets": 14,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 2,
+          "ltot": 45
+        },
+        {
+          "k": 11,
+          "hits": 573,
+          "c": 318929,
+          "targets": 15,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 2,
+          "ltot": 45
+        },
+        {
+          "k": 12,
+          "hits": 574,
+          "c": 318918,
+          "targets": 16,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 2,
+          "ltot": 45
+        },
+        {
+          "k": 13,
+          "hits": 576,
+          "c": 318658,
+          "targets": 18,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 3,
+          "ltot": 45
+        },
+        {
+          "k": 14,
+          "hits": 578,
+          "c": 318660,
+          "targets": 19,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 15,
+          "hits": 579,
+          "c": 318662,
+          "targets": 20,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 16,
+          "hits": 580,
+          "c": 318615,
+          "targets": 21,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 17,
+          "hits": 581,
+          "c": 318611,
+          "targets": 22,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 18,
+          "hits": 582,
+          "c": 318578,
+          "targets": 24,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 19,
+          "hits": 583,
+          "c": 318551,
+          "targets": 25,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 20,
+          "hits": 584,
+          "c": 318554,
+          "targets": 26,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 21,
+          "hits": 585,
+          "c": 318555,
+          "targets": 28,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 22,
+          "hits": 586,
+          "c": 318548,
+          "targets": 29,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 23,
+          "hits": 587,
+          "c": 318550,
+          "targets": 30,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 24,
+          "hits": 587,
+          "c": 318550,
+          "targets": 31,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 25,
+          "hits": 588,
+          "c": 318559,
+          "targets": 32,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 26,
+          "hits": 589,
+          "c": 318550,
+          "targets": 33,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 27,
+          "hits": 590,
+          "c": 318576,
+          "targets": 34,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 28,
+          "hits": 591,
+          "c": 318567,
+          "targets": 35,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 4,
+          "ltot": 45
+        },
+        {
+          "k": 29,
+          "hits": 593,
+          "c": 318567,
+          "targets": 36,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 5,
+          "ltot": 45
+        },
+        {
+          "k": 30,
+          "hits": 595,
+          "c": 318572,
+          "targets": 38,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 6,
+          "ltot": 45
+        },
+        {
+          "k": 31,
+          "hits": 596,
+          "c": 318573,
+          "targets": 39,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 6,
+          "ltot": 45
+        },
+        {
+          "k": 32,
+          "hits": 598,
+          "c": 318571,
+          "targets": 40,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 7,
+          "ltot": 45
+        },
+        {
+          "k": 33,
+          "hits": 599,
+          "c": 318595,
+          "targets": 41,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 7,
+          "ltot": 45
+        },
+        {
+          "k": 34,
+          "hits": 600,
+          "c": 318558,
+          "targets": 42,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 7,
+          "ltot": 45
+        },
+        {
+          "k": 35,
+          "hits": 601,
+          "c": 318572,
+          "targets": 44,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 7,
+          "ltot": 45
+        },
+        {
+          "k": 36,
+          "hits": 603,
+          "c": 318568,
+          "targets": 45,
+          "ops": [
+            "move_to_x"
+          ],
+          "lhits": 8,
+          "ltot": 45
+        }
+      ],
+      "exemplars": [
+        {
+          "step": 0,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "S041062"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 20 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": -30,
+          "seed": [
+            "B:7150",
+            "A:397"
+          ]
+        },
+        {
+          "step": 1,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "PF15.6W"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 16 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -12,
+          "seed": [
+            "A:851",
+            "B:8444"
+          ]
+        },
+        {
+          "step": 2,
+          "op": "move_to_y",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "11864"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group X, which moved into group Y",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -1,
+          "seed": [
+            "A:482",
+            "B:14854"
+          ]
+        },
+        {
+          "step": 3,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "57 3 4 x 77"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 3 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 45,
+          "seed": [
+            "A:54",
+            "B:17893"
+          ]
+        },
+        {
+          "step": 4,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "WAN-2140"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 9 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265165127,
+          "d_c": -1,
+          "seed": [
+            "A:164",
+            "B:124"
+          ]
+        },
+        {
+          "step": 5,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "GB01959"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 48 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -33,
+          "seed": [
+            "A:1535",
+            "B:1091"
+          ]
+        },
+        {
+          "step": 6,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Container of 24"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 2 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 0,
+          "seed": [
+            "A:578",
+            "B:19368"
+          ]
+        },
+        {
+          "step": 7,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "VMAX92UWV2"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "A:2543",
+            "B:6691"
+          ]
+        },
+        {
+          "step": 8,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "108R00657"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 13 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -6,
+          "seed": [
+            "B:20175",
+            "A:337"
+          ]
+        },
+        {
+          "step": 9,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "5029"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -3,
+          "seed": [
+            "B:4283",
+            "A:16"
+          ]
+        },
+        {
+          "step": 10,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "48434"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 37 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 44,
+          "seed": [
+            "B:17104",
+            "A:1700"
+          ]
+        },
+        {
+          "step": 11,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "TWIN2X4096-6400C5C"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -7,
+          "seed": [
+            "B:8520",
+            "A:325"
+          ]
+        },
+        {
+          "step": 12,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "35113"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 14 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265165127,
+          "d_c": -11,
+          "seed": [
+            "A:782",
+            "B:17484"
+          ]
+        },
+        {
+          "step": 13,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "contains",
+              "value": "M2810"
+            }
+          ],
+          "n_moved": 4,
+          "note": "the condition matched 4 of the 74 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -260,
+          "seed": [
+            "A:1154",
+            "B:13246"
+          ]
+        },
+        {
+          "step": 14,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "ACDSee Pro 4"
+            },
+            {
+              "field": "brand",
+              "operator": "contains",
+              "value": "ACD"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 1 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": 2,
+          "seed": [
+            "B:18429",
+            "A:1234"
+          ]
+        },
+        {
+          "step": 15,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "HD7102"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 2 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 2,
+          "seed": [
+            "B:10274",
+            "A:661"
+          ]
+        },
+        {
+          "step": 16,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "TS-A1684R"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 50 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -47,
+          "seed": [
+            "A:2073",
+            "B:4160"
+          ]
+        },
+        {
+          "step": 17,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "30272"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -4,
+          "seed": [
+            "A:1306",
+            "B:2559"
+          ]
+        },
+        {
+          "step": 18,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "27651"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 48 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -33,
+          "seed": [
+            "B:18154",
+            "A:1179"
+          ]
+        },
+        {
+          "step": 19,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "GC23073"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 47 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -27,
+          "seed": [
+            "B:9086",
+            "A:1139"
+          ]
+        },
+        {
+          "step": 20,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "108R00645"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 10 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 3,
+          "seed": [
+            "A:262",
+            "B:5193"
+          ]
+        },
+        {
+          "step": 21,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "upc",
+              "operator": "equals",
+              "value": "0007891021402"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 27 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265165682,
+          "d_c": 1,
+          "seed": [
+            "B:16667",
+            "A:1507"
+          ]
+        },
+        {
+          "step": 22,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "KFC-6993PS"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 10 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -7,
+          "seed": [
+            "A:1944",
+            "B:15781"
+          ]
+        },
+        {
+          "step": 23,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "DC6250"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 3 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 2,
+          "seed": [
+            "A:1844",
+            "B:4901"
+          ]
+        },
+        {
+          "step": 24,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "shipweight",
+              "operator": "equals",
+              "value": "115.0"
+            },
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Dual Vision"
+            }
+          ],
+          "n_moved": 0,
+          "note": "the condition matched 0 of the 23 records in group Y, which moved into group X",
+          "d_pc": 0.0,
+          "d_c": 0,
+          "seed": [
+            "A:933",
+            "B:2814"
+          ]
+        },
+        {
+          "step": 25,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "LJDFF2GBASBNA"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 9,
+          "seed": [
+            "B:21326",
+            "A:1864"
+          ]
+        },
+        {
+          "step": 26,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "108R00676"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 13 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -9,
+          "seed": [
+            "B:18143",
+            "A:1008"
+          ]
+        },
+        {
+          "step": 27,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Joining Clamp"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 4 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 26,
+          "seed": [
+            "A:560",
+            "B:20714"
+          ]
+        },
+        {
+          "step": 28,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "regex",
+              "value": "1EN5\\.?019\\.?02"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 11 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": -9,
+          "seed": [
+            "A:1110",
+            "B:8092"
+          ]
+        },
+        {
+          "step": 29,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "AK-334"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 3 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": 0,
+          "seed": [
+            "A:454",
+            "B:4893"
+          ]
+        },
+        {
+          "step": 30,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "ICC1112CLR"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 2 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": 5,
+          "seed": [
+            "B:19032",
+            "A:247"
+          ]
+        },
+        {
+          "step": 31,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "IT4LO-BLU/BLK"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 6 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 1,
+          "seed": [
+            "A:1045",
+            "B:3010"
+          ]
+        },
+        {
+          "step": 32,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "ANT 9DBI"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 5 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -2,
+          "seed": [
+            "B:17367",
+            "A:2197"
+          ]
+        },
+        {
+          "step": 33,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "modelno",
+              "operator": "equals",
+              "value": "VX401"
+            }
+          ],
+          "n_moved": 2,
+          "note": "the condition matched 2 of the 5 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 24,
+          "seed": [
+            "B:13935",
+            "A:2143"
+          ]
+        },
+        {
+          "step": 34,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "TE0046AC"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 40 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265165682,
+          "d_c": -37,
+          "seed": [
+            "A:2211",
+            "B:16561"
+          ]
+        },
+        {
+          "step": 35,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "Fire Red"
+            },
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "17"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group Y, which moved into group X",
+          "d_pc": 0.0008665511265164572,
+          "d_c": 14,
+          "seed": [
+            "A:1530",
+            "B:1442"
+          ]
+        },
+        {
+          "step": 36,
+          "op": "move_to_x",
+          "model_op": null,
+          "predicate": [
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "ProShot"
+            },
+            {
+              "field": "title",
+              "operator": "contains",
+              "value": "4GB"
+            }
+          ],
+          "n_moved": 1,
+          "note": "the condition matched 1 of the 7 records in group Y, which moved into group X",
+          "d_pc": 0.0017331022530329143,
+          "d_c": -4,
+          "seed": [
+            "B:9165",
+            "A:57"
+          ]
+        }
+      ],
+      "base_hits": 561,
+      "base_c": 318933,
+      "rule_stats": {
+        "helped": 34,
+        "hurt": 0,
+        "inert": 3
+      },
+      "reach_hist": {
+        "2-5": 4,
+        "1": 31,
+        "0": 2
+      },
+      "book": {},
+      "local_recall": 0.17777777777777778,
+      "local_hits": 8,
+      "local_targets": 45
+    }
+  ],
+  "runtime_s": 1239.9
+}

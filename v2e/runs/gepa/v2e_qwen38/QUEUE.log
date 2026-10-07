@@ -1,0 +1,484 @@
+2026-09-26 16:07:54 queue starting, 3 jobs
+2026-09-26 16:07:54 server pin: version={"version":"0.33.2"}
+2026-09-26 16:07:54 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-03T15:05:24.717057534-04:00","size_vram":18918869558,"context_length":184
+2026-09-26 16:07:54 waiting: another v2.py is running (0s)
+2026-09-26 16:17:55 waiting: another v2.py is running (600s)
+2026-09-26 16:27:55 waiting: another v2.py is running (1200s)
+2026-09-26 16:37:56 waiting: another v2.py is running (1800s)
+2026-09-26 16:47:56 waiting: another v2.py is running (2400s)
+2026-09-26 16:57:56 waiting: another v2.py is running (3000s)
+2026-09-26 17:07:57 waiting: another v2.py is running (3600s)
+2026-09-26 17:17:57 waiting: another v2.py is running (4200s)
+2026-09-26 17:27:57 waiting: another v2.py is running (4800s)
+2026-09-26 17:37:58 waiting: another v2.py is running (5400s)
+2026-09-26 17:47:58 waiting: another v2.py is running (6000s)
+2026-09-26 17:57:59 waiting: another v2.py is running (6600s)
+2026-09-26 18:07:59 waiting: another v2.py is running (7200s)
+2026-09-26 18:17:59 waiting: another v2.py is running (7800s)
+2026-09-26 18:28:00 waiting: another v2.py is running (8400s)
+2026-09-26 18:38:00 waiting: another v2.py is running (9000s)
+2026-09-26 18:48:01 waiting: another v2.py is running (9600s)
+2026-09-26 18:58:01 waiting: another v2.py is running (10200s)
+2026-09-26 19:08:01 waiting: another v2.py is running (10800s)
+2026-09-26 19:18:02 waiting: another v2.py is running (11400s)
+2026-09-26 19:28:02 waiting: another v2.py is running (12000s)
+2026-09-26 19:38:03 waiting: another v2.py is running (12600s)
+2026-09-26 19:48:03 waiting: another v2.py is running (13200s)
+2026-09-26 19:58:03 waiting: another v2.py is running (13800s)
+2026-09-26 20:08:04 waiting: another v2.py is running (14400s)
+2026-09-26 20:18:04 waiting: another v2.py is running (15000s)
+2026-09-26 20:28:05 waiting: another v2.py is running (15600s)
+2026-09-26 20:38:05 waiting: another v2.py is running (16200s)
+2026-09-26 20:48:05 waiting: another v2.py is running (16800s)
+2026-09-26 20:58:06 waiting: another v2.py is running (17400s)
+2026-09-26 21:08:06 waiting: another v2.py is running (18000s)
+2026-09-26 21:18:07 waiting: another v2.py is running (18600s)
+2026-09-26 21:28:07 waiting: another v2.py is running (19200s)
+2026-09-26 21:38:07 waiting: another v2.py is running (19800s)
+2026-09-26 21:48:08 waiting: another v2.py is running (20400s)
+2026-09-26 21:58:08 waiting: another v2.py is running (21000s)
+2026-09-26 22:08:08 waiting: another v2.py is running (21600s)
+2026-09-26 22:18:09 waiting: another v2.py is running (22200s)
+2026-09-26 22:28:09 waiting: another v2.py is running (22800s)
+2026-09-26 22:38:10 waiting: another v2.py is running (23400s)
+2026-09-26 22:48:10 waiting: another v2.py is running (24000s)
+2026-09-26 22:58:10 waiting: another v2.py is running (24600s)
+2026-09-26 23:08:11 waiting: another v2.py is running (25200s)
+2026-09-26 23:18:11 waiting: another v2.py is running (25800s)
+2026-09-26 23:28:12 waiting: another v2.py is running (26400s)
+2026-09-26 23:38:12 waiting: another v2.py is running (27000s)
+2026-09-26 23:48:12 waiting: another v2.py is running (27600s)
+2026-09-26 23:58:13 waiting: another v2.py is running (28200s)
+2026-09-27 00:08:13 waiting: another v2.py is running (28800s)
+2026-09-27 00:18:14 waiting: another v2.py is running (29400s)
+2026-09-27 00:28:14 waiting: another v2.py is running (30000s)
+2026-09-27 00:38:14 waiting: another v2.py is running (30600s)
+2026-09-27 00:48:15 waiting: another v2.py is running (31200s)
+2026-09-27 00:58:15 waiting: another v2.py is running (31800s)
+2026-09-27 01:08:16 waiting: another v2.py is running (32400s)
+2026-09-27 01:18:16 waiting: another v2.py is running (33000s)
+2026-09-27 01:28:16 waiting: another v2.py is running (33600s)
+2026-09-27 01:38:17 waiting: another v2.py is running (34200s)
+2026-09-27 01:48:17 waiting: another v2.py is running (34800s)
+2026-09-27 01:58:18 waiting: another v2.py is running (35400s)
+2026-09-27 02:08:18 waiting: another v2.py is running (36000s)
+2026-09-27 02:18:18 waiting: another v2.py is running (36600s)
+2026-09-27 02:28:19 waiting: another v2.py is running (37200s)
+2026-09-27 02:38:19 waiting: another v2.py is running (37800s)
+2026-09-27 02:48:19 waiting: another v2.py is running (38400s)
+2026-09-27 02:58:20 waiting: another v2.py is running (39000s)
+2026-09-27 03:08:20 waiting: another v2.py is running (39600s)
+2026-09-27 03:18:21 waiting: another v2.py is running (40200s)
+2026-09-27 03:28:21 waiting: another v2.py is running (40800s)
+2026-09-27 03:38:21 waiting: another v2.py is running (41400s)
+2026-09-27 03:48:22 waiting: another v2.py is running (42000s)
+2026-09-27 03:58:22 waiting: another v2.py is running (42600s)
+2026-09-27 04:08:23 waiting: another v2.py is running (43200s)
+2026-09-27 04:18:23 waiting: another v2.py is running (43800s)
+2026-09-27 04:28:23 waiting: another v2.py is running (44400s)
+2026-09-27 04:38:24 waiting: another v2.py is running (45000s)
+2026-09-27 04:48:24 waiting: another v2.py is running (45600s)
+2026-09-27 04:58:25 waiting: another v2.py is running (46200s)
+2026-09-27 05:08:25 waiting: another v2.py is running (46800s)
+2026-09-27 05:18:25 waiting: another v2.py is running (47400s)
+2026-09-27 05:28:26 waiting: another v2.py is running (48000s)
+2026-09-27 05:38:27 waiting: another v2.py is running (48600s)
+2026-09-27 05:48:27 waiting: another v2.py is running (49200s)
+2026-09-27 05:58:28 waiting: another v2.py is running (49800s)
+2026-09-27 06:08:28 waiting: another v2.py is running (50400s)
+2026-09-27 06:18:28 waiting: another v2.py is running (51000s)
+2026-09-27 06:28:29 waiting: another v2.py is running (51600s)
+2026-09-27 06:38:29 waiting: another v2.py is running (52200s)
+2026-09-27 06:48:30 waiting: another v2.py is running (52800s)
+2026-09-27 06:58:30 waiting: another v2.py is running (53400s)
+2026-09-27 07:08:30 waiting: another v2.py is running (54000s)
+2026-09-27 07:18:31 waiting: another v2.py is running (54600s)
+2026-09-27 07:28:31 waiting: another v2.py is running (55200s)
+2026-09-27 07:38:32 waiting: another v2.py is running (55800s)
+2026-09-27 07:48:32 waiting: another v2.py is running (56400s)
+2026-09-27 07:58:32 waiting: another v2.py is running (57000s)
+2026-09-27 08:08:33 waiting: another v2.py is running (57600s)
+2026-09-27 08:18:33 waiting: another v2.py is running (58200s)
+2026-09-27 08:28:34 waiting: another v2.py is running (58800s)
+2026-09-27 08:38:34 waiting: another v2.py is running (59400s)
+2026-09-27 08:48:34 waiting: another v2.py is running (60000s)
+2026-09-27 08:58:35 waiting: another v2.py is running (60600s)
+2026-09-27 09:08:35 waiting: another v2.py is running (61200s)
+2026-09-27 09:18:36 waiting: another v2.py is running (61800s)
+2026-09-27 09:28:36 waiting: another v2.py is running (62400s)
+2026-09-27 09:38:36 waiting: another v2.py is running (63000s)
+2026-09-27 09:48:37 waiting: another v2.py is running (63600s)
+2026-09-27 09:58:37 waiting: another v2.py is running (64200s)
+2026-09-27 10:08:38 waiting: another v2.py is running (64800s)
+2026-09-27 10:18:38 waiting: another v2.py is running (65400s)
+2026-09-27 10:28:38 waiting: another v2.py is running (66000s)
+2026-09-27 10:38:39 waiting: another v2.py is running (66600s)
+2026-09-27 10:48:39 waiting: another v2.py is running (67200s)
+2026-09-27 10:58:39 waiting: another v2.py is running (67800s)
+2026-09-27 11:08:40 waiting: another v2.py is running (68400s)
+2026-09-27 11:18:40 waiting: another v2.py is running (69000s)
+2026-09-27 11:28:41 waiting: another v2.py is running (69600s)
+2026-09-27 11:38:41 waiting: another v2.py is running (70200s)
+2026-09-27 11:48:41 waiting: another v2.py is running (70800s)
+2026-09-27 11:58:42 waiting: another v2.py is running (71400s)
+2026-09-27 12:08:42 waiting: another v2.py is running (72000s)
+2026-09-27 12:18:43 waiting: another v2.py is running (72600s)
+2026-09-27 12:28:43 waiting: another v2.py is running (73200s)
+2026-09-27 12:38:43 waiting: another v2.py is running (73800s)
+2026-09-27 12:48:44 waiting: another v2.py is running (74400s)
+2026-09-27 12:58:44 waiting: another v2.py is running (75000s)
+2026-09-27 13:08:45 waiting: another v2.py is running (75600s)
+2026-09-27 13:18:45 waiting: another v2.py is running (76200s)
+2026-09-27 13:28:45 waiting: another v2.py is running (76800s)
+2026-09-27 13:38:46 waiting: another v2.py is running (77400s)
+2026-09-27 13:48:46 waiting: another v2.py is running (78000s)
+2026-09-27 13:58:47 waiting: another v2.py is running (78600s)
+2026-09-27 14:08:47 waiting: another v2.py is running (79200s)
+2026-09-27 14:18:47 waiting: another v2.py is running (79800s)
+2026-09-27 14:28:48 waiting: another v2.py is running (80400s)
+2026-09-27 14:38:48 waiting: another v2.py is running (81000s)
+2026-09-27 14:48:49 waiting: another v2.py is running (81600s)
+2026-09-27 14:58:49 waiting: another v2.py is running (82200s)
+2026-09-27 15:08:49 waiting: another v2.py is running (82800s)
+2026-09-27 15:18:50 waiting: another v2.py is running (83400s)
+2026-09-27 15:28:50 waiting: another v2.py is running (84000s)
+2026-09-27 15:38:51 waiting: another v2.py is running (84600s)
+2026-09-27 15:48:51 waiting: another v2.py is running (85200s)
+2026-09-27 15:58:51 waiting: another v2.py is running (85800s)
+2026-09-27 16:08:52 waiting: another v2.py is running (86400s)
+2026-09-27 16:18:52 waiting: another v2.py is running (87000s)
+2026-09-27 16:28:53 waiting: another v2.py is running (87600s)
+2026-09-27 16:38:53 waiting: another v2.py is running (88200s)
+2026-09-27 16:46:53 START 10_cand7_k32_random
+2026-09-27 20:23:14 DONE  10_cand7_k32_random
+2026-09-27 20:23:14 START 20_e2b_small_first
+2026-09-27 23:59:44 DONE  20_e2b_small_first
+2026-09-27 23:59:44 START 21_e2b_large_first
+2026-09-28 03:41:02 DONE  21_e2b_large_first
+2026-09-28 03:41:02 queue complete
+2026-09-28 12:05:29 [chain] runner gone with jobs pending; relaunching
+2026-09-28 12:05:29 queue starting, 6 jobs
+2026-09-28 12:05:29 server pin: version={"version":"0.33.2"}
+2026-09-28 12:05:29 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-05T12:02:48.712710037-04:00","size_vram":18918869558,"context_length":184
+2026-09-28 12:05:29 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-28 12:05:29 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-28 12:05:29 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-28 12:05:29 START 30_e6b_move_to_x
+2026-09-28 14:54:49 queue starting, 20 jobs
+2026-09-28 14:54:49 server pin: version={"version":"0.33.2"}
+2026-09-28 14:54:49 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-05T12:02:48.712710037-04:00","size_vram":18918869558,"context_length":184
+2026-09-28 14:54:49 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-28 14:54:49 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-28 14:54:49 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-28 14:54:49 waiting: another v2.py is running (0s)
+2026-09-28 15:38:00 DONE  30_e6b_move_to_x
+2026-09-28 15:38:00 START 31_e6b_move_to_y
+2026-09-28 18:55:31 DONE  31_e6b_move_to_y
+2026-09-28 18:55:31 START 32_e6b_new_block
+2026-09-28 21:57:03 DONE  32_e6b_new_block
+2026-09-28 21:57:03 skip 32_e6b_new_block (done 2026-09-28 21:57:03)
+2026-09-28 21:57:03 START 32_e6b_new_block
+2026-09-29 00:58:39 DONE  32_e6b_new_block
+2026-09-29 01:00:14 [chain] runner gone with jobs pending; relaunching
+2026-09-29 01:00:14 queue starting, 20 jobs
+2026-09-29 01:00:14 server pin: version={"version":"0.33.2"}
+2026-09-29 01:00:14 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-06T00:58:39.150422113-04:00","size_vram":18918869558,"context_length":184
+2026-09-29 01:00:14 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-29 01:00:14 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-29 01:00:14 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-29 01:00:14 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-29 01:00:14 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-29 01:00:14 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-29 01:00:14 START 41_best_mistral-small3_2_24b
+2026-09-29 05:27:14 FAIL  41_best_mistral-small3_2_24b rc=1 -- stopping the queue rather than running
+2026-09-29 05:27:14       the next arm against an unknown state
+2026-09-29 05:28:49 [chain] runner gone with jobs pending; relaunching
+2026-09-29 05:28:49 queue starting, 20 jobs
+2026-09-29 05:28:50 server pin: version={"version":"0.33.2"}
+2026-09-29 05:28:50 server pin: ps={"models":[{"name":"mistral-small3.2:24b","model":"mistral-small3.2:24b","size":90147051643,"digest":"5a408ab55df5c1b5cf46533c368813b30bf9e4d8fc39263bf2a3338cfa3b895b","details":{"parent_model":"","format":"gguf","family":"mistral3","families":["mistral3"],"parameter_size":"24.0B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-06T05:27:13.831791981-04:00","size_vram":65168044193,"context_len
+2026-09-29 05:28:50 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-29 05:28:50 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-29 05:28:50 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-29 05:28:50 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-29 05:28:50 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-29 05:28:50 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-29 05:28:50 START 41_best_mistral-small3_2_24b
+2026-09-29 10:12:00 FAIL  41_best_mistral-small3_2_24b rc=1 -- stopping the queue rather than running
+2026-09-29 10:12:00       the next arm against an unknown state
+2026-09-29 10:13:26 [chain] runner gone with jobs pending; relaunching
+2026-09-29 10:13:26 queue starting, 20 jobs
+2026-09-29 10:13:26 server pin: version={"version":"0.33.2"}
+2026-09-29 10:13:26 server pin: ps={"models":[{"name":"mistral-small3.2:24b","model":"mistral-small3.2:24b","size":90147051643,"digest":"5a408ab55df5c1b5cf46533c368813b30bf9e4d8fc39263bf2a3338cfa3b895b","details":{"parent_model":"","format":"gguf","family":"mistral3","families":["mistral3"],"parameter_size":"24.0B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-06T10:12:00.073617193-04:00","size_vram":65168044193,"context_len
+2026-09-29 10:13:26 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-29 10:13:26 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-29 10:13:26 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-29 10:13:26 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-29 10:13:26 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-29 10:13:26 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-29 10:13:26 START 41_best_mistral-small3_2_24b
+2026-09-29 17:17:22 FAIL  41_best_mistral-small3_2_24b rc=1 -- stopping the queue rather than running
+2026-09-29 17:17:22       the next arm against an unknown state
+2026-09-29 17:18:05 [chain] runner gone with jobs pending; relaunching
+2026-09-29 17:18:05 queue starting, 20 jobs
+2026-09-29 17:18:05 server pin: version={"version":"0.33.2"}
+2026-09-29 17:18:05 server pin: ps={"models":[{"name":"mistral-small3.2:24b","model":"mistral-small3.2:24b","size":90147051643,"digest":"5a408ab55df5c1b5cf46533c368813b30bf9e4d8fc39263bf2a3338cfa3b895b","details":{"parent_model":"","format":"gguf","family":"mistral3","families":["mistral3"],"parameter_size":"24.0B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-06T17:17:22.292699122-04:00","size_vram":65168044193,"context_len
+2026-09-29 17:18:05 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-29 17:18:05 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-29 17:18:05 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-29 17:18:05 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-29 17:18:05 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-29 17:18:05 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-29 17:18:05 START 41_best_mistral-small3_2_24b
+2026-09-30 00:16:12 FAIL  41_best_mistral-small3_2_24b rc=1 -- stopping the queue rather than running
+2026-09-30 00:16:12       the next arm against an unknown state
+2026-09-30 00:16:44 [chain] runner gone with jobs pending; relaunching
+2026-09-30 00:16:44 queue starting, 20 jobs
+2026-09-30 00:16:44 server pin: version={"version":"0.33.2"}
+2026-09-30 00:16:44 server pin: ps={"models":[{"name":"mistral-small3.2:24b","model":"mistral-small3.2:24b","size":90147051643,"digest":"5a408ab55df5c1b5cf46533c368813b30bf9e4d8fc39263bf2a3338cfa3b895b","details":{"parent_model":"","format":"gguf","family":"mistral3","families":["mistral3"],"parameter_size":"24.0B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-07T00:16:12.512069893-04:00","size_vram":65168044193,"context_len
+2026-09-30 00:16:44 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-30 00:16:44 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-30 00:16:44 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-30 00:16:44 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-30 00:16:44 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-30 00:16:44 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-30 00:16:44 START 41_best_mistral-small3_2_24b
+2026-09-30 03:19:01 queue starting, 20 jobs
+2026-09-30 03:19:01 server pin: version={"version":"0.33.2"}
+2026-09-30 03:19:01 server pin: ps={"models":[]}
+2026-09-30 03:19:01 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-30 03:19:01 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-30 03:19:01 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-30 03:19:01 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-30 03:19:01 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-30 03:19:01 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-30 03:19:02 START 41_best_mistral-small3_2_24b
+2026-09-30 10:27:32 FAIL  41_best_mistral-small3_2_24b rc=1 -- stopping the queue rather than running
+2026-09-30 10:27:32       the next arm against an unknown state
+2026-09-30 10:29:10 [chain] a job failed (41_best_mistral-small3_2_24b failed at 2026-09-30 10:27:32 rc=1); not relaunching.
+2026-09-30 10:29:10 [chain] clear q/QUEUE_FAILED once the cause is fixed.
+2026-09-30 14:55:45 queue starting, 20 jobs
+2026-09-30 14:55:45 server pin: version={"version":"0.33.2"}
+2026-09-30 14:55:45 server pin: ps={"models":[{"name":"mistral-small3.2:24b","model":"mistral-small3.2:24b","size":90147051643,"digest":"5a408ab55df5c1b5cf46533c368813b30bf9e4d8fc39263bf2a3338cfa3b895b","details":{"parent_model":"","format":"gguf","family":"mistral3","families":["mistral3"],"parameter_size":"24.0B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-07T10:27:32.46161894-04:00","size_vram":65168044193,"context_leng
+2026-09-30 14:55:45 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-30 14:55:45 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-30 14:55:45 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-30 14:55:45 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-30 14:55:45 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-30 14:55:45 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-30 14:55:45 START 41_best_mistral-small3_2_24b
+2026-09-30 15:44:56 queue starting, 18 jobs
+2026-09-30 15:44:58 server pin: version={"version":"0.33.2"}
+2026-09-30 15:44:58 server pin: ps={"models":[]}
+2026-09-30 15:44:58 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-30 15:44:58 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-30 15:44:58 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-30 15:44:58 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-30 15:44:58 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-30 15:44:58 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-30 15:44:58 START 42_best_gemma4_26b
+2026-09-30 19:23:48 queue starting, 18 jobs
+2026-09-30 19:23:48 server pin: version={"version":"0.33.2"}
+2026-09-30 19:23:48 server pin: ps={"models":[{"name":"gemma4:26b","model":"gemma4:26b","size":34528968044,"digest":"5571076f3d70050487b26b341705799e0ab29b808164f90d20d4cf84f699d251","details":{"parent_model":"","format":"gguf","family":"gemma4","families":["gemma4"],"parameter_size":"25.8B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-07T19:23:17.36496375-04:00","size_vram":34528968044,"context_length":18432}]}
+2026-09-30 19:23:48 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-09-30 19:23:48 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-09-30 19:23:48 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-09-30 19:23:48 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-09-30 19:23:48 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-09-30 19:23:48 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-09-30 19:23:48 START 42_best_gemma4_26b
+2026-10-01 01:42:13 DONE  42_best_gemma4_26b
+2026-10-01 01:42:13 START 42_seed_gemma4_26b
+2026-10-01 06:06:15 DONE  42_seed_gemma4_26b
+2026-10-01 06:06:16 START 43_best_llama3_1_8b
+2026-10-01 07:05:46 DONE  43_best_llama3_1_8b
+2026-10-01 07:05:46 START 43_seed_llama3_1_8b
+2026-10-01 08:04:11 DONE  43_seed_llama3_1_8b
+2026-10-01 08:04:11 START 44_best_qwen3_6_27b
+2026-10-01 10:26:56 DONE  44_best_qwen3_6_27b
+2026-10-01 10:26:56 START 44_seed_qwen3_6_27b
+2026-10-01 13:33:02 DONE  44_seed_qwen3_6_27b
+2026-10-01 13:33:02 START 54_build_pc45
+2026-10-01 13:33:04 DONE  54_build_pc45
+2026-10-01 13:33:05 START 55_e5_pc45_seed
+2026-10-01 13:33:05 FAIL  55_e5_pc45_seed rc=1 -- stopping the queue rather than running
+2026-10-01 13:33:05       the next arm against an unknown state
+2026-10-01 13:33:18 [chain] a job failed (55_e5_pc45_seed failed at 2026-10-01 13:33:05 rc=1); not relaunching.
+2026-10-01 13:33:18 [chain] clear q/QUEUE_FAILED once the cause is fixed.
+2026-10-01 18:33:21 queue starting, 18 jobs
+2026-10-01 18:33:21 server pin: version={"version":"0.33.2"}
+2026-10-01 18:33:21 server pin: ps={"models":[{"name":"qwen3.6:27b","model":"qwen3.6:27b","size":17426295028,"digest":"a50eda8ed977ab48a12431878896b27ffd5cef552c17af3317d9623b939a7f1e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.8B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-08T13:33:01.633740894-04:00","size_vram":17426295028,"context_length":18432}]}
+2026-10-01 18:33:21 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-10-01 18:33:21 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-10-01 18:33:21 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-10-01 18:33:21 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-10-01 18:33:21 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-10-01 18:33:21 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-10-01 18:33:21 skip 42_best_gemma4_26b (done 2026-10-01 01:42:13)
+2026-10-01 18:33:21 skip 42_seed_gemma4_26b (done 2026-10-01 06:06:15)
+2026-10-01 18:33:21 skip 43_best_llama3_1_8b (done 2026-10-01 07:05:46)
+2026-10-01 18:33:21 skip 43_seed_llama3_1_8b (done 2026-10-01 08:04:11)
+2026-10-01 18:33:21 skip 44_best_qwen3_6_27b (done 2026-10-01 10:26:56)
+2026-10-01 18:33:21 skip 44_seed_qwen3_6_27b (done 2026-10-01 13:33:01)
+2026-10-01 18:33:21 START 54_build_pc45
+2026-10-01 18:35:36 DONE  54_build_pc45
+2026-10-01 18:35:36 START 55_e5_pc45_seed
+2026-10-01 18:55:19 DONE  55_e5_pc45_seed
+2026-10-01 18:55:19 START 56_e5_pc45_best
+2026-10-01 19:32:35 DONE  56_e5_pc45_best
+2026-10-01 19:32:35 START 57_build_pc75
+2026-10-01 19:33:26 DONE  57_build_pc75
+2026-10-01 19:33:26 START 58_e5_pc75_seed
+2026-10-01 20:03:14 DONE  58_e5_pc75_seed
+2026-10-01 20:03:14 START 59_e5_pc75_best
+2026-10-01 20:46:44 DONE  59_e5_pc75_best
+2026-10-01 20:46:44 queue complete
+2026-10-01 20:48:17 [chain] no pending jobs; chain exiting
+2026-10-02 17:53:50 queue starting, 20 jobs
+2026-10-02 17:53:50 server pin: version={"version":"0.33.2"}
+2026-10-02 17:53:50 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-08T20:46:44.229010988-04:00","size_vram":18918869558,"context_length":184
+2026-10-02 17:53:50 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-10-02 17:53:50 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-10-02 17:53:50 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-10-02 17:53:50 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-10-02 17:53:50 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-10-02 17:53:50 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-10-02 17:53:50 skip 42_best_gemma4_26b (done 2026-10-01 01:42:13)
+2026-10-02 17:53:50 skip 42_seed_gemma4_26b (done 2026-10-01 06:06:15)
+2026-10-02 17:53:50 skip 43_best_llama3_1_8b (done 2026-10-01 07:05:46)
+2026-10-02 17:53:50 skip 43_seed_llama3_1_8b (done 2026-10-01 08:04:11)
+2026-10-02 17:53:50 skip 44_best_qwen3_6_27b (done 2026-10-01 10:26:56)
+2026-10-02 17:53:50 skip 44_seed_qwen3_6_27b (done 2026-10-01 13:33:01)
+2026-10-02 17:53:50 skip 54_build_pc45 (done 2026-10-01 18:35:36)
+2026-10-02 17:53:50 skip 55_e5_pc45_seed (done 2026-10-01 18:55:19)
+2026-10-02 17:53:50 skip 56_e5_pc45_best (done 2026-10-01 19:32:35)
+2026-10-02 17:53:50 skip 57_build_pc75 (done 2026-10-01 19:33:26)
+2026-10-02 17:53:50 skip 58_e5_pc75_seed (done 2026-10-01 20:03:14)
+2026-10-02 17:53:50 skip 59_e5_pc75_best (done 2026-10-01 20:46:44)
+2026-10-02 17:53:50 START 60_noseed
+2026-10-04 01:11:36 DONE  60_noseed
+2026-10-04 01:11:36 START 61_seedsim
+2026-10-04 04:55:08 DONE  61_seedsim
+2026-10-04 04:55:08 queue complete
+2026-10-04 04:55:29 [chain] runner gone with jobs pending; relaunching
+2026-10-04 04:55:29 queue starting, 22 jobs
+2026-10-04 04:55:29 server pin: version={"version":"0.33.2"}
+2026-10-04 04:55:29 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-11T04:55:08.338577729-04:00","size_vram":18918869558,"context_length":184
+2026-10-04 04:55:29 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-10-04 04:55:29 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-10-04 04:55:29 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-10-04 04:55:29 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-10-04 04:55:29 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-10-04 04:55:29 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-10-04 04:55:29 skip 42_best_gemma4_26b (done 2026-10-01 01:42:13)
+2026-10-04 04:55:29 skip 42_seed_gemma4_26b (done 2026-10-01 06:06:15)
+2026-10-04 04:55:29 skip 43_best_llama3_1_8b (done 2026-10-01 07:05:46)
+2026-10-04 04:55:29 skip 43_seed_llama3_1_8b (done 2026-10-01 08:04:11)
+2026-10-04 04:55:29 skip 44_best_qwen3_6_27b (done 2026-10-01 10:26:56)
+2026-10-04 04:55:29 skip 44_seed_qwen3_6_27b (done 2026-10-01 13:33:01)
+2026-10-04 04:55:29 skip 54_build_pc45 (done 2026-10-01 18:35:36)
+2026-10-04 04:55:29 skip 55_e5_pc45_seed (done 2026-10-01 18:55:19)
+2026-10-04 04:55:29 skip 56_e5_pc45_best (done 2026-10-01 19:32:35)
+2026-10-04 04:55:29 skip 57_build_pc75 (done 2026-10-01 19:33:26)
+2026-10-04 04:55:29 skip 58_e5_pc75_seed (done 2026-10-01 20:03:14)
+2026-10-04 04:55:29 skip 59_e5_pc75_best (done 2026-10-01 20:46:44)
+2026-10-04 04:55:29 skip 60_noseed (done 2026-10-04 01:11:36)
+2026-10-04 04:55:29 skip 61_seedsim (done 2026-10-04 04:55:08)
+2026-10-04 04:55:29 START 70_2seed_similar
+2026-10-04 09:02:43 DONE  70_2seed_similar
+2026-10-04 09:02:43 START 71_2seed_different
+2026-10-04 12:59:21 DONE  71_2seed_different
+2026-10-04 12:59:21 queue complete
+2026-10-04 13:00:09 [chain] no pending jobs; chain exiting
+2026-10-04 20:19:47 queue starting, 22 jobs
+2026-10-04 20:19:47 server pin: version={"version":"0.33.2"}
+2026-10-04 20:19:47 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-11T12:59:20.892237474-04:00","size_vram":18918869558,"context_length":184
+2026-10-04 20:19:47 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-10-04 20:19:47 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-10-04 20:19:47 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-10-04 20:19:47 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-10-04 20:19:47 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-10-04 20:19:47 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-10-04 20:19:47 skip 42_best_gemma4_26b (done 2026-10-01 01:42:13)
+2026-10-04 20:19:47 skip 42_seed_gemma4_26b (done 2026-10-01 06:06:15)
+2026-10-04 20:19:47 skip 43_best_llama3_1_8b (done 2026-10-01 07:05:46)
+2026-10-04 20:19:47 skip 43_seed_llama3_1_8b (done 2026-10-01 08:04:11)
+2026-10-04 20:19:47 skip 44_best_qwen3_6_27b (done 2026-10-01 10:26:56)
+2026-10-04 20:19:47 skip 44_seed_qwen3_6_27b (done 2026-10-01 13:33:01)
+2026-10-04 20:19:47 skip 54_build_pc45 (done 2026-10-01 18:35:36)
+2026-10-04 20:19:47 skip 55_e5_pc45_seed (done 2026-10-01 18:55:19)
+2026-10-04 20:19:47 skip 56_e5_pc45_best (done 2026-10-01 19:32:35)
+2026-10-04 20:19:47 skip 57_build_pc75 (done 2026-10-01 19:33:26)
+2026-10-04 20:19:47 skip 58_e5_pc75_seed (done 2026-10-01 20:03:14)
+2026-10-04 20:19:47 skip 59_e5_pc75_best (done 2026-10-01 20:46:44)
+2026-10-04 20:19:47 skip 60_noseed (done 2026-10-04 01:11:36)
+2026-10-04 20:19:47 skip 61_seedsim (done 2026-10-04 04:55:08)
+2026-10-04 20:19:47 START 70_2seed_similar
+2026-10-05 00:27:01 DONE  70_2seed_similar
+2026-10-05 00:27:01 START 71_2seed_different
+2026-10-05 04:23:43 DONE  71_2seed_different
+2026-10-05 04:23:43 queue complete
+2026-10-05 04:25:37 [chain] no pending jobs; chain exiting
+2026-10-05 15:39:20 queue starting, 24 jobs
+2026-10-05 15:39:20 server pin: version={"version":"0.33.2"}
+2026-10-05 15:39:20 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-12T15:38:49.148715025-04:00","size_vram":18918869558,"context_length":184
+2026-10-05 15:39:20 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-10-05 15:39:20 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-10-05 15:39:20 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-10-05 15:39:20 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-10-05 15:39:20 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-10-05 15:39:20 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-10-05 15:39:20 skip 42_best_gemma4_26b (done 2026-10-01 01:42:13)
+2026-10-05 15:39:20 skip 42_seed_gemma4_26b (done 2026-10-01 06:06:15)
+2026-10-05 15:39:20 skip 43_best_llama3_1_8b (done 2026-10-01 07:05:46)
+2026-10-05 15:39:20 skip 43_seed_llama3_1_8b (done 2026-10-01 08:04:11)
+2026-10-05 15:39:20 skip 44_best_qwen3_6_27b (done 2026-10-01 10:26:56)
+2026-10-05 15:39:20 skip 44_seed_qwen3_6_27b (done 2026-10-01 13:33:01)
+2026-10-05 15:39:21 skip 54_build_pc45 (done 2026-10-01 18:35:36)
+2026-10-05 15:39:21 skip 55_e5_pc45_seed (done 2026-10-01 18:55:19)
+2026-10-05 15:39:21 skip 56_e5_pc45_best (done 2026-10-01 19:32:35)
+2026-10-05 15:39:21 skip 57_build_pc75 (done 2026-10-01 19:33:26)
+2026-10-05 15:39:21 skip 58_e5_pc75_seed (done 2026-10-01 20:03:14)
+2026-10-05 15:39:21 skip 59_e5_pc75_best (done 2026-10-01 20:46:44)
+2026-10-05 15:39:21 skip 60_noseed (done 2026-10-04 01:11:36)
+2026-10-05 15:39:21 skip 61_seedsim (done 2026-10-04 04:55:08)
+2026-10-05 15:39:21 skip 70_2seed_similar (done 2026-10-05 00:27:01)
+2026-10-05 15:39:21 skip 71_2seed_different (done 2026-10-05 04:23:43)
+2026-10-05 15:39:21 START 80_exhaustive_seed
+2026-10-05 18:49:29 DONE  80_exhaustive_seed
+2026-10-05 18:49:30 START 81_exhaustive_best
+2026-10-05 23:58:58 DONE  81_exhaustive_best
+2026-10-05 23:58:58 queue complete
+2026-10-06 00:00:23 [chain] no pending jobs; chain exiting
+2026-10-06 18:00:49 queue starting, 26 jobs
+2026-10-06 18:00:49 server pin: version={"version":"0.33.2"}
+2026-10-06 18:00:49 server pin: ps={"models":[{"name":"qwen3.8:27b-q4_K_M","model":"qwen3.8:27b-q4_K_M","size":18918869558,"digest":"25b843619e944cd0ae6069f94ff4e5e26a16e109ccbc0a66a0f05979ed70098e","details":{"parent_model":"","format":"gguf","family":"qwen35","families":["qwen35"],"parameter_size":"27.3B","quantization_level":"Q4_K_M"},"expires_at":"2026-10-12T23:58:58.389037257-04:00","size_vram":18918869558,"context_length":184
+2026-10-06 18:00:49 skip 10_cand7_k32_random (done 2026-09-27 20:23:14)
+2026-10-06 18:00:49 skip 20_e2b_small_first (done 2026-09-27 23:59:44)
+2026-10-06 18:00:49 skip 21_e2b_large_first (done 2026-09-28 03:41:02)
+2026-10-06 18:00:49 skip 30_e6b_move_to_x (done 2026-09-28 15:38:00)
+2026-10-06 18:00:49 skip 31_e6b_move_to_y (done 2026-09-28 18:55:31)
+2026-10-06 18:00:49 skip 32_e6b_new_block (done 2026-09-29 00:58:39)
+2026-10-06 18:00:49 skip 42_best_gemma4_26b (done 2026-10-01 01:42:13)
+2026-10-06 18:00:49 skip 42_seed_gemma4_26b (done 2026-10-01 06:06:15)
+2026-10-06 18:00:49 skip 43_best_llama3_1_8b (done 2026-10-01 07:05:46)
+2026-10-06 18:00:49 skip 43_seed_llama3_1_8b (done 2026-10-01 08:04:11)
+2026-10-06 18:00:49 skip 44_best_qwen3_6_27b (done 2026-10-01 10:26:56)
+2026-10-06 18:00:49 skip 44_seed_qwen3_6_27b (done 2026-10-01 13:33:01)
+2026-10-06 18:00:49 skip 54_build_pc45 (done 2026-10-01 18:35:36)
+2026-10-06 18:00:49 skip 55_e5_pc45_seed (done 2026-10-01 18:55:19)
+2026-10-06 18:00:49 skip 56_e5_pc45_best (done 2026-10-01 19:32:35)
+2026-10-06 18:00:49 skip 57_build_pc75 (done 2026-10-01 19:33:26)
+2026-10-06 18:00:49 skip 58_e5_pc75_seed (done 2026-10-01 20:03:14)
+2026-10-06 18:00:49 skip 59_e5_pc75_best (done 2026-10-01 20:46:44)
+2026-10-06 18:00:49 skip 60_noseed (done 2026-10-04 01:11:36)
+2026-10-06 18:00:49 skip 61_seedsim (done 2026-10-04 04:55:08)
+2026-10-06 18:00:49 skip 70_2seed_similar (done 2026-10-05 00:27:01)
+2026-10-06 18:00:49 skip 71_2seed_different (done 2026-10-05 04:23:43)
+2026-10-06 18:00:49 skip 80_exhaustive_seed (done 2026-10-05 18:49:29)
+2026-10-06 18:00:49 skip 81_exhaustive_best (done 2026-10-05 23:58:58)
+2026-10-06 18:00:49 START 90_exh_v1_seed
+2026-10-06 21:56:39 DONE  90_exh_v1_seed
+2026-10-06 21:56:39 START 91_exh_v1_best
+2026-10-07 02:34:26 DONE  91_exh_v1_best
+2026-10-07 02:34:26 queue complete
+2026-10-07 02:35:01 [chain] no pending jobs; chain exiting

@@ -1,0 +1,101 @@
+[excluded] lambdafold/amazon-google: 29 of 88 Case-3 block pairs (33%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/walmart-amazon: 85 of 86 Case-3 block pairs (99%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] lambdafold/dblp-scholar: 236 of 440 Case-3 block pairs (54%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] simcse/walmart-amazon: PC 0.207 outside [0.45, 0.8]
+[excluded] simcse/dblp-scholar: 120 of 259 Case-3 block pairs (46%) are too large for the context; keeping only the small ones would bias the cell
+[excluded] reclin2/dblp-acm: only 3 usable Case-3 block pairs (3 Case-3, 0 too large for the context)
+[excluded] klsh/amazon-google: PC 0.362 outside [0.45, 0.8]
+[excluded] klsh/walmart-amazon: PC 0.377 outside [0.45, 0.8]
+[excluded] klsh/abt-buy: PC 0.442 outside [0.45, 0.8]
+[excluded] klsh/dblp-scholar: 28 of 28 Case-3 block pairs (100%) are too large for the context; keeping only the small ones would bias the cell
+[panel] 40 instances, 24 workers
+v0 cora             dPC=+0.1422 d|C|=+26.00% pairs=+2443 ops={'move_to_y': 17, 'move_to_x': 11, 'none': 1}
+v0 amazon-google    dPC=+0.0323 d|C|=-0.28% pairs=+42 ops={'move_to_y': 21, 'move_to_x': 10}
+v0 cora             dPC=+0.0146 d|C|=-7.41% pairs=+251 ops={'move_to_x': 15, 'none': 2, 'move_to_y': 15}
+v0 cora             dPC=+0.0194 d|C|=-9.20% pairs=+333 ops={'move_to_x': 14, 'none': 3, 'move_to_y': 15}
+v0 cora             dPC=+0.0184 d|C|=-7.30% pairs=+316 ops={'none': 4, 'move_to_y': 14, 'move_to_x': 13}
+v0 dblp-acm         dPC=+0.0144 d|C|=-0.92% pairs=+32 ops={'move_to_y': 18, 'move_to_x': 14}
+v0 dblp-acm         dPC=+0.0045 d|C|=+2.67% pairs=+10 ops={'move_to_y': 20, 'move_to_x': 12}
+v0 dblp-acm         dPC=+0.0139 d|C|=-0.91% pairs=+31 ops={'move_to_y': 15, 'move_to_x': 17}
+v0 dblp-acm         dPC=+0.0139 d|C|=-1.28% pairs=+31 ops={'move_to_y': 18, 'move_to_x': 13, 'none': 1}
+v0 amazon-google    dPC=+0.0315 d|C|=-0.37% pairs=+41 ops={'move_to_y': 17, 'move_to_x': 14}
+v0 cora             dPC=+0.0918 d|C|=+18.11% pairs=+1577 ops={'move_to_x': 15, 'move_to_y': 7, 'none': 8}
+v0 amazon-google    dPC=+0.0362 d|C|=-0.30% pairs=+47 ops={'move_to_x': 15, 'move_to_y': 17}
+v0 amazon-google    dPC=+0.0292 d|C|=-1.68% pairs=+38 ops={'move_to_x': 16, 'move_to_y': 15}
+v0 amazon-google    dPC=+0.0338 d|C|=-0.32% pairs=+44 ops={'move_to_x': 14, 'move_to_y': 16}
+v0 cora             dPC=+0.0688 d|C|=+13.88% pairs=+1182 ops={'move_to_x': 13, 'none': 8, 'move_to_y': 11}
+v0 cora             dPC=+0.0142 d|C|=-17.26% pairs=+244 ops={'move_to_x': 11, 'none': 4, 'move_to_y': 17}
+v0 cora             dPC=+0.0932 d|C|=+19.83% pairs=+1602 ops={'move_to_y': 14, 'move_to_x': 13, 'none': 5}
+v0 dblp-acm         dPC=+0.0144 d|C|=-0.70% pairs=+32 ops={'move_to_y': 18, 'move_to_x': 14}
+v0 dblp-acm         dPC=+0.0144 d|C|=-1.15% pairs=+32 ops={'move_to_x': 18, 'move_to_y': 14}
+v0 amazon-google    dPC=+0.0254 d|C|=-2.35% pairs=+33 ops={'move_to_x': 19, 'move_to_y': 12}
+v0 amazon-google    dPC=+0.0338 d|C|=-3.20% pairs=+44 ops={'move_to_x': 15, 'move_to_y': 18}
+v0 amazon-google    dPC=+0.0323 d|C|=-2.24% pairs=+42 ops={'move_to_y': 12, 'move_to_x': 20}
+v0 dblp-acm         dPC=+0.0139 d|C|=-1.45% pairs=+31 ops={'move_to_y': 13, 'move_to_x': 19}
+v0 dblp-acm         dPC=+0.0148 d|C|=-1.24% pairs=+33 ops={'move_to_y': 14, 'move_to_x': 18}
+v0 cora             dPC=+0.0740 d|C|=+3.02% pairs=+1272 ops={'move_to_y': 17, 'move_to_x': 12, 'none': 1}
+v0 walmart-amazon   dPC=+0.0338 d|C|=-0.17% pairs=+39 ops={'move_to_x': 19, 'move_to_y': 12}
+v0 walmart-amazon   dPC=+0.0347 d|C|=-0.21% pairs=+40 ops={'move_to_x': 20, 'move_to_y': 11}
+v0 walmart-amazon   dPC=+0.0303 d|C|=-0.20% pairs=+35 ops={'move_to_y': 12, 'move_to_x': 19}
+v0 walmart-amazon   dPC=+0.0329 d|C|=-0.23% pairs=+38 ops={'move_to_x': 22, 'move_to_y': 10}
+v0 cora             dPC=+0.0073 d|C|=+1.01% pairs=+126 ops={'move_to_y': 18, 'move_to_x': 12, 'none': 2}
+v0 cora             dPC=+0.0101 d|C|=+1.48% pairs=+173 ops={'none': 4, 'move_to_x': 14, 'move_to_y': 14}
+v0 cora             dPC=+0.0093 d|C|=+1.28% pairs=+159 ops={'none': 4, 'move_to_x': 17, 'move_to_y': 11}
+v0 cora             dPC=+0.0095 d|C|=+0.40% pairs=+163 ops={'move_to_x': 17, 'move_to_y': 14, 'none': 1}
+v0 dblp-acm         dPC=+0.0135 d|C|=-0.85% pairs=+30 ops={'move_to_y': 20, 'move_to_x': 12}
+v0 dblp-acm         dPC=+0.0144 d|C|=-0.68% pairs=+32 ops={'move_to_x': 15, 'move_to_y': 17}
+v0 dblp-acm         dPC=+0.0144 d|C|=-0.42% pairs=+32 ops={'move_to_x': 13, 'move_to_y': 19}
+v0 dblp-acm         dPC=+0.0139 d|C|=-0.51% pairs=+31 ops={'move_to_x': 12, 'move_to_y': 20}
+v0 cora             dPC=+0.0200 d|C|=+3.10% pairs=+344 ops={'move_to_y': 17, 'move_to_x': 13, 'none': 2}
+v0 cora             dPC=+0.0125 d|C|=-3.90% pairs=+215 ops={'move_to_y': 12, 'move_to_x': 14, 'none': 6}
+v0 cora             dPC=+0.0717 d|C|=-0.48% pairs=+1232 ops={'move_to_x': 12, 'move_to_y': 20}
+{
+  "variants": 1,
+  "n_pairs_per_instance": 32,
+  "order": "random",
+  "per_cell": {
+    "klsh/cora": {
+      "d_pc_mean": 0.04456180167597765,
+      "d_pc_spread": 0.06151070763500932,
+      "d_c_rel_mean": 0.004362960137325959,
+      "pairs_gained_mean": 765.75,
+      "score_mean": 0.8036484980528326,
+      "n": 4
+    },
+    "klsh/dblp-acm": {
+      "d_pc_mean": 0.014051258992805737,
+      "d_pc_spread": 0.0008992805755396738,
+      "d_c_rel_mean": -0.006122694203922311,
+      "pairs_gained_mean": 31.25,
+      "score_mean": 0.6257533311594716,
+      "n": 4
+    },
+    "lambdafold/cora": {
+      "d_pc_mean": 0.016643389199255107,
+      "d_pc_spread": 0.005179236499068929,
+      "d_c_rel_mean": -0.10290030877812087,
+      "pairs_gained_mean": 286.0,
+      "score_mean": 1.1061751059472333,
+      "n": 4
+    },
+    "lambdafold/dblp-acm": {
+      "d_pc_mean": 0.01427607913669067,
+      "d_pc_spread": 0.0008992805755395628,
+      "d_c_rel_mean": -0.012798907472837556,
+      "pairs_gained_mean": 31.75,
+      "score_mean": 0.2668724155497359,
+      "n": 4
+    },
+    "reclin2/amazon-google": {
+      "d_pc_mean": 0.030192307692307685,
+      "d_pc_spread": 0.00846153846153841,
+      "d_c_rel_mean": -0.02364691334538191,
+      "pairs_gained_mean": 39.25,
+      "score_mean": 0.6349898505751594,
+      "n": 4
+    },
+    "reclin2/cora": {
+      "d_pc_mean": 0.009034567039106128,
+      "d_pc_spread": 0.0027351024208566166,
+      "d_c_rel_mean": 0.010427528675703858,
+      "pairs_gained_mean"

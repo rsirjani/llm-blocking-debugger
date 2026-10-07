@@ -1,0 +1,18 @@
+Two groups of records, group X and group Y, are shown below. One pair of records, one from each group, is known to describe the same real-world entity, yet the two records were placed in different groups.
+
+{STATS}
+
+Known same-entity pair:
+{SEED}
+
+Group X sample:
+{SAMPLE_X}
+
+Group Y sample:
+{SAMPLE_Y}
+
+Decide what change to the grouping would place records that describe the same entity together. State the change as a condition on record fields, not as a list of the records you were shown: the condition is applied to every record of the group, including the many that are not shown here. Answer with a single JSON object:
+{"operation": "move_to_x" | "move_to_y" | "new_block" | "none", "predicate": [{"field": "<field name>", "operator": "equals" | "contains" | "not_contains" | "regex" | "is_null" | "is_not_null" | "gte" | "lte" | "between", "value": "<text>"}], "reason": "<one sentence>"}
+"gte" and "lte" compare the first number found in the field against the value; "between" takes "value": [low, high] and is true when the number falls in that range, endpoints included.
+You may give several rules at once, up to five, as {"actions": [{...}, {...}], "reason": "<one sentence>"}; they are applied in the order written, and each one acts on the grouping the previous rules left behind.
+"move_to_x" moves every record of group Y that satisfies the condition into group X; "move_to_y" is the mirror. "new_block" takes the records of either group that satisfy the condition into a group of their own. "none" leaves the grouping unchanged and needs no condition. Conditions within one rule are combined with and.
