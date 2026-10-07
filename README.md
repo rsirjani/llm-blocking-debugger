@@ -63,8 +63,7 @@ ssh tunnels from the driver. Job scripts under `v2e/q/jobs/` name the model for 
 run, including the cross-judge checks (`gemma4:26b`, `llama3.1:8b`, `qwen3.6:27b`; a
 `mistral-small3.2:24b` run was attempted and failed on serving memory and time limits). The
 cross-judge files carry score and parse counts but no withheld-pair accounting. The reflection step of the search called the Claude
-CLI (Sonnet through the third accepted candidate, Opus afterwards, and briefly a third
-model whose proposals were all rejected); `v2.py` records the sequence. The full
+CLI (Sonnet for candidates 1-3, Opus from candidate 4; candidate 7, the evaluated instruction, descends from the initial prompt through candidates 4-6, all Opus-proposed); `v2.py` records the sequence. The full
 reflection prompt, including the objective and the comparison-count arithmetic given
 to the reflection model, is `REFLECT_TEMPLATE` in `v2.py`. There is no job script for
 the search itself; it was driven interactively by `v2.py` over eighteen days. The paper's threats
