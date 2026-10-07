@@ -30,7 +30,7 @@ All under `v2e/runs/gepa/v2e_qwen38/` unless noted.
 
 | file | paper |
 |---|---|
-| `eval_val_exh_best.json`, `eval_val_exh_seed.json` | exhaustive sweeps over the ten training cells, optimized and initial instruction (Table 3, Figure 2, the score decomposition) |
+| `eval_val_exh_best.json`, `eval_val_exh_seed.json` | exhaustive sweeps over the ten training cells, optimized and initial instruction (Table 3, Figure 1, the score decomposition, the one-entity walk-through and the lambdafold Δ|C| figure in Section 5) |
 | `eval_val_exh_best_v1.json`, `eval_val_exh_seed_v1.json` | the replicate of both sweeps over the same boundary set in a different order |
 | `eval_val_best.json`, `eval_val_seed.json` | the 120-instance validation panel, both instructions (win rate) |
 | `eval_test_best.json` | the 80 held-out instances, optimized instruction |
