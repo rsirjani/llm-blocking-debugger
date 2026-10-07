@@ -34,6 +34,7 @@ All under `v2e/runs/gepa/v2e_qwen38/` unless noted.
 | `eval_val_exh_best_v1.json`, `eval_val_exh_seed_v1.json` | the replicate of both sweeps over the same boundary set in a different order |
 | `eval_val_exh_lcs.json`, `92_exh_lcs.out` | the model-free baseline of Section 5: the same exhaustive sweep with the judge replaced by `v2e/pc_gepa/lcs_baseline.py`, which writes the longest shared text of the disclosed pair as a `contains` rule moved out of the larger block. Run with the arguments of job 81 plus `--tag exh_lcs`. The script applies the rule written in steps 1 and 5 of `prompts/best.txt`; it is not an independent method. |
 | `v2e/pc_gepa/merge_both.py` | the merge-both-blocks cost per cell (Table 3, column mrg.). |
+| `eval_test_test2_best.json`, `94_test2_best.out` | the optimized instruction rerun on the Abt-Buy and DBLP-Scholar held-out cells, two instances per cell, with withheld accounting; compared against the same instances in `eval_test_lcs.json` (Section 5). |
 | `eval_test_mblcs.json`, `95_test_mblcs.out` | the script on the MB-20K held-out cell, mirroring `eval_test_mbbest.json`. |
 | `eval_test_lcs.json`, `93_test_lcs.out` | the same script on the held-out cells, mirroring `eval_test_best.json` (64 boundaries, 8 instances per cell). |
 | `eval_val_best.json`, `eval_val_seed.json` | the 120-instance validation panel, both instructions (win rate) |
