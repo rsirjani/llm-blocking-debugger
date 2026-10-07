@@ -39,12 +39,18 @@ All under `v2e/runs/gepa/v2e_qwen38/` unless noted.
 | `serving_exh_v1_{best,seed}_{before,after}.json` | server state snapshots (model digest, load time) around the replicate sweeps. No such snapshot exists for the first sweeps; the paper identifies their server from the resident server's state. |
 | `llm_events_spotcheck.jsonl` | the re-run of six validation instances against the resident server |
 
-Behavioural tallies (Table 2) and the rule-vocabulary statistics of Section 5 are
-computed from the per-step exemplars in the `eval_*` files by
+Behavioural tallies (Table 2) and the rule-vocabulary and per-blocker statistics of
+Section 5 are computed from the per-step exemplars in the `eval_*` files by
 `v2e/pc_gepa/rule_stats.py`, whose docstring states every definition used (what counts
-as a predicate, an inert rule, a single-token value, a full-group sweep). The
-validation-panel rows of Table 2 were cross-checked against `llm_events.jsonl`, which
-is not shipped.
+as a predicate, an inert rule, a single-token value, a full-group sweep). The Section 5
+shape figures (one-condition share, operator and field mix, full-group share, median
+group size) are from the 120-instance validation panel, `eval_val_best.json` and
+`eval_val_seed.json`, regrouped by blocker: run `rule_stats.py --per-cell` and pool the
+cells of each blocker. The same counters over the exhaustive files give lower full-group
+shares (for example 57.0% rather than 72.4% on reclin2/Cora), as the sweeps visit every
+boundary while the panel draws 64 per instance. Table 2's sweep rows use the exhaustive
+files. The validation-panel rows were cross-checked against `llm_events.jsonl`, which is
+not shipped.
 
 ## Models and serving
 

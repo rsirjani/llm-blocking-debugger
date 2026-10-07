@@ -15,20 +15,24 @@ Definitions used by the paper:
     the group size and N the number matched, both read from each exemplar's
     harness note.
 
-Usage: python3 rule_stats.py [runs_dir]   (default: ../runs/gepa/v2e_qwen38)
+Usage: python3 rule_stats.py [runs_dir] [--per-cell]   (default: ../runs/gepa/v2e_qwen38)
+  --per-cell keys the counters by (blocker, dataset) instead of dataset; this is
+  what the per-blocker geometry figures in Section 5 use.
 """
 import json, os, re, sys
 from collections import Counter, defaultdict
 
+PER_CELL = "--per-cell" in sys.argv
+sys.argv = [a for a in sys.argv if a != "--per-cell"]
 R = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "runs", "gepa", "v2e_qwen38")
-NOTE_NM = re.compile(r"(\d+)\s*(?:of|/)\s*(\d+)")
+NOTE_NM = re.compile(r"matched (\d+) of the (\d+) records")
 
 def stats(fname):
     d = json.load(open(os.path.join(R, fname)))
     per = defaultdict(lambda: defaultdict(Counter))
     agg = defaultdict(lambda: dict(vlen=[], single=0, nval=0, inert=0, npred=0, steps=0, pf=0, full=0, sized=0))
     for r in d["rows"]:
-        ds = r["cell"][1]; a = agg[ds]
+        ds = "/".join(r["cell"]) if PER_CELL else r["cell"][1]; a = agg[ds]
         a["steps"] += r.get("steps_run", 0); a["pf"] += r.get("parse_failures", 0)
         for e in r["exemplars"]:
             per[ds]["ops"][e["op"]] += 1
