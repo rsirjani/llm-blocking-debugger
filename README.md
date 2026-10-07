@@ -1,6 +1,6 @@
 # LLM-Based Debugging and Explainability of Blocking Methods in Entity Resolution
 
-Artifacts for the EDBT 2027 short paper of the same title (Sirjani, Patel, Milani;
+Artifacts for the EDBT 2027 short paper of the same title (Ramtin Sirjani, Farhan Patel, Mostafa Milani;
 The University of Western Ontario).
 
 The method shows a large language model the two blocks that a known true pair was
