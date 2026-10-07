@@ -20,7 +20,7 @@ never shown.
 | `v2e/runs/gepa/v2e_qwen38/prompts/best.txt` | the optimized instruction the paper evaluates. (`v2e/pc_gepa/best_prompt.txt` is an earlier V1-design file and is not the evaluated instruction.) |
 | `v2e/runs/gepa/v2e_qwen38/prompts/seed.txt` | the strategy-free initial prompt |
 | `v2e/runs/gepa/v2e_qwen38/prompts/abl_no{1..7}.txt`, `force_*.txt`, `noseed.txt` | the manipulated instructions (one method step deleted; direction forced; disclosed pair withheld) |
-| `v2e/q/jobs/` | one shell script per experiment, in run order, with the exact arguments used |
+| `v2e/q/jobs/` | one shell script per queued experiment (sweeps, replicate, manipulated instructions, cross-judge runs, operating-point rebuilds), with the exact arguments used. The validation-panel re-score, the held-out and MB-20K runs and the six-instance spot-check were launched by hand with `v2.py`; their result files are shipped, their launch lines are not. |
 | `v2e/runs/gepa/v2e_qwen38/*.out`, `*.log` | the logs those jobs wrote |
 | `v2e/src/loaders.py` | dataset loaders |
 
@@ -39,10 +39,12 @@ All under `v2e/runs/gepa/v2e_qwen38/` unless noted.
 | `serving_exh_v1_{best,seed}_{before,after}.json` | server state snapshots (model digest, load time) around the replicate sweeps. No such snapshot exists for the first sweeps; the paper identifies their server from the resident server's state. |
 | `llm_events_spotcheck.jsonl` | the re-run of six validation instances against the resident server |
 
-Behavioural tallies (Table 2): the sweep rows are computed from the executed actions
-recorded in the `eval_val_exh_*` files by `v2e/pc_gepa/analyze_ops.py`. The
-validation-panel rows were computed by `behaviour.py` from `llm_events.jsonl`, which
-is not shipped (see below).
+Behavioural tallies (Table 2) and the rule-vocabulary statistics of Section 5 are
+computed from the per-step exemplars in the `eval_*` files by
+`v2e/pc_gepa/rule_stats.py`, whose docstring states every definition used (what counts
+as a predicate, an inert rule, a single-token value, a full-group sweep). The
+validation-panel rows of Table 2 were cross-checked against `llm_events.jsonl`, which
+is not shipped.
 
 ## Models and serving
 
